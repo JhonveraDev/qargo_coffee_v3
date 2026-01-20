@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import { NAV_LINKS as links } from "../layout/data/navBar.data";
+
 import logo from "../../assets/images/global/qargo-logo.png";
 import hamburgerMenu from "../../assets/images/global/hamburger_menu.svg";
 
@@ -14,7 +15,6 @@ export const NavBar = () => {
         <img src={logo} alt="Qargo Coffee logo" />
       </Link>
 
-      {/* Botón hamburguesa */}
       <button
         className="navbar-toggle"
         onClick={() => setIsOpen(!isOpen)}
