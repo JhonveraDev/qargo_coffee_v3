@@ -5,13 +5,13 @@ import { NavBar } from "./ui/layout/NavBar";
 
 function Layout() {
   return (
-    <>
+    <div className="app-container">
       <NavBar />
-      <main className="content-wrap">
+      <main className="page-container">
         <Outlet />
       </main>
       {/* <Footer /> */}
-    </>
+    </div>
   );
 }
 
