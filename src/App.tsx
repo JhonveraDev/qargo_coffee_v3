@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate, Outlet } from "react-router-dom";
+
 import { HomePage } from "./features/home/page/HomePage";
 import { NavBar } from "./ui/layout/NavBar";
 

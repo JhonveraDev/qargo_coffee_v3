@@ -1,14 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
-import {NAV_LINKS as links} from "../layout/data/NavBar.data"
+
+import {NAV_LINKS as links} from "../layout/data/NavBar.data";
+
 import logo from "../../assets/images/global/qargo-logo.png";
 
 export const NavBar = () => {
 
   return (
-    <div className="navbar">
+    <nav className="navbar">
 
       <Link to="/" className="navbar-logo">
-        <img src={logo} alt="Qargo Coffe Logo" />
+        <img src={logo} alt="Qargo Coffee logo" />
       </Link>
 
       <ul className="navbar-links">
@@ -24,6 +26,6 @@ export const NavBar = () => {
         ))}
       </ul>
 
-    </div>
+    </nav>
   )
 }
