@@ -20,10 +20,10 @@ export const NavBar = () => {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >
-        <img src={hamburgerMenu} alt="icon menu" className="navbar__menu-icon"/>
+        <img src={hamburgerMenu} alt="icon menu" className="navbar__menu-icon" />
       </button>
 
-      <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
+      <ul className={`navbar-links ${isOpen ? "navbar-links--open" : ""}`}>
         {links.map((link) => (
           <li key={link.to}>
             <NavLink
