@@ -36,7 +36,7 @@ export const HeaderHome = () => {
 
       <div className="header-home__actions">
         <Button text="Order now" className="header-home__button" />
-        <Button text="Find a store" className="header-home__button" />
+        <Button text="Find a store" size="md" className="header-home__button" />
       </div>
     </section>
   );
