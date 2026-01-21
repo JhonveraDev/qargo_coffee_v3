@@ -187,6 +187,7 @@
 @media (max-width: 1000px) {
   .navbar {
     padding: 0 2rem;
+    z-index: 3;
   }
 
   .navbar-toggle {
@@ -197,10 +198,9 @@
   .navbar-links {
     -webkit-backdrop-filter: blur(5.2px);
     backdrop-filter: blur(5.2px);
-    background: rgba(255, 255, 255, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.29);
+    background: linear-gradient(65deg, rgba(253, 253, 248, 1) 32%, rgba(230, 228, 224, 1) 50%, rgba(228, 228, 223, 1) 72%);
     border-radius: 0 0 22px 22px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 18px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     left: 0;
     opacity: 0;
@@ -403,7 +403,7 @@
 
 @media (max-width: 580px) {
   .header-home {
-    padding-top: 4rem;
+    padding-top: 5.5rem;
   }
 
   .header-home__copy {
