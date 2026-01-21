@@ -184,10 +184,9 @@
   cursor: pointer;
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1000px) {
   .navbar {
     padding: 0 2rem;
-    ;
   }
 
   .navbar-toggle {
@@ -326,6 +325,13 @@
     padding: 3rem 0rem 0 5.4rem;
   }
 
+  .navbar {
+    padding: 0 1.6rem 0 2.57rem;
+  }
+
+  .navbar-links {
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 1025px) {
@@ -396,6 +402,10 @@
 }
 
 @media (max-width: 580px) {
+  .header-home {
+    padding-top: 4rem;
+  }
+
   .header-home__copy {
     padding: 3.5rem 1rem;
   }
@@ -440,10 +450,22 @@
 
 @media (max-width: 380px) {
   .title--lg {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .text--md {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 345px) {
+  .title--lg {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 295px) {
+  .title--lg {
+    font-size: 1.5rem;
   }
 }
