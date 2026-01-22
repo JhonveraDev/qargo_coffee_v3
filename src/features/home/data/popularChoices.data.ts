@@ -9,9 +9,9 @@ interface PopularChoice {
 
 export const popularChoicesData: PopularChoice[] = [
   { img: a1, text: "Frosted Apple Chai" },
-  { img: a3, text: "Pumpkin Pixie Latte" },
   { img: a2, text: "Pumpkin Pixie Latte" },
+  { img: a3, text: "Pumpkin Pixie Latte" },
   { img: a1, text: "Frosted Apple Chai" },
-  { img: a3, text: "Pumpkin Pixie Latte" },
   { img: a2, text: "Pumpkin Pixie Latte" },
+  { img: a3, text: "Pumpkin Pixie Latte" },
 ];

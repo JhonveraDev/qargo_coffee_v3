@@ -1,35 +1,39 @@
-// 1. Cambiamos la forma de importar para que Vite lo encuentre físicamente
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper'; // Cambiado de 'swiper/modules' a 'swiper'
-
 import { popularChoicesData } from '../index';
+import { Pagination } from 'swiper';
+
 import { Button } from '../../../ui/components/Button';
 
-// Estilos (Mantener así)
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Title } from '../../../ui/components';
 
 export const PopularChoices = () => {
   return (
     <div className="popular-choices">
-      <h2 className="popular-choices__title">Most popular choices</h2>
-
+      <Title title="Most popular choices" as="h2" size="md" className="popular-choices__title" />
       <Swiper
-        /* 2. El módulo Pagination ahora se pasa correctamente desde 'swiper' */
-        modules={[Pagination]} 
         slidesPerView={3}
-        spaceBetween={5}
+        initialSlide={1}
+        spaceBetween={30}
         pagination={{ clickable: true }}
-        loop={true}
-        centeredSlides={true}
+        modules={[Pagination]}
+        className="popular-choices__slider"
       >
         {popularChoicesData.map((product, index) => (
-          <SwiperSlide key={index}>
-            <img src={product.img} alt={product.text} />
-            <Button text={product.text} />
+          <SwiperSlide key={index} className="popular-choices__slide">
+            <img
+              src={product.img}
+              alt={product.text}
+              className="popular-choices__image"
+            />
+
+            <Button text={product.text} className="popular-choices__button" />
+
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
   );
-};
+}
