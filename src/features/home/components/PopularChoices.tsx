@@ -1,28 +1,39 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { popularChoicesData } from '../index';
 import { Pagination } from 'swiper';
 
-import { Button } from '../../../ui/components/Button';
+import { Button } from '../../../ui/components';
+import { Title } from '../../../ui/components';
+
+import { popularChoicesData } from '../index';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Title } from '../../../ui/components';
+
+const swiperConfig = {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  initialSlide: 1,
+  pagination: { clickable: true },
+  modules: [Pagination],
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+};
 
 export const PopularChoices = () => {
   return (
     <div className="popular-choices">
       <Title title="Most popular choices" as="h2" size="md" className="popular-choices__title" />
-      <Swiper
-        slidesPerView={3}
-        initialSlide={1}
-        spaceBetween={30}
-        pagination={{ clickable: true }}
-        modules={[Pagination]}
-        className="popular-choices__slider"
-      >
-        {popularChoicesData.map((product, index) => (
-          <SwiperSlide key={index} className="popular-choices__slide">
+
+      <Swiper {...swiperConfig}>
+        {popularChoicesData.map((product) => (
+          <SwiperSlide key={product.id} className="popular-choices__slide">
             <img
               src={product.img}
               alt={product.text}
@@ -34,6 +45,7 @@ export const PopularChoices = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
     </div>
   );
 }
