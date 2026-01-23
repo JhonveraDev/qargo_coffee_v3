@@ -12,9 +12,11 @@ import 'swiper/css/pagination';
 
 const swiperConfig = {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 40,
+  centeredSlides: true,
+  loop: true,
   initialSlide: 1,
-  pagination: { clickable: true },
+  pagination: { clickable: false },
   modules: [Pagination],
   breakpoints: {
     768: {
@@ -29,7 +31,7 @@ const swiperConfig = {
 export const PopularChoices = () => {
   return (
     <div className="popular-choices">
-      <Title title="Most popular choices" as="h2" size="md" className="popular-choices__title" />
+      <Title title="Most popular choices" as="h2" size="sm" className="popular-choices__title" />
 
       <Swiper {...swiperConfig}>
         {popularChoicesData.map((product) => (
@@ -40,7 +42,7 @@ export const PopularChoices = () => {
               className="popular-choices__image"
             />
 
-            <Button text={product.text} className="popular-choices__button" />
+            <Button text={product.text} size="sm" className="popular-choices__button" />
 
           </SwiperSlide>
         ))}
