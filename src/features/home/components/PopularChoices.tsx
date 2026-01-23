@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 
 const swiperConfig = {
   slidesPerView: 3,
-  spaceBetween: 40,
+  spaceBetween: 45,
   centeredSlides: true,
   loop: true,
   initialSlide: 1,
