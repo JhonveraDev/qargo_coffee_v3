@@ -91,10 +91,10 @@
 }
 
 .button--sm {
-  padding: 0.9rem 1rem;
+  padding: 0.7rem 1rem;
   font-size: 1.5rem;
   font-weight: 600;
-  width: 78% !important;
+  width: 83% !important;
 }
 
 .button--md {
@@ -477,7 +477,7 @@
   width: 100%;
   text-align: center;
   display: grid;
-  padding: 8rem 3rem;
+  padding: 7.5rem 5.5rem;
 }
 
 .popular-choices__button {
@@ -502,6 +502,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-slide-active {
+  transform: scale(1.08);
+  opacity: 1;
 }
 
 .swiper-slide img {
@@ -532,5 +537,55 @@
 }
 
 .swiper-horizontal {
-  padding: 7rem 0 5.3rem 0 !important;
+  padding: 8rem 0 5rem 0 !important;
+}
+
+.popular-choices__slide {
+  position: relative;
+  overflow: visible !important;
+}
+
+.leaf-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+  z-index: 10;
+}
+
+.leaf {
+  position: absolute;
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+
+@keyframes leaf-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.6);
+    filter: blur(4px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1.4);
+    filter: blur(0);
+  }
+}
+
+.swiper-slide-active .leaf {
+  animation: leaf-fade-in 1.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.leaf-1 {
+  top: -20%;
+  left: 0%;
+}
+
+.swiper-slide-active .popular-choices__button {
+  transform: translateX(-50%) translateY(-6px);
 }

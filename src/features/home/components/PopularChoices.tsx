@@ -6,13 +6,14 @@ import { Button } from '../../../ui/components';
 import { Title } from '../../../ui/components';
 
 import { popularChoicesData } from '../index';
+import leaf from '../../../assets/images/home/home-popular-leaf.png';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 const swiperConfig = {
   slidesPerView: 3,
-  spaceBetween: 45,
+  spaceBetween: 40,
   centeredSlides: true,
   loop: true,
   initialSlide: 1,
@@ -36,6 +37,9 @@ export const PopularChoices = () => {
       <Swiper {...swiperConfig}>
         {popularChoicesData.map((product) => (
           <SwiperSlide key={product.id} className="popular-choices__slide">
+            <div className="leaf-container">
+              <img src={leaf} alt="Leaf"className="leaf leaf-1" />
+            </div>
             <img
               src={product.img}
               alt={product.text}
