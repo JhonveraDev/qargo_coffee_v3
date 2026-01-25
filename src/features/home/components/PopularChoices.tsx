@@ -38,7 +38,7 @@ export const PopularChoices = () => {
         {popularChoicesData.map((product) => (
           <SwiperSlide key={product.id} className="popular-choices__slide">
             <div className="leaf-container">
-              <img src={leaf} alt="Leaf"className="leaf leaf-1" />
+              <img src={leaf} alt="Leaf" className="leaf leaf-1" />
             </div>
             <img
               src={product.img}

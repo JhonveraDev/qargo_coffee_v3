@@ -1,6 +1,9 @@
 import a1 from '../../../assets/images/home/home-popular-choice-01.png';
 import a2 from '../../../assets/images/home/home-popular-choice-02.png';
 import a3 from '../../../assets/images/home/home-popular-choice-03.png';
+// import a4 from '../../../assets/images/home/home-popular-choice-04.png';
+// import a5 from '../../../assets/images/home/home-popular-choice-05.png';
+
 
 interface PopularChoice {
   id: number;

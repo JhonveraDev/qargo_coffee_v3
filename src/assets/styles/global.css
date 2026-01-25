@@ -88,17 +88,24 @@
   cursor: pointer;
   border-radius: 35.5px;
   border: none;
+  transition: 
+    transform 0.55s cubic-bezier(.22, .61, .36, 1),
+    background-color 0.4s ease;
+}
+
+.button:hover {
+  background-color: var(--color-secondary);
+  transform: scale(1.03) !important;
 }
 
 .button--sm {
-  padding: 0.7rem 1rem;
+  padding: 0.65rem 1rem;
   font-size: 1.5rem;
   font-weight: 600;
-  width: 83% !important;
+  width: 78% !important;
 }
 
 .button--md {
-  padding: 20px;
   font-size: 1.5rem;
   font-weight: 700;
   padding: 18px 95px;
@@ -483,8 +490,14 @@
 .popular-choices__button {
   bottom: 1.8rem;
   position: absolute;
-  transform: translateX(-50%);
-  transition: all 0.55s cubic-bezier(.22, .61, .36, 1);
+  transform: translateX(-50%) scale(1);
+  transition: 
+    transform 0.55s cubic-bezier(.22, .61, .36, 1),
+    background-color 0.4s ease;
+}
+
+.popular-choices__button:hover {
+  transform: translateX(-50%) scale(1.03) !important;
 }
 
 .swiper {
@@ -552,7 +565,7 @@
   transform: translateX(-50%);
   width: 100%;
   height: 100%;
-  pointer-events: none; 
+  pointer-events: none;
   z-index: 10;
 }
 
@@ -561,7 +574,6 @@
   opacity: 0;
   will-change: opacity, transform;
 }
-
 
 @keyframes leaf-fade-in {
   0% {
