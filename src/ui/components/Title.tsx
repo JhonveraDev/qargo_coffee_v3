@@ -1,7 +1,7 @@
 interface Props {
   title: string;
   as?: "h1" | "h2" | "h3" | "h4";
-  size?: "sm" | "md" | "lg";
+  size?: "sm"| "sm-a" | "md" | "lg";
   className?: string;
 }
 

@@ -51,6 +51,11 @@
   font-size: 3.75rem;
 }
 
+.title--sm-a {
+  font-weight: 600;
+  font-size: 2.875rem;
+}
+
 .title--md {
   font-weight: 800;
   font-size: 0.875rem;
@@ -758,4 +763,9 @@
   .title--sm {
     font-size: 2rem;
   }
+}
+
+/* ===== HOME PAGE - Section / Start Your Franchise ===== */
+.start-franchise__title {
+  color: var(--text-main);
 }
