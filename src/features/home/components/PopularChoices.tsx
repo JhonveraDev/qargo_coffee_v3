@@ -12,26 +12,26 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const swiperConfig = {
-  slidesPerView: 3,
-  spaceBetween: 40,
   centeredSlides: true,
   loop: true,
   initialSlide: 1,
   pagination: { clickable: false },
   modules: [Pagination],
   breakpoints: {
-    768: {
-      slidesPerView: 2,
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 1,
     },
-    1024: {
+    896: {
       slidesPerView: 3,
+      spaceBetween: 35,
     },
   },
 };
 
 export const PopularChoices = () => {
   return (
-    <div className="popular-choices">
+    <section className="popular-choices">
       <Title title="Most popular choices" as="h2" size="sm" className="popular-choices__title" />
 
       <Swiper {...swiperConfig}>
@@ -52,6 +52,6 @@ export const PopularChoices = () => {
         ))}
       </Swiper>
 
-    </div>
+    </section>
   );
 }
