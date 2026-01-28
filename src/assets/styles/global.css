@@ -768,7 +768,7 @@
 .start-franchise {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 2.5rem 3.125rem 5rem;
+  padding: 0rem 3.125rem 5rem;
 }
 
 .start-franchise__content {
@@ -921,30 +921,6 @@
 
 @media (max-width: 580px) {
   .start-franchise {
-    padding: 5.3125rem 4.0625rem 20rem;
-  }
-
-  .start-franchise__title {
-    font-size: 3.125rem;
-  }
-
-  .start-franchise__description {
-    font-size: 1.375rem;
-  }
-
-  .start-franchise__button {
-    width: 72%;
-    font-size: 1.45rem;
-    height: 4.0625rem;
-  }
-
-  .start-franchise__buttons {
-    transform: translate(-50%, -80%);
-  }
-}
-
-@media (max-width: 580px) {
-  .start-franchise {
     padding: 5.3125rem 3.4375rem 20rem;
   }
 
@@ -1003,7 +979,6 @@
   .start-franchise__description {
     font-size: 1.125rem;
     line-height: 165%;
-    /* se mantiene igual 👍 */
   }
 
   .start-franchise__button {
@@ -1029,5 +1004,85 @@
 
   .start-franchise__buttons {
     transform: translate(-50%, -100%);
+  }
+}
+
+/* ===== HOME PAGE - Section / Start Your Franchise ===== */
+
+.find-store {
+  padding: 3.7rem 3rem;
+}
+
+.find-store__wrapper {
+  background-color: var(--bg-secondary);
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 6rem 2.5rem;
+  place-items: center;
+  border-radius: 30px;
+}
+
+.find-store__image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.find-store__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 3rem;
+  width: 68%;
+  margin-left: 1rem;
+}
+
+.find-store__button {
+  font-size: 1.25rem;
+  padding: 15px 40px;
+}
+
+.find-store__description {
+  color: var(--text-main);
+  line-height: 177.3%;
+}
+
+@media (max-width: 1110px) {
+  .find-store__title {
+    font-size: 2.5rem;
+  }
+
+  .find-store__description {
+    font-size: 1.125rem;
+  }
+
+  .find-store__button {
+    font-size: 1rem;
+  }
+
+  .find-store__content {
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .find-store__title {
+    font-size: 2.3rem;
+  }
+
+  .find-store__button {
+    font-size: 0.9rem;
+  } 
+
+  .find-store__content {
+    width: 85%;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 985px) {
+  .find-store__wrapper {
+    
   }
 }

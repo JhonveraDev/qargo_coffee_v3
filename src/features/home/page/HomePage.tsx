@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeaderHome, PopularChoices, StartYourFranchise } from '../index.ts'
+import { HeaderHome, PopularChoices, StartYourFranchise, FindStore } from '../index.ts'
 
 export const HomePage = () => {
   return (
@@ -7,6 +7,7 @@ export const HomePage = () => {
       <HeaderHome />
       <PopularChoices />
       <StartYourFranchise />
+      <FindStore />
     </>
   )
 }
