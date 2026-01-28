@@ -768,7 +768,7 @@
 .start-franchise {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 40px 50px 80px;
+  padding: 2.5rem 3.125rem 5rem;
 }
 
 .start-franchise__content {
@@ -780,7 +780,7 @@
 
 .start-franchise__title {
   color: var(--text-main);
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   font-weight: 600;
   width: 65%;
 }
@@ -792,7 +792,7 @@
 }
 
 .start-franchise__description {
-  margin-bottom: 65px;
+  margin-bottom: 4.0625rem;
   line-height: 177.3%;
   color: var(--text-main);
 }
@@ -806,14 +806,14 @@
 }
 
 .start-franchise__button {
-  width: 204px;
-  height: 60px;
+  width: 12.75rem;
+  height: 3.75rem;
   padding: 0;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .start-franchise__button:nth-child(1) {
-  margin-right: 45px;
+  margin-right: 2.8125rem;
 }
 
 .start-franchise__image {
@@ -834,33 +834,33 @@
   }
 
   .start-franchise__button {
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 
   .start-franchise__button {
-    height: 50px;
+    height: 3.125rem;
   }
 
   .start-franchise__button:nth-child(1) {
-    margin-right: 40px;
+    margin-right: 2.5rem;
   }
 }
 
 @media (max-width: 970px) {
   .start-franchise__button {
-    font-size: 15.5px;
+    font-size: 0.96875rem;
   }
 }
 
 @media (max-width: 940px) {
   .start-franchise__description {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 }
 
 @media (max-width: 895px) {
   .start-franchise {
-    padding: 85px 80px 320px;
+    padding: 5.3125rem 5rem 20rem;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -886,7 +886,7 @@
   .start-franchise__button {
     width: 75%;
     font-size: 1.8rem;
-    height: 70px;
+    height: 4.375rem;
   }
 
   .start-franchise__button:nth-child(1) {
@@ -910,32 +910,32 @@
   }
 
   .start-franchise__title {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 
   .start-franchise__description {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 177%;
   }
 }
 
 @media (max-width: 580px) {
   .start-franchise {
-    padding: 85px 65px 320px;
+    padding: 5.3125rem 4.0625rem 20rem;
   }
 
   .start-franchise__title {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 
   .start-franchise__description {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .start-franchise__button {
     width: 72%;
     font-size: 1.45rem;
-    height: 65px;
+    height: 4.0625rem;
   }
 
   .start-franchise__buttons {
@@ -945,21 +945,21 @@
 
 @media (max-width: 580px) {
   .start-franchise {
-    padding: 85px 55px 320px;
+    padding: 5.3125rem 3.4375rem 20rem;
   }
 
   .start-franchise__title {
-    font-size: 42px;
+    font-size: 2.625rem;
   }
 
   .start-franchise__description {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .start-franchise__button {
     width: 83%;
-    font-size: 1.3rem;
-    height: 63px;
+    font-size: 1.6rem;
+    height: 3.9375rem;
   }
 
   .start-franchise__buttons {
@@ -969,21 +969,21 @@
 
 @media (max-width: 430px) {
   .start-franchise {
-    padding: 85px 40px 320px;
+    padding: 5.3125rem 2.5rem 20rem;
   }
 
   .start-franchise__title {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .start-franchise__description {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
 
   .start-franchise__button {
     width: 82%;
-    font-size: 1.2rem;
-    height: 61px;
+    font-size: 1.3rem;
+    height: 3.8125rem;
   }
 
   .start-franchise__buttons {
@@ -993,21 +993,22 @@
 
 @media (max-width: 380px) {
   .start-franchise {
-    padding: 85px 35px 285px;
+    padding: 5.3125rem 2.1875rem 17.8125rem;
   }
 
   .start-franchise__title {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 
   .start-franchise__description {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 165%;
+    /* se mantiene igual 👍 */
   }
 
   .start-franchise__button {
     width: 80%;
-    height: 55px;
+    height: 3.4375rem;
   }
 
   .start-franchise__buttons {
@@ -1017,14 +1018,12 @@
 
 @media (max-width: 350px) {
   .start-franchise {
-    padding: 85px 25px 285px;
+    padding: 5.3125rem 1.5625rem 17.8125rem;
   }
-}
 
-@media (max-width: 350px) {
   .start-franchise__button {
     width: 83%;
-    height: 52px;
+    height: 3.25rem;
     font-size: 1.1rem;
   }
 
