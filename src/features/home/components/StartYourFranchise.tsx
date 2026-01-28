@@ -3,7 +3,7 @@ import blogImage from "../../../assets/images/home/home-start-your-franchise.png
 
 export const StartYourFranchise = () => {
   return (
-    <div className="start-franchise">
+    <section className="start-franchise">
       <div className="start-franchise__image-wrapper">
         <img
           src={blogImage}
@@ -13,7 +13,7 @@ export const StartYourFranchise = () => {
       </div>
 
       <div className="start-franchise__content">
-        <Title title="Start your own coffee franchise" as="h2" size="sm-a" className="start-franchise__title" />
+        <Title title="Start your own coffee franchise" as="h2" size="md" className="start-franchise__title" />
 
         <Text
           text="Turn your passion for coffee into a thriving business. Partner with us and bring authentic Italian flavors, premium beverages, and a modern experience to your community."
@@ -26,6 +26,6 @@ export const StartYourFranchise = () => {
           <Button text="Learn more" size="md" className="start-franchise__button" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

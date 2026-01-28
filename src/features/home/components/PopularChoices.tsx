@@ -46,7 +46,7 @@ export const PopularChoices = () => {
               className="popular-choices__image"
             />
 
-            <Button text={product.text} size="sm" className="popular-choices__button" />
+            <Button text={product.text} size="lg" className="popular-choices__button" />
 
           </SwiperSlide>
         ))}

@@ -4,6 +4,6 @@ interface Props {
   className?: string;
 }
 
-export const Text = ({ text, size, className }: Props) => {
+export const Text = ({ text = 'md', size= 'md', className }: Props) => {
   return <p className={`text text--${size} ${className ?? ""}`}>{text}</p>;
 };

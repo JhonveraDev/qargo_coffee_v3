@@ -51,14 +51,11 @@
   font-size: 3.75rem;
 }
 
-.title--sm-a {
+.title--md {
   font-weight: 600;
   font-size: 2.875rem;
-}
-
-.title--md {
-  font-weight: 800;
-  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 
 .title--lg {
@@ -80,6 +77,11 @@
 }
 
 .text--md {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.text--lg {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 150%;
@@ -104,12 +106,7 @@
   transform: scale(1.03) !important;
 }
 
-.button--sm {
-  padding: 0.65rem 1rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  width: 78% !important;
-}
+.button--sm {}
 
 .button--md {
   font-size: 1.5rem;
@@ -118,8 +115,10 @@
 }
 
 .button--lg {
-  padding: 1.25rem 2.5rem;
-  font-size: 1.125rem;
+  padding: 0.65rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 78% !important;
 }
 
 /* ===== NAVBAR - Section / Menu Items ===== */
@@ -445,7 +444,7 @@
     font-size: 2.5rem;
   }
 
-  .text--md {
+  .text--lg {
     font-size: 1.3rem;
   }
 
@@ -468,7 +467,7 @@
     font-size: 2.2rem;
   }
 
-  .text--md {
+  .text--lg {
     font-size: 1.2rem;
   }
 }
@@ -610,14 +609,14 @@
 }
 
 @media (max-width: 1240px) {
-  .button--sm {
+  .button--lg {
     font-size: 1.1rem;
   }
 }
 
 
 @media (max-width: 1040px) {
-  .button--sm {
+  .button--lg {
     font-size: 0.9rem;
   }
 
@@ -629,7 +628,7 @@
 
 
 @media (max-width: 900px) {
-  .button--sm {
+  .button--lg {
     font-size: 0.75rem;
   }
 
@@ -665,7 +664,7 @@
     transform: translateY(-25px) !important;
   }
 
-  .button--sm {
+  .button--lg {
     font-size: 2rem;
     font-weight: 700;
   }
@@ -708,7 +707,7 @@
 }
 
 @media (max-width: 530px) {
-  .button--sm {
+  .button--lg {
     font-size: 1.6rem;
   }
 }
@@ -720,7 +719,7 @@
 }
 
 @media (max-width: 440px) {
-  .button--sm {
+  .button--lg {
     font-size: 1.3rem;
   }
 }
@@ -738,7 +737,7 @@
 }
 
 @media (max-width: 380px) {
-  .button--sm {
+  .button--lg {
     font-size: 1rem;
   }
 }
@@ -750,7 +749,7 @@
 }
 
 @media (max-width: 335px) {
-  .button--sm {
+  .button--lg {
     font-size: 0.8rem;
   }
 }
@@ -766,6 +765,270 @@
 }
 
 /* ===== HOME PAGE - Section / Start Your Franchise ===== */
+.start-franchise {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 40px 50px 80px;
+}
+
+.start-franchise__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+
 .start-franchise__title {
   color: var(--text-main);
+  margin-bottom: 30px;
+  font-weight: 600;
+  width: 65%;
+}
+
+.start-franchise__buttons,
+.start-franchise__title,
+.start-franchise__description {
+  padding-left: 3rem;
+}
+
+.start-franchise__description {
+  margin-bottom: 65px;
+  line-height: 177.3%;
+  color: var(--text-main);
+}
+
+.start-franchise__buttons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+}
+
+.start-franchise__button {
+  width: 204px;
+  height: 60px;
+  padding: 0;
+  font-size: 20px;
+}
+
+.start-franchise__button:nth-child(1) {
+  margin-right: 45px;
+}
+
+.start-franchise__image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1310px) {
+  .start-franchise__title {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .start-franchise__title {
+    width: 100%;
+  }
+
+  .start-franchise__button {
+    font-size: 17px;
+  }
+
+  .start-franchise__button {
+    height: 50px;
+  }
+
+  .start-franchise__button:nth-child(1) {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 970px) {
+  .start-franchise__button {
+    font-size: 15.5px;
+  }
+}
+
+@media (max-width: 940px) {
+  .start-franchise__description {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 895px) {
+  .start-franchise {
+    padding: 85px 80px 320px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content"
+      "image";
+    place-items: center;
+    position: relative;
+  }
+
+  .start-franchise__buttons {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -72%);
+  }
+
+  .start-franchise__button {
+    width: 75%;
+    font-size: 1.8rem;
+    height: 70px;
+  }
+
+  .start-franchise__button:nth-child(1) {
+    margin-right: 0;
+  }
+
+  .start-franchise__content {
+    text-align: center;
+    grid-row: 1;
+    width: 100%;
+  }
+
+  .start-franchise__image-wrapper {
+    grid-row: 2;
+  }
+
+  .start-franchise__buttons,
+  .start-franchise__title,
+  .start-franchise__description {
+    padding-left: 0;
+  }
+
+  .start-franchise__title {
+    font-size: 60px;
+  }
+
+  .start-franchise__description {
+    font-size: 24px;
+    line-height: 177%;
+  }
+}
+
+@media (max-width: 580px) {
+  .start-franchise {
+    padding: 85px 65px 320px;
+  }
+
+  .start-franchise__title {
+    font-size: 50px;
+  }
+
+  .start-franchise__description {
+    font-size: 22px;
+  }
+
+  .start-franchise__button {
+    width: 72%;
+    font-size: 1.45rem;
+    height: 65px;
+  }
+
+  .start-franchise__buttons {
+    transform: translate(-50%, -80%);
+  }
+}
+
+@media (max-width: 580px) {
+  .start-franchise {
+    padding: 85px 55px 320px;
+  }
+
+  .start-franchise__title {
+    font-size: 42px;
+  }
+
+  .start-franchise__description {
+    font-size: 20px;
+  }
+
+  .start-franchise__button {
+    width: 83%;
+    font-size: 1.3rem;
+    height: 63px;
+  }
+
+  .start-franchise__buttons {
+    transform: translate(-50%, -90%);
+  }
+}
+
+@media (max-width: 430px) {
+  .start-franchise {
+    padding: 85px 40px 320px;
+  }
+
+  .start-franchise__title {
+    font-size: 40px;
+  }
+
+  .start-franchise__description {
+    font-size: 19px;
+  }
+
+  .start-franchise__button {
+    width: 82%;
+    font-size: 1.2rem;
+    height: 61px;
+  }
+
+  .start-franchise__buttons {
+    transform: translate(-50%, -95%);
+  }
+}
+
+@media (max-width: 380px) {
+  .start-franchise {
+    padding: 85px 35px 285px;
+  }
+
+  .start-franchise__title {
+    font-size: 36px;
+  }
+
+  .start-franchise__description {
+    font-size: 18px;
+    line-height: 165%;
+  }
+
+  .start-franchise__button {
+    width: 80%;
+    height: 55px;
+  }
+
+  .start-franchise__buttons {
+    transform: translate(-50%, -95%);
+  }
+}
+
+@media (max-width: 350px) {
+  .start-franchise {
+    padding: 85px 25px 285px;
+  }
+}
+
+@media (max-width: 350px) {
+  .start-franchise__button {
+    width: 83%;
+    height: 52px;
+    font-size: 1.1rem;
+  }
+
+  .start-franchise__buttons {
+    transform: translate(-50%, -100%);
+  }
 }

@@ -20,7 +20,7 @@ export const HeaderHome = () => {
 
           <Text
             text="The enchanted elves gather magical ingredients like gingerbread, chocolate, pistachio, matcha, and more to bring warmth to your winter days."
-            size="md"
+            size="lg"
             className="header-home__text"
           />
         </div>
