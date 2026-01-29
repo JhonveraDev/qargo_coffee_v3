@@ -1007,8 +1007,7 @@
   }
 }
 
-/* ===== HOME PAGE - Section / Start Your Franchise ===== */
-
+/* ===== HOME PAGE - Section / Find a Store ===== */
 .find-store {
   padding: 3.7rem 3rem;
 }
@@ -1073,7 +1072,7 @@
 
   .find-store__button {
     font-size: 0.9rem;
-  } 
+  }
 
   .find-store__content {
     width: 85%;
@@ -1081,8 +1080,189 @@
   }
 }
 
-@media (max-width: 985px) {
+@media (max-width: 895px) {
+  .find-store {
+    padding: 1.7rem 4.1rem 3.7rem;
+  }
+
   .find-store__wrapper {
-    
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .find-store__image {
+    grid-row: 2;
+  }
+
+  .find-store__content {
+    grid-row: 1;
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .find-store__title {
+    font-size: 3.75rem;
+  }
+
+  .find-store__description {
+    font-size: 1.5rem;
+    width: 75%;
+  }
+
+  .find-store__button {
+    font-size: 1.8rem;
+    padding: 0.875rem 3.438rem;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    width: 60%;
+  }
+
+  .find-store__wrapper {
+    padding: 8rem 2.5rem 12rem;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .find-store__button {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 795px) {
+  .find-store__title {
+    width: 80%;
+  }
+}
+
+@media (max-width: 777px) {
+  .find-store__button {
+    font-size: 1.4rem;
+    width: 70%;
+  }
+
+  .find-store__description {
+    width: 85%;
+  }
+}
+
+@media (max-width: 650px) {
+  .find-store__wrapper {
+    padding: 6rem 2rem 10rem;
+  }
+
+  .find-store {
+    padding: 0.7rem 2.5rem;
+  }
+}
+
+@media (max-width: 645px) {
+  .find-store__description {
+    width: 95%;
+  }
+
+  .find-store__title {
+    width: 95%;
+  }
+}
+
+@media (max-width: 580px) {
+  .find-store__title {
+    font-size: 3.125rem;
+  }
+
+  .find-store__description {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 555px) {
+  .find-store__description {
+    width: 100%;
+  }
+
+  .find-store__title {
+    width: 100%;
+  }
+
+  .find-store__button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 465px) {
+  .find-store__wrapper {
+    padding: 6rem 1.4rem 10rem;
+  }
+
+  .find-store {
+    padding: 0 2.1rem 1.7rem;
+  }
+
+  .find-store__button {
+    font-size: 1rem;
+  }
+
+  .find-store__title {
+    font-size: 2.9rem;
+  }
+
+  .find-store__text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .find-store__button {
+    width: 78%;
+    font-size: 1rem;
+  }
+
+  .find-store__wrapper {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .find-store__title {
+    font-size: 2.6rem;
+  }
+
+  .find-store__description {
+    font-size: 1.2rem;
+  }
+
+  .find-store {
+    padding: 0 1.8rem 3.7rem;
+  }
+
+  .find-store__wrapper {
+    padding: 5rem 1.4rem 10rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .find-store__button {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .find-store {
+    padding: 0rem 1.3rem 3.7rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .find-store__title {
+    font-size: 2.4rem;
+  }
+
+  .find-store__description {
+    font-size: 1.1rem;
   }
 }
