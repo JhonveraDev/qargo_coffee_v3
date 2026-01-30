@@ -29,6 +29,7 @@
   justify-content: center;
   width: 100%;
   background-color: var(--bg-main);
+  position: relative;
 }
 
 .page-container {
@@ -130,7 +131,7 @@
   left: 50%;
   padding: 0 7rem 0 2.57rem;
   position: absolute;
-  top: 7%;
+  top: 3.6rem;
   transform: translate(-50%, -50%);
   max-width: 90rem;
   width: 100%;
@@ -263,6 +264,101 @@
 @media (max-width: 320px) {
   .navbar {
     padding: 0 1.25rem;
+  }
+}
+
+/* ===== Footer - Section / Menu Items ===== */
+.footer {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  left: 50%;
+  padding: 0 2rem;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, -60%);
+  max-width: 90rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.social-networks a img {
+  margin-right: 1.3rem;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 1.3rem;
+}
+
+.footer-container a {
+  color: var(--text-main);
+  font-size: 1.25rem;
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+  .footer-container a {
+    font-size: 1.1rem;
+  }
+
+  .social-networks a img {
+    margin-right: 1.1rem;
+  }
+}
+
+@media (max-width: 895px) {
+  .footer {
+    align-items: center;
+    transform: translate(-50%, -20%);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  .footer-container a {
+    font-size: 1rem;
+  }
+
+  .footer-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer {
+    padding: 0;
+  }
+}
+
+@media (max-width: 310px) {
+  .footer-container a {
+    font-size: 0.9rem;
   }
 }
 
@@ -1010,6 +1106,7 @@
 /* ===== HOME PAGE - Section / Find a Store ===== */
 .find-store {
   padding: 3.7rem 3rem;
+  margin-bottom: 8.5rem;
 }
 
 .find-store__wrapper {
@@ -1082,7 +1179,8 @@
 
 @media (max-width: 895px) {
   .find-store {
-    padding: 1.7rem 4.1rem 3.7rem;
+    padding: 1.7rem 3.1rem 3.7rem;
+    margin-bottom: 15.5rem;
   }
 
   .find-store__wrapper {
@@ -1157,6 +1255,7 @@
 
   .find-store {
     padding: 0.7rem 2.5rem;
+    margin-bottom: 18.5rem;
   }
 }
 
@@ -1201,6 +1300,7 @@
 
   .find-store {
     padding: 0 2.1rem 1.7rem;
+    margin-bottom: 17rem;
   }
 
   .find-store__button {
@@ -1238,6 +1338,7 @@
 
   .find-store {
     padding: 0 1.8rem 3.7rem;
+    margin-bottom: 16rem;
   }
 
   .find-store__wrapper {

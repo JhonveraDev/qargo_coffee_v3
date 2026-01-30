@@ -2,6 +2,7 @@ import { Routes, Route, Navigate, Outlet } from "react-router-dom";
 
 import { HomePage } from "./features/home/page/HomePage";
 import { NavBar } from "./ui/layout/NavBar";
+import { Footer } from "./ui/layout/Footer";
 
 function Layout() {
   return (
@@ -10,7 +11,7 @@ function Layout() {
       <main className="page-container">
         <Outlet />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
