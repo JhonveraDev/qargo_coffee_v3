@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Title, Button, Text } from "../../../ui/components/index";
 
 import heroHome from "../../../assets/images/home/hero-home-image.png";

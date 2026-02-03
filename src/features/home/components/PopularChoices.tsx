@@ -1,9 +1,7 @@
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 
-import { Button } from '../../../ui/components';
-import { Title } from '../../../ui/components';
+import { Title, Button } from "../../../ui/components/index";
 
 import { popularChoicesData } from '../index';
 import leaf from '../../../assets/images/home/home-popular-leaf.png';

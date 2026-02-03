@@ -79,7 +79,7 @@
 
 .text--md {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .text--lg {
@@ -104,7 +104,6 @@
 
 .button:hover {
   background-color: var(--color-secondary);
-  transform: scale(1.03) !important;
 }
 
 .button--sm {}
@@ -112,14 +111,14 @@
 .button--md {
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 18px 95px;
+  padding: 1.125rem 6.188rem;
 }
 
 .button--lg {
   padding: 0.65rem 1rem;
   font-size: 1.5rem;
   font-weight: 600;
-  width: 78% !important;
+  width: 80% !important;
 }
 
 /* ===== NAVBAR - Section / Menu Items ===== */
@@ -224,7 +223,7 @@
     pointer-events: none;
     position: absolute;
     top: 100%;
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem);
     transition:
       opacity 0.3s ease,
       transform 0.3s ease,
@@ -276,7 +275,7 @@
   align-items: start;
   flex-direction: column;
   left: 50%;
-  padding: 0 2rem;
+  padding: 0 3rem;
   position: absolute;
   bottom: 0;
   transform: translate(-50%, -60%);
@@ -379,7 +378,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  transform: translate(0px, -100px);
+  transform: translate(0, -100px);
   z-index: 0;
 }
 
@@ -465,7 +464,7 @@
   }
 
   .button--md {
-    padding: 13px 82px;
+    padding: 0.813rem 5.125rem;
     font-size: 1.4rem;
   }
 
@@ -495,7 +494,7 @@
   }
 
   .header-home__background {
-    height: 770px;
+    height: 48.125rem;
   }
 }
 
@@ -549,7 +548,7 @@
   }
 
   .button--md {
-    padding: 9px 65px;
+    padding: 0.563rem 4.063rem;
     font-size: 1.2rem;
   }
 
@@ -613,7 +612,7 @@
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -864,7 +863,7 @@
 .start-franchise {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 0rem 3.125rem 5rem;
+  padding: 0rem 3.125rem 4rem;
 }
 
 .start-franchise__content {
@@ -884,7 +883,7 @@
 .start-franchise__buttons,
 .start-franchise__title,
 .start-franchise__description {
-  padding-left: 3rem;
+  padding-left: 4rem;
 }
 
 .start-franchise__description {
@@ -1105,7 +1104,7 @@
 
 /* ===== HOME PAGE - Section / Find a Store ===== */
 .find-store {
-  padding: 3.7rem 3rem;
+  padding: 3.5rem 2.8rem;
   margin-bottom: 8.5rem;
 }
 
@@ -1136,7 +1135,7 @@
 
 .find-store__button {
   font-size: 1.25rem;
-  padding: 15px 40px;
+  padding: 0.938rem 2.5rem;
 }
 
 .find-store__description {
@@ -1337,7 +1336,7 @@
   }
 
   .find-store {
-    padding: 0 1.8rem 3.7rem;
+    padding: 0 1.4rem 3.7rem;
     margin-bottom: 16rem;
   }
 
@@ -1348,7 +1347,7 @@
 
 @media (max-width: 370px) {
   .find-store__button {
-    padding: 15px 20px;
+    padding: 0.938rem 1.25rem;
   }
 }
 

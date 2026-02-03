@@ -1,4 +1,5 @@
 import { Button, Text, Title } from "../../../ui/components";
+
 import blogImage from "../../../assets/images/home/home-start-your-franchise.png";
 
 export const StartYourFranchise = () => {
