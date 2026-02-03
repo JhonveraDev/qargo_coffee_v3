@@ -6,9 +6,9 @@ import heroHome from "../../../assets/images/home/hero-home-image.png";
 
 export const HeaderHome = () => {
   return (
-    <section className="header-home">
+    <header className="header-home">
       {/* Background */}
-      <div className="header-home__background" />
+      <div className="header-home__background" aria-hidden="true"/>
 
       <div className="header-home__content">
         <div className="header-home__copy">
@@ -39,6 +39,6 @@ export const HeaderHome = () => {
         <Button text="Order now" size="md" className="header-home__button" />
         <Button text="Find a store" size="md" className="header-home__button" />
       </div>
-    </section>
+    </header>
   );
 };

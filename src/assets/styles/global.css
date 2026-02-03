@@ -1366,3 +1366,32 @@
     font-size: 1.1rem;
   }
 }
+
+/* ===== FRANCHISE PAGE - Section / Header ===== */
+.header-franchise {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7.7rem;
+  overflow: hidden;
+}
+
+.header-franchise__background {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/franchise/franchise-header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.header-franchise__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+}
