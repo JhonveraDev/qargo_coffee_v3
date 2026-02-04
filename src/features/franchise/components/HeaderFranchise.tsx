@@ -8,7 +8,7 @@ export const HeaderFranchise = () => {
   return (
     <header className="header-franchise">
       {/* Background */}
-      <div className="header-franchise__background" aria-hidden="true" />
+      {/* <div className="header-franchise__background" aria-hidden="true" /> */}
 
       {/* Content */}
       <div className="header-franchise__content">

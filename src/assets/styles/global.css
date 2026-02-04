@@ -1596,3 +1596,91 @@
     font-size: 0.8rem;
   }
 }
+
+/* ===== FRANCHISE PAGE - Section / Business Model ===== */
+.business-models {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0rem 4.4rem 4rem;
+}
+
+.business-models__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 27px;
+}
+
+.business-models__card-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.business-models__card {
+  background-color: var(--bg-secondary);
+  border-radius: 15px;
+  border: 1px solid #B8B8B8;
+}
+
+.business-models__card-content {
+  padding: 1.7rem 1.7rem 5rem;
+  gap: 1rem;
+}
+
+.business-models__card-title {
+  color: var(--text-main);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--font-main);
+  line-height: 100%;
+}
+
+.business-models__description {
+  color: var(--text-main);
+  line-height: 150%;
+  font-size: 24px;
+}
+
+.business-models__card-text {
+  color: var(--text-main);
+  font-size: 17px;
+  line-height: 140%;
+  font-weight: 400;
+  font-family: var(--font-main);
+  margin: 20px 0;
+}
+
+.business-models__card-list {
+  gap: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.business-models__card-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 17px;
+  font-family: var(--font-main);
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 100%;
+}
+
+.business-models__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  flex-direction: column;
+  text-align: center;
+  gap: 35px;
+}
