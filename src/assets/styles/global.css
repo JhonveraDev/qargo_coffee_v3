@@ -1620,13 +1620,12 @@
 
 .business-models__card {
   background-color: var(--bg-secondary);
-  border-radius: 15px;
+  border-radius: 30px;
   border: 1px solid #B8B8B8;
 }
 
 .business-models__card-content {
   padding: 1.7rem 1.7rem 5rem;
-  gap: 1rem;
 }
 
 .business-models__card-title {
@@ -1649,7 +1648,7 @@
   line-height: 140%;
   font-weight: 400;
   font-family: var(--font-main);
-  margin: 20px 0;
+  margin: 20px 0 30px;
 }
 
 .business-models__card-list {
@@ -1683,4 +1682,133 @@
   flex-direction: column;
   text-align: center;
   gap: 35px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d6d0c4;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dot.active {
+  background-color: #b8ad92;
+  transform: scale(1.2);
+}
+
+.business-models__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+@media (max-width: 1250px) {
+  .business-models {
+    padding: 0rem 2rem 4rem;
+  }
+
+  .business-models__cards {
+    gap: 20px;
+  }
+
+  .business-models__card-title {
+    font-size: 22px;
+  }
+
+  .business-models__card-text {
+    font-size: 16px;
+  }
+
+  .business-models__card-content {
+    padding: 1.7rem 1.7rem 4rem;
+  }
+
+  .business-models__card-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .business-models {
+    padding: 0rem 1.5rem 4rem;
+  }
+
+  .business-models__cards {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .business-models__card-content {
+    padding: 1.7rem 1.3rem 3rem;
+  }
+
+  .business-models__card-text {
+    margin: 15px 0 27px;
+  }
+
+  .business-models__card-list {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 980px) {
+
+  .business-models__cards {
+    gap: 13px;
+  }
+
+  .business-models__card-content {
+    padding: 1.7rem 1.1rem 3rem
+  }
+
+  .business-models {
+    padding: 0rem 1.2rem 4rem;
+  }
+
+  .business-models__card-title {
+    font-size: 20px;
+  }
+
+  .business-models__card-text {
+    font-size: 15px;
+  }
+
+  .business-models__card-list {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 895px) {
+
+  .business-models {
+    padding: 0rem 9rem 4rem;
+  }
+
+  .business-models__cards {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .business-models__cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .business-models__card {
+    min-width: 100%;
+    width: 100%;
+    scroll-snap-align: center;
+  }
+}
+
+@media (min-width: 896px) {
+  .business-models__dots {
+    display: none;
+  }
 }
