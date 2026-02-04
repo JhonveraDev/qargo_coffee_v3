@@ -24,7 +24,7 @@ export const BusinessModels: React.FC = () => {
   };
 
   return (
-    <section className="business-models"> 
+    <section className="business-models">
 
       <div className="business-models__content">
         <Title
