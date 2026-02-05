@@ -1,10 +1,11 @@
 import React, { useRef, useState } from "react";
+
 import { Title, Text } from "../../../ui/components/index";
 
 import { BUSINESS_MODELS } from "../data/businessModels.data";
 import franchiseCheck from "../../../assets/images/franchise/franchise-check.png";
 
-export const BusinessModels: React.FC = () => {
+export const BusinessModels = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -38,7 +39,7 @@ export const BusinessModels: React.FC = () => {
           text="Choose from four proven Qargo Coffee franchise formats, each designed to
           match different markets, locations, and investment levels. However you
           think big, there’s a Qargo built for you!"
-          size="md"
+          size="lg"
           className="business-models__description"
         />
       </div>

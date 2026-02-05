@@ -1885,3 +1885,68 @@
     padding: 0rem 1.5rem 4rem;;
   }
 }
+
+/* ===== FRANCHISE PAGE - Section / Investment Overview ===== */
+.investment-overview {
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  padding: 160px 0px;
+}
+
+.investment-overview__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 27px;
+  padding: 0 68px;
+}
+
+.investment-overview__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 41px 20px;
+  border-radius: 15px;
+  border: 1px solid #B8B8B8;
+  background-color: var(--bg-secondary);
+  gap: 20px;
+}
+
+.investment-overview__title {
+  color: var(--color-secondary);
+  font-size: 60px;
+  line-height: 87%;
+  font-weight: 600;
+}
+
+.investment-overview__description {
+  color: var(--text-main);
+  line-height: 150%;
+  font-weight: 400;
+  margin: 52px auto;
+  max-width: 850px;
+  width: 100%;
+}
+
+.investment-overview__card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  font-family: var(--font-main);
+  color: #A9A8A6;
+}
+
+.investment-overview__card-value {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  font-family: var(--font-main);
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1285px) {
+  .investment-overview__cards {
+    padding: 0 35px;
+  }
+}
