@@ -1,8 +1,8 @@
-export interface CarouselTitleData {
+export interface CarouselTitleContent {
   title: string
 }
 
-export interface CarouselItem {
+export interface CarouselItemContent {
   id: number;
   img: string;
   text: string;

@@ -3,7 +3,8 @@ import { Pagination } from 'swiper';
 import type { SwiperOptions } from 'swiper/types';
 
 import { Title, Button } from "../../../ui/components";
-import { carouselData, carouselTitle } from "../data/carousel.data";
+
+import { carouselItemsData, carouselTitleData } from "../data/carousel.data";
 
 import leaf from '../../../assets/images/home/home-popular-leaf.png';
 
@@ -30,21 +31,21 @@ const swiperConfig:SwiperOptions = {
 export const Carousel = () => {
   return (
     <section className="home-carousel">
-      <Title title={carouselTitle.title} as="h2" size="sm" className="home-carousel__title" />
+      <Title title={carouselTitleData.title} as="h2" size="sm" className="home-carousel__title" />
 
       <Swiper {...swiperConfig}>
-        {carouselData.map((product) => (
-          <SwiperSlide key={product.id} className="home-carousel__slide">
+        {carouselItemsData.map((item) => (
+          <SwiperSlide key={item.id} className="home-carousel__slide">
             <div className="leaf-container">
               <img src={leaf} alt="" className="leaf leaf-1" />
             </div>
             <img
-              src={product.img}
-              alt={product.text}
+              src={item.img}
+              alt={item.text}
               className="home-carousel__image"
             />
 
-            <Button text={product.text} size="lg" className="home-carousel__button" />
+            <Button text={item.text} size="lg" className="home-carousel__button" />
 
           </SwiperSlide>
         ))}

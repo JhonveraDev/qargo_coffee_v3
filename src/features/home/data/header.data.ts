@@ -1,4 +1,4 @@
-import heroHome from "../../../assets/images/home/hero-home-image.png";
+import heroHome from "../../../assets/images/home/home-header-image.png";
 
 import type { HeaderContent } from "../types/header.types";
 
