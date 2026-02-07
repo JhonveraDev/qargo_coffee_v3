@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { HeaderFranchise, BusinessModels, InvestmentOverview } from '../index';
+import { Header, BusinessModels, InvestmentOverview } from '../index';
 
 export const FranchisePage = () => {
   return (
     <>
-      <HeaderFranchise />
+      <Header />
       <BusinessModels />
-      <InvestmentOverview />
+      {/* <InvestmentOverview /> */}
     </>
   )
 }
