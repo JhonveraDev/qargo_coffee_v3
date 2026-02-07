@@ -6,33 +6,33 @@ export const CtaMap = () => {
   const { title, description, image, button } = ctaMapData;
 
   return (
-    <section className="cta-map">
-      <div className="cta-map__wrapper">
+    <section className="home-cta-map">
+      <div className="home-cta-map__wrapper">
         <img
           src={image.src}
           alt={image.alt}
-          className="cta-map__image"
+          className="home-cta-map__image"
           loading="lazy"
         />
 
-        <div className="cta-map__content">
+        <div className="home-cta-map__content">
           <Title
             title={title}
             as="h3"
             size="md"
-            className="cta-map__title"
+            className="home-cta-map__title"
           />
 
           <Text
             text={description}
             size="md"
-            className="cta-map__description"
+            className="home-cta-map__description"
           />
 
           <Button
             text={button.text}
             size={button.size}
-            className="cta-map__button"
+            className="home-cta-map__button"
           />
         </div>
       </div>

@@ -859,40 +859,40 @@
   }
 }
 
-/* ===== HOME PAGE - Section / Start Your Franchise ===== */
-.cta-banner {
+/* ===== HOME PAGE - Section /  CtaBanner ===== */
+.home-cta-banner {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 0rem 3.125rem 4rem;
 }
 
-.cta-banner__content {
+.home-cta-banner__content {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: start;
 }
 
-.cta-banner__title {
+.home-cta-banner__title {
   color: var(--text-main);
   margin-bottom: 1.875rem;
   font-weight: 600;
   width: 65%;
 }
 
-.cta-banner__buttons,
-.cta-banner__title,
-.cta-banner__description {
+.home-cta-banner__buttons,
+.home-cta-banner__title,
+.home-cta-banner__description {
   padding-left: 4rem;
 }
 
-.cta-banner__description {
+.home-cta-banner__description {
   margin-bottom: 4.0625rem;
   line-height: 177.3%;
   color: var(--text-main);
 }
 
-.cta-banner__buttons {
+.home-cta-banner__buttons {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -900,61 +900,61 @@
   width: 100%;
 }
 
-.cta-banner__button {
+.home-cta-banner__button {
   width: 12.75rem;
   height: 3.75rem;
   padding: 0;
   font-size: 1.25rem;
 }
 
-.cta-banner__button:nth-child(1) {
+.home-cta-banner__button:nth-child(1) {
   margin-right: 2.8125rem;
 }
 
-.cta-banner__image {
+.home-cta-banner__image {
   max-width: 100%;
   width: 100%;
   height: auto;
 }
 
 @media (max-width: 1310px) {
-  .cta-banner__title {
+  .home-cta-banner__title {
     width: 80%;
   }
 }
 
 @media (max-width: 1080px) {
-  .cta-banner__title {
+  .home-cta-banner__title {
     width: 100%;
   }
 
-  .cta-banner__button {
+  .home-cta-banner__button {
     font-size: 1.0625rem;
   }
 
-  .cta-banner__button {
+  .home-cta-banner__button {
     height: 3.125rem;
   }
 
-  .cta-banner__button:nth-child(1) {
+  .home-cta-banner__button:nth-child(1) {
     margin-right: 2.5rem;
   }
 }
 
 @media (max-width: 970px) {
-  .cta-banner__button {
+  .home-cta-banner__button {
     font-size: 0.96875rem;
   }
 }
 
 @media (max-width: 940px) {
-  .cta-banner__description {
+  .home-cta-banner__description {
     margin-bottom: 2.5rem;
   }
 }
 
 @media (max-width: 895px) {
-  .cta-banner {
+  .home-cta-banner {
     padding: 5.3125rem 5rem 20rem;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr;
@@ -965,7 +965,7 @@
     position: relative;
   }
 
-  .cta-banner__buttons {
+  .home-cta-banner__buttons {
     width: 75%;
     display: flex;
     align-items: center;
@@ -978,137 +978,137 @@
     transform: translate(-50%, -72%);
   }
 
-  .cta-banner__button {
+  .home-cta-banner__button {
     width: 75%;
     font-size: 1.8rem;
     height: 4.375rem;
   }
 
-  .cta-banner__button:nth-child(1) {
+  .home-cta-banner__button:nth-child(1) {
     margin-right: 0;
   }
 
-  .cta-banner__content {
+  .home-cta-banner__content {
     text-align: center;
     grid-row: 1;
     width: 100%;
   }
 
-  .cta-banner__image-wrapper {
+  .home-cta-banner__image-wrapper {
     grid-row: 2;
   }
 
-  .cta-banner__buttons,
-  .cta-banner__title,
-  .cta-banner__description {
+  .home-cta-banner__buttons,
+  .home-cta-banner__title,
+  .home-cta-banner__description {
     padding-left: 0;
   }
 
-  .cta-banner__title {
+  .home-cta-banner__title {
     font-size: 3.75rem;
   }
 
-  .cta-banner__description {
+  .home-cta-banner__description {
     font-size: 1.5rem;
     line-height: 177%;
   }
 }
 
 @media (max-width: 580px) {
-  .cta-banner {
+  .home-cta-banner {
     padding: 5.3125rem 3.4375rem 20rem;
   }
 
-  .cta-banner__title {
+  .home-cta-banner__title {
     font-size: 2.625rem;
   }
 
-  .cta-banner__description {
+  .home-cta-banner__description {
     font-size: 1.25rem;
   }
 
-  .cta-banner__button {
+  .home-cta-banner__button {
     width: 83%;
     font-size: 1.6rem;
     height: 3.9375rem;
   }
 
-  .cta-banner__buttons {
+  .home-cta-banner__buttons {
     transform: translate(-50%, -90%);
   }
 }
 
 @media (max-width: 430px) {
-  .cta-banner {
+  .home-cta-banner {
     padding: 5.3125rem 2.5rem 20rem;
   }
 
-  .cta-banner__title {
+  .home-cta-banner__title {
     font-size: 2.5rem;
   }
 
-  .cta-banner__description {
+  .home-cta-banner__description {
     font-size: 1.1875rem;
   }
 
-  .cta-banner__button {
+  .home-cta-banner__button {
     width: 82%;
     font-size: 1.3rem;
     height: 3.8125rem;
   }
 
-  .cta-banner__buttons {
+  .home-cta-banner__buttons {
     transform: translate(-50%, -95%);
   }
 }
 
 @media (max-width: 380px) {
-  .cta-banner {
+  .home-cta-banner {
     padding: 5.3125rem 2.1875rem 17.8125rem;
   }
 
-  .cta-banner__title {
+  .home-cta-banner__title {
     font-size: 2.25rem;
   }
 
-  .cta-banner__description {
+  .home-cta-banner__description {
     font-size: 1.125rem;
     line-height: 165%;
   }
 
-  .cta-banner__button {
+  .home-cta-banner__button {
     width: 80%;
     height: 3.4375rem;
   }
 
-  .cta-banner__buttons {
+  .home-cta-banner__buttons {
     transform: translate(-50%, -95%);
   }
 }
 
 @media (max-width: 350px) {
-  .cta-banner {
+  .home-cta-banner {
     padding: 5.3125rem 1.5625rem 17.8125rem;
   }
 
-  .cta-banner__button {
+  .home-cta-banner__button {
     width: 83%;
     height: 3.25rem;
     font-size: 1.1rem;
   }
 
-  .cta-banner__buttons {
+  .home-cta-banner__buttons {
     transform: translate(-50%, -100%);
   }
 }
 
-/* ===== HOME PAGE - Section / Find a Store ===== */
-.cta-map {
+/* ===== HOME PAGE - Section / CtaMap ===== */
+.home-cta-map {
   padding: 3.5rem 2.8rem;
   margin-bottom: 8.5rem;
 }
 
-.cta-map__wrapper {
+.home-cta-map__wrapper {
   background-color: var(--bg-secondary);
   display: grid;
   grid-template-columns: 60% 40%;
@@ -1117,13 +1117,13 @@
   border-radius: 30px;
 }
 
-.cta-map__image {
+.home-cta-map__image {
   max-width: 100%;
   width: 100%;
   height: auto;
 }
 
-.cta-map__content {
+.home-cta-map__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1133,65 +1133,65 @@
   margin-left: 1rem;
 }
 
-.cta-map__button {
+.home-cta-map__button {
   font-size: 1.25rem;
   padding: 0.938rem 2.5rem;
 }
 
-.cta-map__description {
+.home-cta-map__description {
   color: var(--text-main);
   line-height: 177.3%;
 }
 
 @media (max-width: 1110px) {
-  .cta-map__title {
+  .home-cta-map__title {
     font-size: 2.5rem;
   }
 
-  .cta-map__description {
+  .home-cta-map__description {
     font-size: 1.125rem;
   }
 
-  .cta-map__button {
+  .home-cta-map__button {
     font-size: 1rem;
   }
 
-  .cta-map__content {
+  .home-cta-map__content {
     gap: 2.5rem;
   }
 }
 
 @media (max-width: 980px) {
-  .cta-map__title {
+  .home-cta-map__title {
     font-size: 2.3rem;
   }
 
-  .cta-map__button {
+  .home-cta-map__button {
     font-size: 0.9rem;
   }
 
-  .cta-map__content {
+  .home-cta-map__content {
     width: 85%;
     margin-left: 3rem;
   }
 }
 
 @media (max-width: 895px) {
-  .cta-map {
+  .home-cta-map {
     padding: 1.7rem 3.1rem 3.7rem;
     margin-bottom: 15.5rem;
   }
 
-  .cta-map__wrapper {
+  .home-cta-map__wrapper {
     grid-template-columns: 1fr;
     position: relative;
   }
 
-  .cta-map__image {
+  .home-cta-map__image {
     grid-row: 2;
   }
 
-  .cta-map__content {
+  .home-cta-map__content {
     grid-row: 1;
     width: 100%;
     margin-left: 0;
@@ -1199,16 +1199,16 @@
     text-align: center;
   }
 
-  .cta-map__title {
+  .home-cta-map__title {
     font-size: 3.75rem;
   }
 
-  .cta-map__description {
+  .home-cta-map__description {
     font-size: 1.5rem;
     width: 75%;
   }
 
-  .cta-map__button {
+  .home-cta-map__button {
     font-size: 1.8rem;
     padding: 0.875rem 3.438rem;
     position: absolute;
@@ -1218,95 +1218,95 @@
     width: 60%;
   }
 
-  .cta-map__wrapper {
+  .home-cta-map__wrapper {
     padding: 8rem 2.5rem 12rem;
     gap: 4rem;
   }
 }
 
 @media (max-width: 830px) {
-  .cta-map__button {
+  .home-cta-map__button {
     font-size: 1.6rem;
   }
 }
 
 @media (max-width: 795px) {
-  .cta-map__title {
+  .home-cta-map__title {
     width: 80%;
   }
 }
 
 @media (max-width: 777px) {
-  .cta-map__button {
+  .home-cta-map__button {
     font-size: 1.4rem;
     width: 70%;
   }
 
-  .cta-map__description {
+  .home-cta-map__description {
     width: 85%;
   }
 }
 
 @media (max-width: 650px) {
-  .cta-map__wrapper {
+  .home-cta-map__wrapper {
     padding: 6rem 2rem 10rem;
   }
 
-  .cta-map {
+  .home-cta-map {
     padding: 0.7rem 2.5rem;
     margin-bottom: 18.5rem;
   }
 }
 
 @media (max-width: 645px) {
-  .cta-map__description {
+  .home-cta-map__description {
     width: 95%;
   }
 
-  .cta-map__title {
+  .home-cta-map__title {
     width: 95%;
   }
 }
 
 @media (max-width: 580px) {
-  .cta-map__title {
+  .home-cta-map__title {
     font-size: 3.125rem;
   }
 
-  .cta-map__description {
+  .home-cta-map__description {
     font-size: 1.4rem;
   }
 }
 
 @media (max-width: 555px) {
-  .cta-map__description {
+  .home-cta-map__description {
     width: 100%;
   }
 
-  .cta-map__title {
+  .home-cta-map__title {
     width: 100%;
   }
 
-  .cta-map__button {
+  .home-cta-map__button {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 465px) {
-  .cta-map__wrapper {
+  .home-cta-map__wrapper {
     padding: 6rem 1.4rem 10rem;
   }
 
-  .cta-map {
+  .home-cta-map {
     padding: 0 2.1rem 1.7rem;
     margin-bottom: 17rem;
   }
 
-  .cta-map__button {
+  .home-cta-map__button {
     font-size: 1rem;
   }
 
-  .cta-map__title {
+  .home-cta-map__title {
     font-size: 2.9rem;
   }
 
@@ -1316,53 +1316,53 @@
 }
 
 @media (max-width: 420px) {
-  .cta-map__button {
+  .home-cta-map__button {
     width: 78%;
     font-size: 1rem;
   }
 
-  .cta-map__wrapper {
+  .home-cta-map__wrapper {
     gap: 2rem;
   }
 }
 
 @media (max-width: 380px) {
-  .cta-map__title {
+  .home-cta-map__title {
     font-size: 2.6rem;
   }
 
-  .cta-map__description {
+  .home-cta-map__description {
     font-size: 1.2rem;
   }
 
-  .cta-map {
+  .home-cta-map {
     padding: 0 1.4rem 3.7rem;
     margin-bottom: 16rem;
   }
 
-  .cta-map__wrapper {
+  .home-cta-map__wrapper {
     padding: 5rem 1.4rem 10rem;
   }
 }
 
 @media (max-width: 370px) {
-  .cta-map__button {
+  .home-cta-map__button {
     padding: 0.938rem 1.25rem;
   }
 }
 
 @media (max-width: 350px) {
-  .cta-map {
+  .home-cta-map {
     padding: 0rem 1.3rem 3.7rem;
   }
 }
 
 @media (max-width: 325px) {
-  .cta-map__title {
+  .home-cta-map__title {
     font-size: 2.4rem;
   }
 
-  .cta-map__description {
+  .home-cta-map__description {
     font-size: 1.1rem;
   }
 }

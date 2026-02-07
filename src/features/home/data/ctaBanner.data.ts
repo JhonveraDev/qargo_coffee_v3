@@ -1,4 +1,5 @@
 import blogImage from "../../../assets/images/home/home-start-your-franchise.png";
+
 import type { CtaBannerContent } from "../types/ctaBanner.types";
 
 export const ctaBannerData: CtaBannerContent = {
