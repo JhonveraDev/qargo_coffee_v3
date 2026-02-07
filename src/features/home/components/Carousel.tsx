@@ -1,15 +1,16 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
+import type { SwiperOptions } from 'swiper/types';
 
-import { Title, Button } from "../../../ui/components/index";
+import { Title, Button } from "../../../ui/components";
+import { carouselData, carouselTitle } from "../data/carousel.data";
 
-import { popularChoicesData } from '../index';
 import leaf from '../../../assets/images/home/home-popular-leaf.png';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const swiperConfig = {
+const swiperConfig:SwiperOptions = {
   centeredSlides: true,
   loop: true,
   initialSlide: 1,
@@ -18,7 +19,6 @@ const swiperConfig = {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 1,
     },
     896: {
       slidesPerView: 3,
@@ -27,24 +27,24 @@ const swiperConfig = {
   },
 };
 
-export const PopularChoices = () => {
+export const Carousel = () => {
   return (
-    <section className="popular-choices">
-      <Title title="Most popular choices" as="h2" size="sm" className="popular-choices__title" />
+    <section className="home-carousel">
+      <Title title={carouselTitle.title} as="h2" size="sm" className="home-carousel__title" />
 
       <Swiper {...swiperConfig}>
-        {popularChoicesData.map((product) => (
-          <SwiperSlide key={product.id} className="popular-choices__slide">
+        {carouselData.map((product) => (
+          <SwiperSlide key={product.id} className="home-carousel__slide">
             <div className="leaf-container">
-              <img src={leaf} alt="Leaf" className="leaf leaf-1" />
+              <img src={leaf} alt="" className="leaf leaf-1" />
             </div>
             <img
               src={product.img}
               alt={product.text}
-              className="popular-choices__image"
+              className="home-carousel__image"
             />
 
-            <Button text={product.text} size="lg" className="popular-choices__button" />
+            <Button text={product.text} size="lg" className="home-carousel__button" />
 
           </SwiperSlide>
         ))}

@@ -1,8 +1,8 @@
 import heroHome from "../../../assets/images/home/hero-home-image.png";
 
-import type { HeaderData } from "../types/header.types";
+import type { HeaderContent } from "../types/header.types";
 
-export const headerData: HeaderData = {
+export const headerData: HeaderContent = {
   title: "Keepers of Winter",
   description: "The enchanted elves gather magical ingredients like gingerbread, chocolate, pistachio, matcha, and more to bring warmth to your winter days.",
   image: {

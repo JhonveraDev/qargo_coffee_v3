@@ -1,4 +1,5 @@
 import { Title, Text, Button } from "../../../ui/components";
+
 import { headerData } from "../data/header.data";
 
 export const Header = () => {
@@ -41,6 +42,7 @@ export const Header = () => {
             text={text}
             size={size}
             className="home-header__button"
+            aria-label={text}
           />
         ))}
       </div>

@@ -9,7 +9,7 @@ export interface HeaderImage {
   alt: string;
 }
 
-export interface HeaderData {
+export interface HeaderContent {
   title: string;
   description: string;
   image: HeaderImage;
