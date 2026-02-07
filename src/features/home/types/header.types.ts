@@ -1,4 +1,5 @@
 export interface HeaderButton {
+  id: string;
   text: string;
   size: "sm" | "md" | "lg";
 }

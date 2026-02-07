@@ -1,25 +1,25 @@
-import { Title, Text, Button } from "../../../ui/components/index";
+import { Title, Text, Button } from "../../../ui/components";
 import { headerData } from "../data/header.data";
 
-const HomeHeader = () => {
+export const Header = () => {
   const { title, description, image, buttons } = headerData;
 
   return (
     <header className="home-header">
-      <div className="home-header__background" aria-hidden="true" />
+      <div className="home-header__background" aria-hidden />
 
       <div className="home-header__content">
         <div className="home-header__copy">
           <Title
-            title={title}
             as="h1"
             size="lg"
+            title={title}
             className="home-header__title"
           />
 
           <Text
-            text={description}
             size="lg"
+            text={description}
             className="home-header__text"
           />
         </div>
@@ -28,17 +28,18 @@ const HomeHeader = () => {
           <img
             src={image.src}
             alt={image.alt}
+            loading="eager"
             className="home-header__image"
           />
         </div>
       </div>
 
       <div className="home-header__actions">
-        {buttons.map((button, index) => (
+        {buttons.map(({ id, text, size }) => (
           <Button
-            key={index}
-            text={button.text}
-            size={button.size}
+            key={id}
+            text={text}
+            size={size}
             className="home-header__button"
           />
         ))}
@@ -46,5 +47,3 @@ const HomeHeader = () => {
     </header>
   );
 };
-
-export default HomeHeader;
