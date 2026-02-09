@@ -6,20 +6,20 @@ export const statsGridData: StatsGridContent = {
     "Our investment structure is designed to support long-term growth, with clear costs, scalable formats, and comprehensive support from day one.",
   cards: [
     {
-      title: "Initial Investment",
-      value: "$120,000",
+      title: "Franchise Fee",
+      value: "$40,000 - $50,000",
     },
     {
-      title: "ROI Period",
-      value: "18–24 months",
+      title: "Development Fee",
+      value: "$10,000",
     },
     {
-      title: "Store Formats",
-      value: "3 Available",
+      title: "Royalties",
+      value: "6%",
     },
     {
-      title: "Store Formats",
-      value: "3 Available",
+      title: "Marketing Fund",
+      value: "2%",
     },
   ],
 };
