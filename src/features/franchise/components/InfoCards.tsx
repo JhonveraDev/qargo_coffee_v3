@@ -6,7 +6,7 @@ import { infoCardsTextData, infoCardsData } from "../data/infoCards.data";
 
 import infoCardCheck from "../../../assets/images/franchise/franchise-check.png";
 
-export const InfoCards: React.FC = () => {
+export const InfoCards = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
@@ -28,45 +28,45 @@ export const InfoCards: React.FC = () => {
   }, []);
 
   return (
-    <section className="info-cards">
-      <div className="info-cards__content">
+    <section className="franchise-info-cards">
+      <div className="franchise-info-cards__content">
         <Title
           title={infoCardsTextData.title}
           as="h2"
           size="sm"
-          className="info-cards__title"
+          className="franchise-info-cards__title"
         />
 
         <Text
           text={infoCardsTextData.description}
           size="lg"
-          className="info-cards__description"
+          className="franchise-info-cards__description"
         />
       </div>
 
       <div
         ref={containerRef}
         onScroll={handleScroll}
-        className="info-cards__cards"
+        className="franchise-info-cards__cards"
       >
         {infoCardsData.map(
           ({ id, image, title, description, features }) => (
-            <article key={id} className="info-cards__card">
+            <article key={id} className="franchise-info-cards__card">
               <img
                 src={image}
                 alt={title}
-                className="info-cards__card-image"
+                className="franchise-info-cards__card-image"
               />
 
-              <div className="info-cards__card-content">
-                <h3 className="info-cards__card-title">{title}</h3>
-                <p className="info-cards__card-text">{description}</p>
+              <div className="franchise-info-cards__card-content">
+                <h3 className="franchise-info-cards__card-title">{title}</h3>
+                <p className="franchise-info-cards__card-text">{description}</p>
 
-                <ul className="info-cards__card-list">
+                <ul className="franchise-info-cards__card-list">
                   {features.map((feature, index) => (
                     <li
                       key={`${id}-feature-${index}`}
-                      className="info-cards__card-item"
+                      className="franchise-info-cards__card-item"
                     >
                       <img src={infoCardCheck} alt="" />
                       <span>{feature}</span>
@@ -79,7 +79,7 @@ export const InfoCards: React.FC = () => {
         )}
       </div>
 
-      <div className="info-cards__dots">
+      <div className="franchise-info-cards__dots">
         {infoCardsData.map((_, index) => (
           <span
             key={`dot-${index}`}
