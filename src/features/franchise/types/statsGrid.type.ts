@@ -1,4 +1,4 @@
-interface StatsGridCard {
+interface StatsGridCardContent {
   title: string;
   value: string;
 }
@@ -6,5 +6,5 @@ interface StatsGridCard {
 export interface StatsGridContent {
   title: string;
   description: string;
-  cards: StatsGridCard[];
+  cards: StatsGridCardContent[];
 }

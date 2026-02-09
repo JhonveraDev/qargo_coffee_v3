@@ -7,7 +7,7 @@ export const Header = () => {
 
   return (
     <header className="home-header">
-      <div className="home-header__background" aria-hidden />
+      <div className="home-header__background" aria-hidden="true" />
 
       <div className="home-header__content">
         <div className="home-header__copy">
@@ -42,7 +42,6 @@ export const Header = () => {
             text={text}
             size={size}
             className="home-header__button"
-            aria-label={text}
           />
         ))}
       </div>

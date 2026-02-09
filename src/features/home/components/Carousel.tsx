@@ -31,13 +31,23 @@ const swiperConfig:SwiperOptions = {
 export const Carousel = () => {
   return (
     <section className="home-carousel">
-      <Title title={carouselTitleData.title} as="h2" size="sm" className="home-carousel__title" />
+      <Title 
+        title={carouselTitleData.title} 
+        as="h2" 
+        size="sm" 
+        className="home-carousel__title" 
+      />
 
       <Swiper {...swiperConfig}>
         {carouselItemsData.map((item) => (
           <SwiperSlide key={item.id} className="home-carousel__slide">
-            <div className="leaf-container">
-              <img src={leaf} alt="" className="leaf leaf-1" />
+            <div className="home-leaf-container">
+              <img 
+                src={leaf} 
+                alt="" 
+                className="leaf leaf-1" 
+                aria-hidden="true" 
+              />
             </div>
             <img
               src={item.img}
@@ -45,7 +55,11 @@ export const Carousel = () => {
               className="home-carousel__image"
             />
 
-            <Button text={item.text} size="lg" className="home-carousel__button" />
+            <Button 
+              text={item.text} 
+              size="lg" 
+              className="home-carousel__button" 
+            />
 
           </SwiperSlide>
         ))}

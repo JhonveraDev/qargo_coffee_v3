@@ -659,7 +659,7 @@
   overflow: visible !important;
 }
 
-.leaf-container {
+.home-leaf-container {
   position: absolute;
   top: 0;
   left: 50%;
@@ -751,7 +751,7 @@
     padding: 7rem 4.5rem 0;
   }
 
-  .leaf-container {
+  .home-leaf-container {
     top: 3.125rem;
   }
 
@@ -1887,7 +1887,7 @@
   }
 }
 
-/* ===== FRANCHISE PAGE - Section / Investment Overview ===== */
+/* ===== FRANCHISE PAGE - Section / Info Cards ===== */
 .franchise-stats-grid {
   text-align: center;
   max-width: 100%;

@@ -19,9 +19,10 @@ export const Header = () => {
 
         <img
           src={image.src}
-          alt={image.alt}
+          alt=""
           className="franchise-header__mobile-image"
           loading="eager"
+          aria-hidden="true"
         />
 
         <Text

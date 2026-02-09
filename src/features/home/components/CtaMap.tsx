@@ -13,6 +13,7 @@ export const CtaMap = () => {
           alt={image.alt}
           className="home-cta-map__image"
           loading="lazy"
+          aria-hidden="true"
         />
 
         <div className="home-cta-map__content">

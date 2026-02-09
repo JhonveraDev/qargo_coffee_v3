@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Title, Text } from "../../../ui/components";
 
 import { statsGridData } from "../data/statsGrid.data";
