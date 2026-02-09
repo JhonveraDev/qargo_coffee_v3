@@ -1598,7 +1598,7 @@
 }
 
 /* ===== FRANCHISE PAGE - Section / Business Model ===== */
-.business-models {
+.info-cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1606,29 +1606,29 @@
   padding: 0rem 4.4rem 4rem;
 }
 
-.business-models__cards {
+.info-cards__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 27px;
 }
 
-.business-models__card-image {
+.info-cards__card-image {
   max-width: 100%;
   width: 100%;
   height: auto;
 }
 
-.business-models__card {
+.info-cards__card {
   background-color: var(--bg-secondary);
   border-radius: 15px;
   border: 1px solid #B8B8B8;
 }
 
-.business-models__card-content {
+.info-cards__card-content {
   padding: 1.7rem 1.7rem 4rem;
 }
 
-.business-models__card-title {
+.info-cards__card-title {
   color: var(--text-main);
   font-size: 24px;
   font-weight: 600;
@@ -1636,13 +1636,13 @@
   line-height: 100%;
 }
 
-.business-models__description {
+.info-cards__description {
   color: var(--text-main);
   line-height: 150%;
   font-size: 24px;
 }
 
-.business-models__card-text {
+.info-cards__card-text {
   color: var(--text-main);
   font-size: 17px;
   line-height: 140%;
@@ -1651,7 +1651,7 @@
   margin: 20px 0 30px;
 }
 
-.business-models__card-list {
+.info-cards__card-list {
   gap: 19px;
   display: flex;
   justify-content: center;
@@ -1659,7 +1659,7 @@
   flex-direction: column;
 }
 
-.business-models__card-item {
+.info-cards__card-item {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -1672,7 +1672,7 @@
   line-height: 100%;
 }
 
-.business-models__content {
+.info-cards__content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1697,7 +1697,7 @@
   transform: scale(1.2);
 }
 
-.business-models__dots {
+.info-cards__dots {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -1705,91 +1705,91 @@
 }
 
 @media (max-width: 1250px) {
-  .business-models {
+  .info-cards {
     padding: 0rem 2rem 4rem;
   }
 
-  .business-models__cards {
+  .info-cards__cards {
     gap: 20px;
   }
 
-  .business-models__card-title {
+  .info-cards__card-title {
     font-size: 22px;
   }
 
-  .business-models__card-text {
+  .info-cards__card-text {
     font-size: 16px;
   }
 
-  .business-models__card-content {
+  .info-cards__card-content {
     padding: 1.7rem 1.7rem 4rem;
   }
 
-  .business-models__card-item {
+  .info-cards__card-item {
     font-size: 16px;
   }
 }
 
 @media (max-width: 1150px) {
-  .business-models {
+  .info-cards {
     padding: 0rem 1.5rem 4rem;
   }
 
-  .business-models__cards {
+  .info-cards__cards {
     gap: 15px;
   }
 }
 
 @media (max-width: 1060px) {
-  .business-models__card-content {
+  .info-cards__card-content {
     padding: 1.7rem 1.3rem 3rem;
   }
 
-  .business-models__card-text {
+  .info-cards__card-text {
     margin: 15px 0 27px;
   }
 
-  .business-models__card-list {
+  .info-cards__card-list {
     gap: 18px;
   }
 }
 
 @media (max-width: 1000px) {
 
-  .business-models__cards {
+  .info-cards__cards {
     gap: 13px;
   }
 
-  .business-models__card-content {
+  .info-cards__card-content {
     padding: 1.7rem 1.1rem 3rem
   }
 
-  .business-models {
+  .info-cards {
     padding: 0rem 1.2rem 4rem;
   }
 
-  .business-models__card-title {
+  .info-cards__card-title {
     font-size: 20px;
   }
 
-  .business-models__card-text {
+  .info-cards__card-text {
     font-size: 15px;
   }
 
-  .business-models__card-list {
+  .info-cards__card-list {
     gap: 16px;
   }
 }
 
 @media (max-width: 970px) {
-  .business-models {
+  .info-cards {
     padding: 0rem 3.7rem 4rem;
     box-sizing: border-box;
     width: 100%;
     overflow: hidden;
   }
 
-  .business-models__cards {
+  .info-cards__cards {
     display: flex;
     gap: 22px;
     overflow-x: auto;
@@ -1800,11 +1800,11 @@
     padding: 10px 0;
   }
 
-  .business-models__cards::-webkit-scrollbar {
+  .info-cards__cards::-webkit-scrollbar {
     display: none;
   }
 
-  .business-models__card {
+  .info-cards__card {
     flex: 0 0 100%;
     scroll-snap-align: center;
     box-sizing: border-box;
@@ -1816,72 +1816,72 @@
 }
 
 @media (min-width: 896px) {
-  .business-models__dots {
+  .info-cards__dots {
     display: none;
   }
 }
 
 @media (max-width: 1050px) {
-  .business-models__description {
+  .info-cards__description {
     font-size: 20.8px;
   }
 
-  .business-models__title {
+  .info-cards__title {
     font-size: 52px;
   }
 }
 
 @media (max-width: 970px) {
-  .business-models__card-content {
+  .info-cards__card-content {
     padding: 1.7rem 1.8rem 3rem;
   }
 }
 
 @media (max-width: 640px) {
-  .business-models__title {
+  .info-cards__title {
     font-size: 45px;
   }
 }
 
 @media (max-width: 560px) {
-  .business-models__title {
+  .info-cards__title {
     font-size: 45px;
   }
 }
 
 @media (max-width: 480px) {
-  .business-models__title {
+  .info-cards__title {
     font-size: 40px;
   }
 
-  .business-models {
+  .info-cards {
     padding: 0rem 2.2rem 4rem;
   }
 }
 
 @media (max-width: 420px) {
-  .business-models__title {
+  .info-cards__title {
     font-size: 35px;
   }
 
-  .business-models__description {
+  .info-cards__description {
     font-size: 19.8px;
   }
 
-  .business-models__content {
+  .info-cards__content {
     padding-bottom: 3rem;
   }
 }
 
 @media (max-width: 390px) {
-  .business-models__title {
+  .info-cards__title {
     font-size: 33px;
     padding: 0;
   }
 }
 
 @media (max-width: 340px) {
-  .business-models {
+  .info-cards {
     padding: 0rem 1.5rem 4rem;
     ;
   }

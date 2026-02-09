@@ -1,3 +1,3 @@
 export * from './components/Header';
-export * from './components/BusinessModels'; 
+export * from './components/InfoCards'; 
 export * from './components/InvestmentOverview';

@@ -3,15 +3,14 @@ import data02 from "../../../assets/images/franchise/franchise-business-model-02
 import data03 from "../../../assets/images/franchise/franchise-business-model-03.png";
 import data04 from "../../../assets/images/franchise/franchise-business-model-04.png";
 
-export interface BusinessModel {
-  id: number;
-  image: string;
-  title: string;
-  description: string;
-  features: string[];
-}
+import type { InfoCardsTextContent, InfoCardsContent } from "../types/infocards.type";
 
-export const BUSINESS_MODELS: BusinessModel[] = [
+export const infoCardsTextData: InfoCardsTextContent = {
+  title: "Our Business Models",
+  description: "Choose from four proven Qargo Coffee franchise formats, each designed to match different markets, locations, and investment levels. However you think big, there’s a Qargo built for you!",
+};
+
+export const infoCardsData: InfoCardsContent[] = [
   {
     id: 1,
     image: data01,

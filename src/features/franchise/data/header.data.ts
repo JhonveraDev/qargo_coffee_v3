@@ -4,8 +4,7 @@ import type { HeaderFranchiseContent } from "../types/header.types";
 
 export const headerFranchiseData: HeaderFranchiseContent = {
   title: "Create Something Bigger with Qargo Coffee",
-  description:
-    "Join the country’s fastest-growing coffee franchise and build a thriving business with Italy’s premium coffee, fine pastries, a unique proven system, and unmatched support.",
+  description: "Join the country’s fastest-growing coffee franchise and build a thriving business with Italy’s premium coffee, fine pastries, a unique proven system, and unmatched support.",
   image: {
     src: franchiseHeaderImage,
     alt: "Qargo Coffee franchise opportunity",
