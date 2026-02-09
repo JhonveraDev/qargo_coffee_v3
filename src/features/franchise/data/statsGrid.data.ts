@@ -1,4 +1,4 @@
-import type { StatsGridContent } from "../types/statsGrid.type";
+import type { StatsGridContent } from "../types/statsGrid.types";
 
 export const statsGridData: StatsGridContent = {
   title: "Qargo Coffee Investment Overview",

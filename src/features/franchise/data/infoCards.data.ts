@@ -3,7 +3,7 @@ import data02 from "../../../assets/images/franchise/franchise-business-model-02
 import data03 from "../../../assets/images/franchise/franchise-business-model-03.png";
 import data04 from "../../../assets/images/franchise/franchise-business-model-04.png";
 
-import type { InfoCardsTextContent, InfoCardsContent } from "../types/infocards.type";
+import type { InfoCardsTextContent, InfoCardsContent } from "../types/infocards.types";
 
 export const infoCardsTextData: InfoCardsTextContent = {
   title: "Our Business Models",

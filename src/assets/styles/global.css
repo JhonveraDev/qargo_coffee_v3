@@ -2102,3 +2102,11 @@
     font-size: 20px;
   }
 }
+
+/* ===== FRANCHISE PAGE - Section / Carousel ===== */
+
+.franchise-carousel {
+  background-color: red;
+  max-width: 100%;
+  width: 100%;
+}

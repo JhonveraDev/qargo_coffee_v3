@@ -1,6 +1,4 @@
-import React from 'react'
-
-import { Header, InfoCards, StatsGrid } from '../index';
+import { Header, InfoCards, StatsGrid, Carousel } from '../index';
 
 export const FranchisePage = () => {
   return (
@@ -8,6 +6,7 @@ export const FranchisePage = () => {
       <Header />
       <InfoCards />
       <StatsGrid />
+      <Carousel />
     </>
   )
 }
