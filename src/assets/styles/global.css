@@ -2305,6 +2305,10 @@
   .franchise-carousel__title {
     font-size: 33px;
   }
+
+  .franchise-carousel {
+    padding: 60px 0 100px;
+  }
 }
 
 @media (max-width: 430px) {

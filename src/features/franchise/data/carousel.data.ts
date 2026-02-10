@@ -1,6 +1,12 @@
 import type { CarouselContent } from "../types/carousel.types"
 
-import fc1 from "../../../assets/images/franchise/fc1.png";
+import fc1 from "../../../assets/images/franchise/fc1.svg";
+import fc2 from "../../../assets/images/franchise/fc2.svg";
+import fc3 from "../../../assets/images/franchise/fc3.svg";
+import fc4 from "../../../assets/images/franchise/fc4.svg";
+import fc5 from "../../../assets/images/franchise/fc5.svg";
+import fc6 from "../../../assets/images/franchise/fc6.svg";
+import fc7 from "../../../assets/images/franchise/fc7.svg";
 
 export const carouselData: CarouselContent = {
   title: "What Makes Qargo Coffee Different?",
@@ -14,37 +20,37 @@ export const carouselData: CarouselContent = {
     },
     {
       id: "csl-002",
-      image: fc1,
+      image: fc2,
       title: "Comprehensive Training",
       text: "From product mastery to operational execution, our end to end training programs prepare franchise owners to succeed from day one."
     },
     {
       id: "csl-003",
-      image: fc1,
+      image: fc3,
       title: "Ongoing Support",
       text: "From launch through expansion, our support team helps drive operational consistency and scalable growth."
     },
     {
       id: "csl-004",
-      image: fc1,
+      image: fc4,
       title: "Premium Italian Coffee",
       text: "A curated selection of Italy’s finest coffee beans, roasted with precision to uphold premium quality."
     },
     {
       id: "csl-005",
-      image: fc1,
+      image: fc5,
       title: "Build Smarter: Save Up to 50%",
       text: "Designed for speed and efficiency, our build out process reduces upfront investment and shortens the timeline to profitability."
     },
     {
       id: "csl-006",
-      image: fc1,
+      image: fc6,
       title: "In-House Architecture Team",
       text: "A unique, scalable design framework developed by a dedicated design team to support network growth."
     },
     {
       id: "csl-007",
-      image: fc1,
+      image: fc7,
       title: "Data-Driven Site Selection",
       text: "Advanced data analytics integrating mobile and credit card insights to support disciplined site selection decisions."
     },

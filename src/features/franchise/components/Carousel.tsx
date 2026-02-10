@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 const swiperConfig: SwiperOptions = {
   centeredSlides: true,
   loop: true,
-  initialSlide: 0,
+  initialSlide: 1,
   pagination: { clickable: false },
   modules: [Pagination],
   breakpoints: {
