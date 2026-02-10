@@ -1,4 +1,4 @@
-import { Header, InfoCards, StatsGrid, Carousel } from '../index';
+import { Header, InfoCards, StatsGrid, Carousel, Dropdown } from '../index';
 
 export const FranchisePage = () => {
   return (
@@ -7,6 +7,7 @@ export const FranchisePage = () => {
       <InfoCards />
       <StatsGrid />
       <Carousel />
+      <Dropdown />
     </>
   )
 }

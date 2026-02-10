@@ -2340,3 +2340,55 @@
     padding-left: 30px;
   }
 }
+
+/* ===== FRANCHISE PAGE - Section / Dropdown ===== */
+.franchise-dropdown {
+  background-color: var(--bg-secondary);
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.franchise-dropdown__steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;;
+  background-color: greenyellow;
+  width: 100%;
+  max-width: 100%;
+  gap: 65px;
+}
+
+.franchise-dropdown__step {
+  width: 54%;
+  max-width: 54%;
+  background-color: #80c2ff;
+  margin: 0 auto;
+}
+
+.franchise-dropdown__step {
+  background-color: red;
+  display: flex;
+}
+
+.franchise-dropdown__step-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: green;
+  text-align: start;
+}
+
+.franchise-dropdown__circle {
+  background-color: var(--color-main);
+  height: 114px;
+  width: 114px;
+  border-radius: 50%; 
+}
