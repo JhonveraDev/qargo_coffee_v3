@@ -11,7 +11,7 @@ import leaf from '../../../assets/images/home/home-popular-leaf.png';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const swiperConfig:SwiperOptions = {
+const swiperConfig: SwiperOptions = {
   centeredSlides: true,
   loop: true,
   initialSlide: 1,
@@ -31,22 +31,22 @@ const swiperConfig:SwiperOptions = {
 export const Carousel = () => {
   return (
     <section className="home-carousel">
-      <Title 
-        title={carouselTitleData.title} 
-        as="h2" 
-        size="sm" 
-        className="home-carousel__title" 
+      <Title
+        title={carouselTitleData.title}
+        as="h2"
+        size="sm"
+        className="home-carousel__title"
       />
 
       <Swiper {...swiperConfig}>
         {carouselItemsData.map((item) => (
           <SwiperSlide key={item.id} className="home-carousel__slide">
             <div className="home-leaf-container">
-              <img 
-                src={leaf} 
-                alt="" 
-                className="leaf leaf-1" 
-                aria-hidden="true" 
+              <img
+                src={leaf}
+                alt=""
+                className="leaf leaf-1"
+                aria-hidden="true"
               />
             </div>
             <img
@@ -55,10 +55,10 @@ export const Carousel = () => {
               className="home-carousel__image"
             />
 
-            <Button 
-              text={item.text} 
-              size="lg" 
-              className="home-carousel__button" 
+            <Button
+              text={item.text}
+              size="lg"
+              className="home-carousel__button"
             />
 
           </SwiperSlide>

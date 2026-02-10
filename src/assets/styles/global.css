@@ -2104,9 +2104,69 @@
 }
 
 /* ===== FRANCHISE PAGE - Section / Carousel ===== */
-
 .franchise-carousel {
-  background-color: red;
   max-width: 100%;
   width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px 0;
+}
+
+.franchise-carousel__title {
+  line-height: 87%;
+}
+
+.franchise-carousel__description {
+  color: var(--text-main);
+  padding: 60px 0 0;
+}
+
+.franchise-carousel__slide {
+  border: 1px solid var(--text-secondary);
+  border-radius: 15px;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  transform: scale(1) !important;
+  gap: 34px;
+  padding: 35px 40px 80px;
+  height: auto !important;
+}
+
+.franchise-carousel__slide img {
+  max-width: 114px;
+  width: 100%;
+  height: auto;
+}
+
+.franchise-carousel__slide h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  font-family: var(--font-main);
+  color: var(--text-main);
+}
+
+.franchise-carousel__slide p {
+  font-size: 17px;
+  line-height: 140%;
+  font-weight: 400;
+  font-family: var(--font-main);
+  color: var(--text-main);
+}
+
+.franchise-carousel__swiper {
+  margin: 0 20px !important;
+}
+
+.franchise-carousel__slider {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 130px;
 }
