@@ -2160,6 +2160,7 @@
 
 .franchise-carousel__swiper {
   margin: 0 20px !important;
+  padding-top: 60px !important;
 }
 
 .franchise-carousel__slider {
@@ -2169,4 +2170,26 @@
   align-items: center;
   justify-content: center;
   padding: 0 130px;
+}
+
+@media (max-width: 1230px) {
+  .franchise-carousel__slider {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .franchise-carousel__slider {
+    padding: 0 50px;
+  }
+
+  .franchise-carousel__title {
+    max-width: 630px;
+    margin: 0 auto;
+    line-height: 100%;
+  }
+
+  .franchise-carousel__description {
+    padding-top: 45px;
+  }
 }
