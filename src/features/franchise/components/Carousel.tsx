@@ -18,10 +18,11 @@ const swiperConfig: SwiperOptions = {
   breakpoints: {
     0: {
       slidesPerView: 1,
+      spaceBetween: 30,
     },
     896: {
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 30,
     },
   },
 };
@@ -48,9 +49,13 @@ export const Carousel = () => {
         <Swiper {...swiperConfig} className="franchise-carousel__swiper">
           {carousel.map((item) => (
             <SwiperSlide key={item.id} className="franchise-carousel__slide">
-              <img src={item.image} alt={item.title} />
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
+              <div className='franchise-carousel__slide-image'>
+                <img src={item.image} alt={item.title} />
+              </div>
+              <div className='franchise-carousel__slide-content'>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
