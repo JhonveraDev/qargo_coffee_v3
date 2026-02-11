@@ -2768,3 +2768,138 @@
   justify-content: center;
   margin-top: 70px;
 }
+
+@media (max-width: 800px) {
+  .franchise-form__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .franchise-form__title {
+    font-size: 52px;
+  }
+
+  .franchise-form__radio-group {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 685px) {
+  .franchise-form__button {
+    padding: 13.5px 45px;
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 570px) {
+  .franchise-form__title {
+    font-size: 50px;
+  }
+
+  .franchise-form {
+    padding-top: 100px;
+  }
+
+  .franchise-form__description {
+    font-size: 22px;
+  }
+
+  .franchise-form__button {
+    font-size: 19px;
+  }
+
+  .franchise-form__radio-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 470px) {
+  .franchise-form {
+    max-width: 85%;
+    width: 85%;
+  }
+
+  .franchise-form__title {
+    font-size: 42px;
+  }
+
+  .franchise-form__description {
+    font-size: 20px;
+  }
+
+  .franchise-form__input {
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    font-size: 21px;
+  }
+
+  .franchise-form__input::placeholder {
+    font-size: 21px;
+  }
+
+  .franchise-form__button {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 430px) {
+  .franchise-form__radio-group {
+    margin-top: 80px;
+  }
+
+  .franchise-form__title {
+    font-size: 39px;
+  }
+
+  .franchise-form__input {
+    font-size: 19px;
+  }
+
+  .franchise-form__input::placeholder {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 380px) {
+  .franchise-form__button {
+    font-size: 16px;
+  }
+
+  .franchise-form__radio-title {
+    font-size: 21px;
+  }
+
+  .franchise-form__radio-text {
+    font-size: 18px;
+  }
+
+  .franchise-form__input::placeholder {
+    font-size: 18px;
+  }
+
+  .franchise-form__radio-input {
+    margin-right: 20px;
+  }
+
+  .franchise-form__button {
+    padding: 11.5px 35px
+  }
+}
+
+@media (max-width: 350px) {
+  .franchise-form__title {
+    font-size: 37px;
+  }
+
+  .franchise-form__description {
+    font-size: 19px;
+  }
+
+  .franchise-form__input {
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+  }
+
+  .franchise-form__radio-title {
+    font-size: 20px;
+  }
+}
