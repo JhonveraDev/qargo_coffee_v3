@@ -2639,22 +2639,39 @@
 }
 
 /* ===== FRANCHISE PAGE - Section / Form ===== */
-
 .franchise-form {
   margin: 0 auto;
   max-width: 77%;
   width: 100%;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 122px;
+}
+
+.franchise-form__title {
+  line-height: 87%
+}
+
+.franchise-form__description {
+  color: var(--text-main);
+  margin-top: 55px;
+  margin-bottom: 60px;
 }
 
 .franchise-form__input--date {
   padding-right: 30px;
-
 }
 
 .franchise-form__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
+}
+
+.franchise-form__form {
+  text-align: start;
+  max-width: 100%;
+  width: 100%;
 }
 
 .franchise-form__input {
@@ -2680,7 +2697,6 @@
   font-weight: 400;
 }
 
-
 .franchise-form__input--full-width {
   width: 100%;
   margin-top: 32px;
@@ -2696,4 +2712,59 @@
   filter:
     invert(68%) sepia(14%) saturate(340%) hue-rotate(7deg) brightness(92%) contrast(90%);
   cursor: pointer;
+}
+
+.franchise-form__radio-group {
+  width: 100%;
+  margin-top: 125px;
+}
+
+.franchise-form__radio-title {
+  color: var(--color-main);
+  font-size: 24px;
+  font-weight: 400;
+  font-family: var(--font-main);
+  margin-bottom: 43px;
+}
+
+.franchise-form__radio-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.franchise-form__radio-text {
+  color: var(--text-main);
+  font-size: 20px;
+  line-height: 170%;
+  font-weight: 500;
+  font-family: var(--font-main);
+}
+
+.franchise-form__radio-input {
+  margin-right: 30px;
+  transform: scale(1.5);
+  accent-color: var(--color-main);
+}
+
+.franchise-form__radio-group--mn {
+  margin-top: 70px;
+}
+
+.franchise-form__button {
+  border-radius: 35.5px;
+  background-color: var(--color-main);
+  color: var(--bg-main);
+  font-size: 24px;
+  font-family: var(--font-main);
+  font-weight: 700;
+  padding: 13.5px 95.6px;
+}
+
+.franchise-form__actions {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
 }

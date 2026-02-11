@@ -1,7 +1,17 @@
 import React, { useState } from "react";
+import { Title, Text } from "../../../ui/components";
+
+import type { FranchiseFormData } from "../types/form.types";
+
+import {
+  inputFields,
+  investmentOptions,
+  timelineOptions,
+  headerFranchiseData
+} from "../data/form.data";
 
 export const Form = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FranchiseFormData>({
     firstName: "",
     lastName: "",
     email: "",
@@ -11,15 +21,17 @@ export const Form = () => {
     areaInterest: "",
     birthDate: "",
     address: "",
-    investment: "",
-    timeline: ""
+    investment: "" as FranchiseFormData["investment"],
+    timeline: "" as FranchiseFormData["timeline"],
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -29,68 +41,41 @@ export const Form = () => {
 
   return (
     <section className="franchise-form">
-      <h1 className="franchise-form__title">Franchise Inquiry Form</h1>
-      <p className="franchise-form__description">
-        Start your journey with Qargo Coffee by filling out this form
-      </p>
+      <Title
+        title={headerFranchiseData.title}
+        as="h2"
+        size="sm"
+        className="franchise-form__title"
+      />
+
+      <Text
+        text={headerFranchiseData.description}
+        size="lg"
+        className="franchise-form__description"
+      />
 
       <form className="franchise-form__form" onSubmit={handleSubmit}>
 
         <div className="franchise-form__grid">
-          <input
-            className="franchise-form__input"
-            name="firstName"
-            placeholder="First name*"
-            onChange={handleChange}
-          />
-          <input
-            className="franchise-form__input"
-            name="lastName"
-            placeholder="Last name*"
-            onChange={handleChange}
-          />
-          <input
-            className="franchise-form__input"
-            name="email"
-            placeholder="Email*"
-            onChange={handleChange}
-          />
-          <input
-            className="franchise-form__input"
-            name="phone"
-            placeholder="Phone*"
-            onChange={handleChange}
-          />
-          <input
-            className="franchise-form__input"
-            name="state"
-            placeholder="State*"
-            onChange={handleChange}
-          />
-          <input
-            className="franchise-form__input"
-            name="city"
-            placeholder="City*"
-            onChange={handleChange}
-          />
-          <input
-            className="franchise-form__input"
-            name="areaInterest"
-            placeholder="Area of interest*"
-            onChange={handleChange}
-          />
-          <input
-            className="franchise-form__input franchise-form__input--date"
-            type="date"
-            name="birthDate"
-            onChange={handleChange}
-          />
+          {inputFields.map(({ name, placeholder, type }) => (
+            <input
+              key={name}
+              className={`franchise-form__input ${type === "date" ? "franchise-form__input--date" : ""
+                }`}
+              name={name}
+              placeholder={placeholder}
+              type={type ?? "text"}
+              value={formData[name]}
+              onChange={handleChange}
+            />
+          ))}
         </div>
 
         <input
           className="franchise-form__input franchise-form__input--full-width"
           name="address"
           placeholder="Address*"
+          value={formData.address}
           onChange={handleChange}
         />
 
@@ -99,13 +84,14 @@ export const Form = () => {
             What is the amount of personal funds you plan to dedicate to your project?*
           </h3>
 
-          {["$50,000 - $100,000", "$100,000 - $300,000", "$300,000 - $500,000", "$500,000 +"].map((option) => (
+          {investmentOptions.map((option) => (
             <label key={option} className="franchise-form__radio-label">
               <input
                 className="franchise-form__radio-input"
                 type="radio"
                 name="investment"
                 value={option}
+                checked={formData.investment === option}
                 onChange={handleChange}
               />
               <span className="franchise-form__radio-text">{option}</span>
@@ -113,18 +99,19 @@ export const Form = () => {
           ))}
         </div>
 
-        <div className="franchise-form__radio-group">
+        <div className="franchise-form__radio-group franchise-form__radio-group--mn">
           <h3 className="franchise-form__radio-title">
             How soon would you like to open your own Qargo Coffee store?*
           </h3>
 
-          {["1-3 months", "3-6 months", "6-12 months", "+12 months"].map((option) => (
+          {timelineOptions.map((option) => (
             <label key={option} className="franchise-form__radio-label">
               <input
                 className="franchise-form__radio-input"
                 type="radio"
                 name="timeline"
                 value={option}
+                checked={formData.timeline === option}
                 onChange={handleChange}
               />
               <span className="franchise-form__radio-text">{option}</span>
@@ -132,14 +119,15 @@ export const Form = () => {
           ))}
         </div>
 
-        <button
-          type="submit"
-          className="franchise-form__button"
-        >
-          Submit Franchise Application
-        </button>
+        <div className="franchise-form__actions">
+          <button
+            type="submit"
+            className="franchise-form__button"
+          >
+            Submit Franchise Application
+          </button>
+        </div>
       </form>
     </section>
-
   );
-}
+};
