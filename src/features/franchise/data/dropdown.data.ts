@@ -1,4 +1,4 @@
-import type { DropdownContent } from "../types/dropdown.type";
+import type { DropdownContent } from "../types/dropdown.types";
 
 export const dropdownData: DropdownContent[] = [{
   title: "Franchise Execution Model Ownership Path",

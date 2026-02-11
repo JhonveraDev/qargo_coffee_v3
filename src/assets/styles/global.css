@@ -2637,3 +2637,63 @@
     width: 90%;
   }
 }
+
+/* ===== FRANCHISE PAGE - Section / Form ===== */
+
+.franchise-form {
+  margin: 0 auto;
+  max-width: 77%;
+  width: 100%;
+}
+
+.franchise-form__input--date {
+  padding-right: 30px;
+
+}
+
+.franchise-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.franchise-form__input {
+  background-color: #EEECE0;
+  border-radius: 40px;
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
+  padding-left: 30px;
+  border: 1px solid #EEECE0;
+  color: var(--color-secondary);
+  font-family: var(--font-main);
+  font-size: 22px;
+  line-height: 87%;
+  font-weight: 400;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.franchise-form__input::placeholder {
+  color: var(--color-secondary);
+  font-family: var(--font-main);
+  font-size: 22px;
+  line-height: 87%;
+  font-weight: 400;
+}
+
+
+.franchise-form__input--full-width {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.franchise-form__input:focus {
+  border-color: var(--color-secondary);
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(197, 157, 95, 0.2);
+}
+
+.franchise-form__input--date::-webkit-calendar-picker-indicator {
+  filter:
+    invert(68%) sepia(14%) saturate(340%) hue-rotate(7deg) brightness(92%) contrast(90%);
+  cursor: pointer;
+}
