@@ -2344,7 +2344,7 @@
 /* ===== FRANCHISE PAGE - Section / Dropdown ===== */
 .franchise-dropdown {
   background-color: var(--bg-secondary);
-  max-width: 100%;
+  max-width: 88%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -2354,26 +2354,31 @@
   border-radius: 30px;
 }
 
+.franchise-dropdown__content {
+  margin: 0 auto;
+  max-width: 65%;
+  width: 100%;
+  padding-top: 90px;
+}
+
 .franchise-dropdown__steps {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;;
-  background-color: greenyellow;
+  flex-direction: column;
   width: 100%;
   max-width: 100%;
   gap: 65px;
+  padding-bottom: 80px;
 }
 
 .franchise-dropdown__step {
   width: 54%;
   max-width: 54%;
-  background-color: #80c2ff;
   margin: 0 auto;
 }
 
 .franchise-dropdown__step {
-  background-color: red;
   display: flex;
 }
 
@@ -2382,7 +2387,6 @@
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  background-color: green;
   text-align: start;
 }
 
@@ -2390,5 +2394,60 @@
   background-color: var(--color-main);
   height: 114px;
   width: 114px;
-  border-radius: 50%; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: var(--bg-secondary);
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.franchise-dropdown__title {
+  font-family: var(--font-main);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  color: var(--text-main);
+  margin-bottom: 15px;
+}
+
+.franchise-dropdown__text {
+  font-family: var(--font-main);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--text-main);
+}
+
+.franchise-dropdown__step-left {
+  margin-right: 40px;
+}
+
+.franchise-dropdown__description {
+  margin: 40px 0 90px;
+}
+
+.franchise-dropdown__see-more {
+  font-size: 32px;
+  font-family: var(--font-main);
+  font-weight: 700;
+  color: var(--color-main);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  width: 26px;
+  margin-left: 12px;
+  transition: transform 0.3s ease;
+  margin-top: 5px;
+}
+
+.arrow--up {
+  transform: rotate(180deg);
 }

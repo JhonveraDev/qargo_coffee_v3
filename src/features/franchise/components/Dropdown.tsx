@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Title, Text } from "../../../ui/components";
 import { dropdownData } from "../data/dropdown.data";
 
+import arrow from "../../../assets/images/franchise/arrow.svg";
+
 export const Dropdown = () => {
   const [expanded, setExpanded] = useState(false);
 
@@ -17,7 +19,7 @@ export const Dropdown = () => {
           title={content.title}
           as="h2"
           size="sm"
-          className="franchise-dropdown__title"
+          className="franchise-dropdown__main-title"
         />
 
         <Text
@@ -51,7 +53,13 @@ export const Dropdown = () => {
           className="franchise-dropdown__see-more"
           onClick={() => setExpanded(!expanded)}
         >
-          {expanded ? "See less ▲" : "See more ▼"}
+          See more
+          <img
+            src={arrow}
+            alt="arrow"
+            className={expanded ? "arrow arrow--up" : "arrow"}
+            aria-hidden="true"
+          />
         </button>
       </div>
     </section>
