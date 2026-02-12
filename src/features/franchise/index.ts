@@ -4,3 +4,4 @@ export * from './components/StatsGrid';
 export * from './components/Carousel';
 export * from './components/Dropdown';
 export * from './components/Form';
+export * from './components/CtaContact';
