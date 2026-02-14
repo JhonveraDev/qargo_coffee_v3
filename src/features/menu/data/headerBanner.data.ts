@@ -8,9 +8,11 @@ const images = import.meta.glob(
   }
 ) as Record<string, string>;
 
+const fallback = images["../../../assets/images/menu/banner.png"];
+
 const getImage = (fileName: string) => {
   const path = `../../../assets/images/menu/${fileName}`;
-  return images[path];
+  return images[path] ?? fallback;
 };
 
 const banner1 = getImage("banner.png");
