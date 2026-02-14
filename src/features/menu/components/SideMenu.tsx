@@ -1,4 +1,4 @@
-import { menuCategories } from "../data/products.data";
+import { menuCategories } from "../data/sideMenu.data";
 import type { CategoryId } from "../types/products.types";
 
 interface SideMenuProps {

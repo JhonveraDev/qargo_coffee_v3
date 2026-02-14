@@ -4,7 +4,7 @@ import banner from "../../../assets/images/menu/banner.png";
 import bannera from "../../../assets/images/menu/our-menu-header-hot-coffee.png";
 import bannerb from "../../../assets/images/menu/banner2.png";
 
-export const headerBanners: Record<CategoryId, string> = {
+export const headerBanner: Record<CategoryId, string> = {
   "hot-coffee": banner,
   "cold-coffee": bannera,
   "fresh-cool": bannerb,

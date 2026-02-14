@@ -9,7 +9,10 @@ export const Products = ({ category }: { category: CategoryId }) => {
   return (
     <div className="products">
       {filteredProducts.map((product) => (
-        <div key={product.id}>{product.name}</div>
+        <div key={product.id}>
+          {product.name}
+          <img src={product.image} alt={product.name} />
+        </div>
       ))}
     </div>
   );
