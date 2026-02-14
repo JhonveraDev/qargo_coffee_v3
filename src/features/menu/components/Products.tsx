@@ -1,4 +1,5 @@
 import { allProducts } from "../data/products.data";
+
 import type { CategoryId } from "../types/products.types"
 
 export const Products = ({ category }: { category: CategoryId }) => {

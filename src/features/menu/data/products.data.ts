@@ -1,13 +1,41 @@
 import type { Product } from "../types/products.types";
 
-import hc01 from "../../../assets/images/menu/elemento-01.png";
-import hc02 from "../../../assets/images/menu/elemento-02.png";
-import hc03 from "../../../assets/images/menu/elemento-01.png";
-import hc04 from "../../../assets/images/menu/elemento-04.png";
+const images = import.meta.glob(
+  "../../../assets/images/menu/*.png",
+  {
+    eager: true,
+    import: "default",
+  }
+) as Record<string, string>;
+
+const getImage = (fileName: string) => {
+  const path = `../../../assets/images/menu/${fileName}`;
+  return images[path];
+};
 
 export const allProducts: Product[] = [
-  { id: 1, category: "hot-coffee", name: "Caffe Latte", image: hc01 },
-  { id: 2, category: "cold-coffee", name: "Cappuccino", image: hc02 },
-  { id: 3, category: "fresh-cool", name: "Iced Latte", image: hc03 },
-  { id: 4, category: "hot-coffee", name: "Caffe con leche", image: hc04 },
+  {
+    id: 1,
+    category: "hot-coffee",
+    name: "Caffe Latte",
+    image: getImage("elemento-01.png")
+  },
+  {
+    id: 2,
+    category: "cold-coffee",
+    name: "Cappuccino",
+    image: getImage("elemento-02.png")
+  },
+  {
+    id: 3,
+    category: "fresh-cool",
+    name: "Iced Latte",
+    image: getImage("elemento-03.png")
+  },
+  {
+    id: 4,
+    category: "hot-coffee",
+    name: "Caffe con leche",
+    image: getImage("elemento-04.png")
+  },
 ];
