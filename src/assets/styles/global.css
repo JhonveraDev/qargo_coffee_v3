@@ -275,7 +275,7 @@
   align-items: start;
   flex-direction: column;
   left: 50%;
-  padding: 0 3rem;
+  padding: 0 2rem;
   position: absolute;
   bottom: 0;
   transform: translate(-50%, -50%);
@@ -356,8 +356,7 @@
   }
 }
 
-@media (max-width: 350px) {
-}
+@media (max-width: 350px) {}
 
 @media (max-width: 310px) {
   .footer-container a {
@@ -1373,7 +1372,10 @@
 
 /* ===== FRANCHISE PAGE - Section / Header ===== */
 .franchise-header {
-  width: 100%;
+  position: relative;
+  width: 100vw;              /* 👈 ancho real del viewport */
+
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3132,3 +3134,5 @@
     font-size: 36px;
   }
 }
+
+/* ===== OUR MENU PAGE - Section / Header ===== */
