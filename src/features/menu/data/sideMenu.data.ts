@@ -1,18 +1,16 @@
-import type { SideMenuContent } from "../types/sideMenu.types"
+import type { MenuCategory } from "../types/products.types";
 
-export const sideMenuData: SideMenuContent[] = [
-  {
-    title: 'Drink',
-    items: [
-      { name: "Cold Coffee", slug: "cold-coffee" },
-      { name: "Hot Coffee", slug: "hot-coffee" }
-    ]
-  },
-  {
-    title: 'Food',
-    items: [
-      { name: "Cold Coffee", slug: "cold-coffee" },
-      { name: "Hot Coffee", slug: "hot-coffee" }
-    ]
-  },
-]
+export const menuCategories: MenuCategory[] = [
+  { id: "hot-coffee", label: "Hot Coffee" },
+  { id: "cold-coffee", label: "Cold Coffee" },
+  { id: "fresh-cool", label: "Fresh & Cool" },
+  { id: "tea", label: "Tea" },
+  { id: "boba-tea", label: "Boba Tea" },
+  { id: "cold-brew", label: "Cold Brew" },
+  { id: "energy-fresh", label: "Energy Fresh" },
+  { id: "energy-smoothies", label: "Energy Smoothies" },
+  { id: "breakfast", label: "Breakfast" },
+  { id: "lunch-sandwiches", label: "Lunch Sandwiches" },
+  { id: "bakery", label: "Bakery" },
+  { id: "taste-of-italy", label: "Taste of Italy" },
+];
