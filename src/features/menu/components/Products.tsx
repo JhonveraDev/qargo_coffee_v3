@@ -1,6 +1,6 @@
 import { allProducts } from "../data/products.data";
 
-import  { getImage } from "../utils/products-images.utils";
+import { getImage } from "../utils/products-images.utils";
 
 import type { CategoryId } from "../types/products.types"
 
@@ -13,14 +13,17 @@ export const Products = ({ category }: { category: CategoryId }) => {
 
   return (
     <div className="products">
-      {filteredProducts.map((product) => (
+      {filteredProducts.map(({ id, name, thumbnail }) => (
         <Link
-          key={product.id}
-          to={`/our-menu/${category}/${product.id}`}
+          key={id}
+          to={`/our-menu/${category}/${id}`}
           className="product-card"
         >
-          {product.name}
-          <img src={getImage(product.image)} alt={product.name} />
+          {name}
+          <img
+            src={getImage("thumbnail-images", thumbnail)}
+            alt={name}
+          />
         </Link>
       ))}
     </div>

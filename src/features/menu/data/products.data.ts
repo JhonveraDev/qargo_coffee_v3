@@ -5,24 +5,28 @@ export const allProducts: Product[] = [
     id: "caffe-latte",
     category: "hot-coffee",
     name: "Caffe Latte",
-    image: "elemento-01.png"
+    thumbnail: "elemento-01.png",
+    mainImage: "dummy-data.png"
   },
   {
     id: "cappuccino",
     category: "cold-coffee",
     name: "Cappuccino",
-    image: "elemento-02.png"
+    thumbnail: "elemento-02.png",
+    mainImage: "elemento-04.png"
   },
   {
     id: "iced-latte",
     category: "fresh-cool",
     name: "Iced Latte",
-    image: "elemento-03.png"
+    thumbnail: "elemento-03.png",
+    mainImage: "elemento-04.png"
   },
   {
     id: "caffe-con-leche",
     category: "hot-coffee",
     name: "Caffe con leche",
-    image: "elemento-04.png"
+    thumbnail: "elemento-04.png",
+    mainImage: "elemento-04.png"
   },
 ];

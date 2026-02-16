@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { Title, Text } from "../../../ui/components";
 
 import type { FranchiseFormData } from "../types/form.types";

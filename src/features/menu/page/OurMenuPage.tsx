@@ -3,7 +3,9 @@ import { SideMenu } from "../components/SideMenu";
 import { Products } from "../components/Products";
 
 import { useParams, Navigate } from "react-router-dom";
+
 import { menuCategories } from "../data/sideMenu.data";
+
 export const OurMenuPage = () => {
   const { categoryId } = useParams();
   const validCategory = menuCategories.find((c) => c.id === categoryId);

@@ -21,5 +21,6 @@ export interface Product {
   id: string;
   category: CategoryId;
   name: string;
-  image: string
+  thumbnail: string;
+  mainImage: string;
 }

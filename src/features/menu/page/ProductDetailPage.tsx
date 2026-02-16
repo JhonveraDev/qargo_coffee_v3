@@ -1,5 +1,7 @@
 import { useParams, Navigate, useNavigate } from "react-router-dom";
+
 import { allProducts } from "../data/products.data";
+
 import { getImage } from "../utils/products-images.utils";
 
 export const ProductDetailPage = () => {
@@ -15,7 +17,7 @@ export const ProductDetailPage = () => {
   return (
     <div className="product-detail-page">
       <h2>{product.name}</h2>
-      <img src={getImage(product.image)} alt={product.name} />
+      <img src={getImage("main-images", product.mainImage)} alt={product.name} />
       <p>{product.name}</p>
       <p>Precio: ${product.id}</p>
       <button onClick={() => navigate(-1)}>Volver</button>

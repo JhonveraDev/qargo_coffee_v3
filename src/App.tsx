@@ -6,6 +6,7 @@ import { Footer } from "./ui/layout/Footer";
 import { HomePage } from "./features/home/page/HomePage";
 import { FranchisePage } from "./features/franchise/page/FranchisePage";
 import { OurMenuPage } from "./features/menu/page/OurMenuPage";
+import { ProductDetailPage } from "./features/menu/page/ProductDetailPage";
 
 function Layout() {
   return (
@@ -25,7 +26,15 @@ export default function App() {
       <Route element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="franchise" element={<FranchisePage />} />
-        <Route path="our-menu" element={<OurMenuPage />} />
+
+        <Route path="our-menu">
+          <Route index element={<Navigate to="hot-coffee" replace />} />
+          <Route path=":categoryId">
+            <Route index element={<OurMenuPage />} />
+            <Route path=":productId" element={<ProductDetailPage />} />
+          </Route>
+        </Route>
+
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
