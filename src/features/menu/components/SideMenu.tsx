@@ -1,22 +1,20 @@
+import { NavLink } from "react-router-dom";
+
 import { menuCategories } from "../data/sideMenu.data";
-import type { CategoryId } from "../types/products.types";
 
-interface SideMenuProps {
-  selectedCategory: CategoryId;
-  onSelectCategory: (id: CategoryId) => void; 
-}
-
-export const SideMenu = ({ selectedCategory, onSelectCategory }: SideMenuProps) => {
+export const SideMenu = () => {
   return (
     <div className="side-menu">
       {menuCategories.map((item) => (
-        <button
+        <NavLink
           key={item.id}
-          onClick={() => onSelectCategory(item.id)} 
-          className={selectedCategory === item.id ? "active" : ""}
+          to={`/our-menu/${item.id}`}
+          className={({ isActive }) =>
+            isActive ? "side-button active" : "side-button"
+          }
         >
           {item.label}
-        </button>
+        </NavLink>
       ))}
     </div>
   );

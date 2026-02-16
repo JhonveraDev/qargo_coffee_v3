@@ -1,22 +1,26 @@
-import { useState } from "react";
-
 import { HeaderBanner } from "../components/HeaderBanner";
 import { SideMenu } from "../components/SideMenu";
 import { Products } from "../components/Products";
 
-import type { CategoryId } from "../types/products.types";
-
+import { useParams, Navigate } from "react-router-dom";
+import { menuCategories } from "../data/sideMenu.data";
 export const OurMenuPage = () => {
-  const [selectedCategory, setSelectedCategory] = useState<CategoryId>("hot-coffee");
+  const { categoryId } = useParams();
+  const validCategory = menuCategories.find((c) => c.id === categoryId);
+
+  if (!validCategory) return <Navigate to="/our-menu/hot-coffee" replace />;
+
+  const selectedCategory = validCategory.id;
 
   return (
     <div className="our-menu-page">
       <HeaderBanner category={selectedCategory} />
-
       <div className="content">
-        <SideMenu selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} />
+        <SideMenu />
         <Products category={selectedCategory} />
       </div>
     </div>
   );
-}
+};
+
+

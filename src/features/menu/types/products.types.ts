@@ -18,7 +18,7 @@ export interface MenuCategory {
 }
 
 export interface Product {
-  id: number;
+  id: string;
   category: CategoryId;
   name: string;
   image: string
