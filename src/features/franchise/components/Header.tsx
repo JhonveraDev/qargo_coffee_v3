@@ -7,7 +7,6 @@ export const Header = () => {
 
   return (
     <header className="franchise-header">
-      {/* Background */} 
       <div className="franchise-header__background" aria-hidden />
       <div className="franchise-header__content">
         <Title

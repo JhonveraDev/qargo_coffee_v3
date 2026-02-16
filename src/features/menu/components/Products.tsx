@@ -12,15 +12,16 @@ export const Products = ({ category }: { category: CategoryId }) => {
   );
 
   return (
-    <div className="products">
+    <div className="our-menu__products">
       {filteredProducts.map(({ id, name, thumbnail }) => (
         <Link
           key={id}
           to={`/our-menu/${category}/${id}`}
-          className="product-card"
+          className="our-menu__card"
         >
-          {name}
+          <span className="our-menu__card-title">{name}</span>
           <img
+            className="our-menu__card-image"
             src={getImage("thumbnail-images", thumbnail)}
             alt={name}
           />

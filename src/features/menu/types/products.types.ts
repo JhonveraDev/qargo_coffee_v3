@@ -12,9 +12,13 @@ export type CategoryId =
   | "bakery"
   | "taste-of-italy";
 
-export interface MenuCategory {
+export interface MenuItem {
   id: CategoryId;
   label: string;
+}
+export interface MenuCategory {
+  section: string;
+  items: MenuItem[];
 }
 
 export interface Product {
