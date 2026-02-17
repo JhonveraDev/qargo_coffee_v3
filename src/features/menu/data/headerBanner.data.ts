@@ -2,7 +2,7 @@ import type { CategoryId } from "../types/products.types";
 
 export const headerBanner: Record<CategoryId, string> = {
   "hot-coffee": "banner2.png",
-  "cold-coffee": "banner2.png",
+  "cold-coffee": "our-menu-header-hot-coffee.png",
   "fresh-cool": "banner2.png",
   "tea": "banner2.png",
   "boba-tea": "banner2.png",
