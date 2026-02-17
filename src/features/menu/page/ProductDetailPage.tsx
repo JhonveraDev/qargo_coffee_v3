@@ -6,21 +6,30 @@ import { getImage } from "../utils/products-images.utils";
 
 export const ProductDetailPage = () => {
   const { categoryId, productId } = useParams();
-
   const navigate = useNavigate();
-  
-  const product = allProducts.find(
-    (p) => p.id === productId && p.category === categoryId
+
+  const categoryData = allProducts.find(
+    (item) => item.category === categoryId
   );
 
-  if (!product) return <Navigate to={`/our-menu/${categoryId}`} replace />;
+  const product = categoryData?.products.find(
+    (item) => item.id === productId
+  );
+
+  if (!product) {
+    return <Navigate to={`/our-menu/${categoryId}`} replace />;
+  }
 
   return (
     <div className="product-detail">
       <h2>{product.name}</h2>
-      <img src={getImage("main-images", product.mainImage)} alt={product.name} />
+      <img
+        src={getImage("main-images", product.mainImage)}
+        alt={product.name}
+      />
       <p>{product.name}</p>
       <button onClick={() => navigate(-1)}>Volver</button>
     </div>
   );
 };
+

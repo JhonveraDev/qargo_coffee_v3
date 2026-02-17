@@ -7,15 +7,19 @@ import { Link } from "react-router-dom";
 import type { MenuItem } from "../types/products.types"
 
 export const Products = ({ category }: { category: MenuItem }) => {
-  const filteredProducts = allProducts.filter(
-    (product) => product.category === category.id
+
+  const categoryData = allProducts.find(
+    (item) => item.category === category.id
   );
+
+  const products = categoryData?.products ?? [];
 
   return (
     <div className="our-menu__products">
       <h2>{category.label}</h2>
+
       <div className="our-menu__grid">
-        {filteredProducts.map(({ id, name, thumbnail }) => (
+        {products.map(({ id, name, thumbnail }) => (
           <Link
             key={id}
             to={`/our-menu/${category.id}/${id}`}
@@ -33,3 +37,4 @@ export const Products = ({ category }: { category: MenuItem }) => {
     </div>
   );
 };
+

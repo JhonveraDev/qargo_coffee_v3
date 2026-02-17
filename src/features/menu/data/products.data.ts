@@ -2,31 +2,61 @@ import type { Product } from "../types/products.types";
 
 export const allProducts: Product[] = [
   {
-    id: "caffe-latte",
     category: "hot-coffee",
-    name: "Caffe Latte",
-    thumbnail: "product-01.png",
-    mainImage: "dummy-data.png"
+    products: [
+      {
+        id: "caffe-con-leche",
+        name: "Caffe con leche",
+        thumbnail: "cafe-au-lait.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "caffe-con-leche",
+        name: "Caffe con leche",
+        thumbnail: "product-04.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "caffe-con-leche",
+        name: "Caffe con leche",
+        thumbnail: "product-04.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "caffe-con-leche",
+        name: "Caffe con leche",
+        thumbnail: "product-04.png",
+        mainImage: "dummy-data.png"
+      },
+    ]
   },
   {
-    id: "cappuccino",
-    category: "hot-coffee",
-    name: "Cappuccino",
-    thumbnail: "product-02.png",
-    mainImage: "dummy-data.png"
-  },
-  {
-    id: "iced-latte",
-    category: "hot-coffee",
-    name: "Iced Latte",
-    thumbnail: "product-03.png",
-    mainImage: "dummy-data.png"
-  },
-  {
-    id: "caffe-con-leche",
-    category: "hot-coffee",
-    name: "Caffe con leche",
-    thumbnail: "product-04.png",
-    mainImage: "dummy-data.png"
-  },
+    category: "cold-coffee",
+    products: [
+      {
+        id: "caffe-con-leche",
+        name: "Caffe con leche",
+        thumbnail: "cold-coffe-iced-americano.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "caffe-con-leche",
+        name: "Caffe con leche",
+        thumbnail: "product-04.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "caffe-con-leche",
+        name: "Caffe con leche",
+        thumbnail: "product-04.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "caffe-con-leche",
+        name: "Caffe con leche",
+        thumbnail: "product-04.png",
+        mainImage: "dummy-data.png"
+      },
+    ]
+  }
 ];

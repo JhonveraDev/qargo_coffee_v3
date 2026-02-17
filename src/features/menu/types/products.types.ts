@@ -22,10 +22,14 @@ export interface MenuCategory {
   items: MenuItem[];
 }
 
-export interface Product {
+export interface ProductItem {
   id: string;
-  category: CategoryId;
   name: string;
   thumbnail: string;
   mainImage: string;
+}
+
+export interface Product {
+  category: CategoryId;
+  products: ProductItem[];
 }
