@@ -8,20 +8,20 @@ import { menuCategories } from "../data/sideMenu.data";
 
 export const OurMenuPage = () => {
   const { categoryId } = useParams();
+  
   const validCategory = menuCategories
     .flatMap((group) => group.items)
     .find((item) => item.id === categoryId);
 
   if (!validCategory) return <Navigate to="/our-menu/hot-coffee" replace />;
 
-  const selectedCategory = validCategory.id;
-
   return (
     <div className="our-menu">
-      <HeaderBanner category={selectedCategory} />
+      <HeaderBanner category={validCategory.id} />
+
       <div className="our-menu__content">
         <SideMenu />
-        <Products category={selectedCategory} />
+        <Products category={validCategory} />
       </div>
     </div>
   );

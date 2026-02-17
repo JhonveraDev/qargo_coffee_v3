@@ -16,6 +16,7 @@ export interface MenuItem {
   id: CategoryId;
   label: string;
 }
+
 export interface MenuCategory {
   section: string;
   items: MenuItem[];

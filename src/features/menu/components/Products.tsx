@@ -2,23 +2,23 @@ import { allProducts } from "../data/products.data";
 
 import { getImage } from "../utils/products-images.utils";
 
-import type { CategoryId } from "../types/products.types"
-
 import { Link } from "react-router-dom";
 
-export const Products = ({ category }: { category: CategoryId }) => {
+import type { MenuItem } from "../types/products.types"
+
+export const Products = ({ category }: { category: MenuItem }) => {
   const filteredProducts = allProducts.filter(
-    (product) => product.category === category
+    (product) => product.category === category.id
   );
 
   return (
     <div className="our-menu__products">
-      <h2> </h2>
+      <h2>{category.label}</h2>
       <div className="our-menu__grid">
         {filteredProducts.map(({ id, name, thumbnail }) => (
           <Link
             key={id}
-            to={`/our-menu/${category}/${id}`}
+            to={`/our-menu/${category.id}/${id}`}
             className="our-menu__card"
           >
             <img
