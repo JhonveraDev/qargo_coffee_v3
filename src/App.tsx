@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate, Outlet } from "react-router-dom";
+import { Routes, Route, Navigate, Outlet, useLocation } from "react-router-dom";
 
 import { NavBar } from "./ui/layout/NavBar";
 import { Footer } from "./ui/layout/Footer";
@@ -9,13 +9,17 @@ import { OurMenuPage } from "./features/menu/page/OurMenuPage";
 import { ProductDetailPage } from "./features/menu/page/ProductDetailPage";
 
 function Layout() {
+  const location = useLocation();
+
+  const hideFooter = location.pathname.startsWith("/our-menu");
+
   return (
     <div className="app-container">
       <NavBar />
       <main className="page-container">
         <Outlet />
       </main>
-      {/* <Footer /> */}
+      {!hideFooter && <Footer />}
     </div>
   );
 }

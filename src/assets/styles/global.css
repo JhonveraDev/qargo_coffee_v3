@@ -1373,9 +1373,10 @@
 /* ===== FRANCHISE PAGE - Section / Header ===== */
 .franchise-header {
   position: relative;
-  width: 100vw;              /* 👈 ancho real del viewport */
+  width: 100vw;
+  /* 👈 ancho real del viewport */
 
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3270,3 +3271,6 @@
   height: auto;
 }
 
+.our-menu__banner img {
+  border-radius: 25px 25px 0 0;
+}
