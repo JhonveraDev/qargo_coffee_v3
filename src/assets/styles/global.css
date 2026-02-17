@@ -3244,6 +3244,7 @@
   border-top: 1px solid var(--color-secondary);
   margin-top: 24px;
   padding-top: 32px;
+  padding-bottom: 110px;
 }
 
 .our-menu__card {
@@ -3269,6 +3270,14 @@
   width: 100%;
   max-width: 160px;
   height: auto;
+}
+
+.our-menu__card-image {
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.our-menu__card:hover .our-menu__card-image {
+  transform: translateY(-6px);
 }
 
 .our-menu__banner img {
