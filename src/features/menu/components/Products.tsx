@@ -13,20 +13,23 @@ export const Products = ({ category }: { category: CategoryId }) => {
 
   return (
     <div className="our-menu__products">
-      {filteredProducts.map(({ id, name, thumbnail }) => (
-        <Link
-          key={id}
-          to={`/our-menu/${category}/${id}`}
-          className="our-menu__card"
-        >
-          <span className="our-menu__card-title">{name}</span>
-          <img
-            className="our-menu__card-image"
-            src={getImage("thumbnail-images", thumbnail)}
-            alt={name}
-          />
-        </Link>
-      ))}
+      <h2> </h2>
+      <div className="our-menu__grid">
+        {filteredProducts.map(({ id, name, thumbnail }) => (
+          <Link
+            key={id}
+            to={`/our-menu/${category}/${id}`}
+            className="our-menu__card"
+          >
+            <img
+              className="our-menu__card-image"
+              src={getImage("thumbnail-images", thumbnail)}
+              alt={name}
+            />
+            <span className="our-menu__card-title">{name}</span>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };

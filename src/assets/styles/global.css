@@ -3157,7 +3157,7 @@
   max-width: 100%;
   display: block;
   background-color: var(--bg-secondary);
-  padding: 105px 20px 10px 60px;
+  padding: 105px 20px 120px 60px;
 }
 
 .side-menu__section {
@@ -3212,7 +3212,48 @@
   margin-bottom: 9px;
 }
 
-.side-menu__title:nth-child(1n) {
-  margin-top: 40px;
-} 
+.side-menu__title--food {
+  margin-top: 73px;
+}
+
+.our-menu__products {
+  max-width: 100%;
+  width: 100%;
+}
+
+.our-menu__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  max-width: 82%;
+  width: 100%;
+  gap: 88px;
+  border-top: 1px solid var(--color-secondary);
+  margin-top: 50px;
+  padding-top: 32px;
+}
+
+.our-menu__card {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-menu__card-title {
+  font-family: var(--font-main);
+  color: var(--color-secondary);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.our-menu__card-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 

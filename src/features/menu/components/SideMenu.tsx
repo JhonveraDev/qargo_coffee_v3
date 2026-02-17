@@ -8,7 +8,7 @@ export const SideMenu = () => {
       {menuCategories.map((group) => (
         <div key={group.section} className="side-menu__section">
 
-          <h3 className="side-menu__title">
+          <h3 className={`side-menu__title side-menu__title--${group.section.toLowerCase()}`}>
             {group.section}
           </h3>
 
