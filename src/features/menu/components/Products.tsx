@@ -30,7 +30,7 @@ export const Products = ({ category }: { category: MenuItem }) => {
               src={getImage("thumbnail-images", thumbnail)}
               alt={name}
             />
-            <span className="our-menu__card-title">{name}</span>
+              <span className="our-menu__card-title">{name}</span>
           </Link>
         ))}
       </div>
