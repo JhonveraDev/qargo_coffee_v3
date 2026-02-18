@@ -377,53 +377,98 @@ export const allProducts: Product[] = [
     ]
   },
   {
-  category: "lunch-sandwiches",
-  products: [
-    {
-      id: "pesto-pomodoro",
-      name: "Pesto Pomodoro",
-      thumbnail: "lunch-pesto-pomodoro.png",
-      mainImage: "dummy-data.png"
-    },
-    {
-      id: "turkey-bacon-classico",
-      name: "Turkey Bacon Classico",
-      thumbnail: "lunch-turkey-bacon-classico.png",
-      mainImage: "dummy-data.png"
-    },
-    {
-      id: "turkey-bacon-al-fresco",
-      name: "Turkey Bacon Al Fresco",
-      thumbnail: "lunch-turkey-bacon-al-fresco.png",
-      mainImage: "dummy-data.png"
-    },
-    {
-      id: "turkey-bacon-formaggio",
-      name: "Turkey Bacon Formaggio",
-      thumbnail: "lunch-turkey-bacon-formaggio.png",
-      mainImage: "dummy-data.png"
-    },
-    {
-      id: "salmone-fresco",
-      name: "Salmone Fresco",
-      thumbnail: "lunch-salmone-fresco.png",
-      mainImage: "dummy-data.png"
-    },
-    {
-      id: "pinsa-di-pollo",
-      name: "Pinsa Di Pollo",
-      thumbnail: "lunch-pinsa-di-pollo.png",
-      mainImage: "dummy-data.png"
-    },
-    {
-      id: "pinsa-perfetta",
-      name: "Pinsa Perfetta",
-      thumbnail: "lunch-pinsa-perfetta.png",
-      mainImage: "dummy-data.png"
-    }
-  ]
-}
-
-
-
+    category: "lunch-sandwiches",
+    products: [
+      {
+        id: "pesto-pomodoro",
+        name: "Pesto Pomodoro",
+        thumbnail: "lunch-pesto-pomodoro.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "turkey-bacon-classico",
+        name: "Turkey Bacon Classico",
+        thumbnail: "lunch-turkey-bacon-classico.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "turkey-bacon-al-fresco",
+        name: "Turkey Bacon Al Fresco",
+        thumbnail: "lunch-turkey-bacon-al-fresco.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "turkey-bacon-formaggio",
+        name: "Turkey Bacon Formaggio",
+        thumbnail: "lunch-turkey-bacon-formaggio.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "salmone-fresco",
+        name: "Salmone Fresco",
+        thumbnail: "lunch-salmone-fresco.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "pinsa-di-pollo",
+        name: "Pinsa Di Pollo",
+        thumbnail: "lunch-pinsa-di-pollo.png",
+        mainImage: "dummy-data.png"
+      },
+      {
+        id: "pinsa-perfetta",
+        name: "Pinsa Perfetta",
+        thumbnail: "lunch-pinsa-perfetta.png",
+        mainImage: "dummy-data.png"
+      }
+    ]
+  },
+  {
+    category: "bakery",
+    products: [
+      { id: "all-butter-croissant", name: "All Butter Croissant", thumbnail: "bakery-all-butter-croissant.png", mainImage: "dummy-data.png" },
+      { id: "chocolate-croissant", name: "Chocolate Croissant", thumbnail: "bakery-chocolate-croissant.png", mainImage: "dummy-data.png" },
+      { id: "pistachio-croissant", name: "Pistachio Croissant", thumbnail: "bakery-pistachio-croissant.png", mainImage: "dummy-data.png" },
+      { id: "almond-croissant", name: "Almond Croissant", thumbnail: "bakery-almond-croissant.png", mainImage: "dummy-data.png" },
+      { id: "chocolate-chip-muffin", name: "Chocolate Chip Muffin", thumbnail: "bakery-chocolate-chip-muffin.png", mainImage: "dummy-data.png" },
+      { id: "cacao-muffin", name: "Cacao Muffin", thumbnail: "bakery-cacao-muffin.png", mainImage: "dummy-data.png" },
+      { id: "pistachio-muffin", name: "Pistachio Muffin", thumbnail: "bakery-pistachio-muffin.png", mainImage: "dummy-data.png" },
+      { id: "vanilla-eclair", name: "Vanilla Éclair", thumbnail: "bakery-vanilla-eclair.png", mainImage: "dummy-data.png" },
+      { id: "chocolate-eclair", name: "Chocolate Éclair", thumbnail: "bakery-chocolate-eclair.png", mainImage: "dummy-data.png" },
+      { id: "coffee-eclair", name: "Coffee Éclair", thumbnail: "bakery-coffee-eclair.png", mainImage: "dummy-data.png" },
+      { id: "cheesecake-brownie", name: "Cheesecake Brownie", thumbnail: "bakery-cheesecake-brownie.png", mainImage: "dummy-data.png" },
+      { id: "lemon-bar", name: "Lemon Bar", thumbnail: "bakery-lemon-bar.png", mainImage: "dummy-data.png" },
+      { id: "plain-bagel", name: "Plain Bagel", thumbnail: "bakery-plain-bagel.png", mainImage: "dummy-data.png" },
+      { id: "everything-bagel", name: "Everything Bagel", thumbnail: "bakery-everything-bagel.png", mainImage: "dummy-data.png" },
+      { id: "cinnamon-raisin-bagel", name: "Cinnamon Raisin Bagel", thumbnail: "bakery-cinnamon-raisin-bagel.png", mainImage: "dummy-data.png" },
+      { id: "spinach-and-feta-danish", name: "Spinach And Feta Danish", thumbnail: "bakery-spinach-and-feta-danish.png", mainImage: "dummy-data.png" },
+      { id: "tomato-and-olive-danish", name: "Tomato And Olive Danish", thumbnail: "bakery-tomato-and-olive-danish.png", mainImage: "dummy-data.png" },
+      { id: "leek-and-parmesan-danish", name: "Leek And Parmesan Danish", thumbnail: "bakery-leek-and-parmesan-danish.png", mainImage: "dummy-data.png" },
+      { id: "cream-cheese-danish", name: "Cream Cheese Danish", thumbnail: "bakery-cream-cheese-danish.png", mainImage: "dummy-data.png" },
+      { id: "lemon-danish", name: "Lemon Danish", thumbnail: "bakery-lemon-danish.png", mainImage: "dummy-data.png" },
+      { id: "maple-pecan-danish", name: "Maple Pecan Danish", thumbnail: "bakery-maple-pecan-danish.png", mainImage: "dummy-data.png" },
+      { id: "guava-danish", name: "Guava Danish", thumbnail: "bakery-guava-danish.png", mainImage: "dummy-data.png" },
+      { id: "cinnamon-roll", name: "Cinnamon Roll", thumbnail: "bakery-cinnamon-roll.png", mainImage: "dummy-data.png" },
+      { id: "cherry-greek-yogurt-danish", name: "Cherry Greek Yogurt Danish", thumbnail: "bakery-cherry-greek-yogurt-danish.png", mainImage: "dummy-data.png" },
+      { id: "blueberry-cheesecake-danish", name: "Blueberry Cheesecake Danish", thumbnail: "bakery-blueberry-cheesecake-danish.png", mainImage: "dummy-data.png" }
+    ]
+  },
+  {
+    category: "taste-of-italy",
+    products: [
+      { id: "cappuccino-cake", name: "Cappuccino Cake", thumbnail: "taste-of-italy-cappuccino-cake.png", mainImage: "dummy-data.png" },
+      { id: "red-velvet-cake", name: "Red Velvet Cake", thumbnail: "taste-of-italy-red-velvet-cake.png", mainImage: "dummy-data.png" },
+      { id: "chocolate-temptation-cake", name: "Chocolate Temptation Cake", thumbnail: "taste-of-italy-chocolate-temptation-cake.png", mainImage: "dummy-data.png" },
+      { id: "carrot-cake", name: "Carrot Cake", thumbnail: "taste-of-italy-carrot-cake.png", mainImage: "dummy-data.png" },
+      { id: "torta-nocciola", name: "Torta Nocciola", thumbnail: "taste-of-italy-torta-nocciola.png", mainImage: "dummy-data.png" },
+      { id: "tres-leches-cake", name: "Tres Leches Cake", thumbnail: "taste-of-italy-tres-leches-cake.png", mainImage: "dummy-data.png" },
+      { id: "pistachio-cheesecake", name: "Pistachio Cheesecake", thumbnail: "taste-of-italy-pistachio-cheesecake.png", mainImage: "dummy-data.png" },
+      { id: "dulce-de-leche-cheesecake", name: "Dulce De Leche Cheesecake", thumbnail: "taste-of-italy-dulce-de-leche-cheesecake.png", mainImage: "dummy-data.png" },
+      { id: "chocolate-ganache-cheesecake", name: "Chocolate Ganache Cheesecake", thumbnail: "taste-of-italy-chocolate-ganache-cheesecake.png", mainImage: "dummy-data.png" },
+      { id: "cheesecake-alle-fragole-strawberry-cheesecake", name: "Cheesecake Alle Fragole (Strawberry Cheesecake)", thumbnail: "taste-of-italy-cheesecake-alle-fragole-strawberry-cheesecake.png", mainImage: "dummy-data.png" },
+      { id: "tiramisu-with-ladyfingers", name: "Tiramisu With Ladyfingers", thumbnail: "taste-of-italy-tiramisu-with-ladyfingers.png", mainImage: "dummy-data.png" },
+      { id: "french-macarons-collection", name: "French Macarons Collection", thumbnail: "taste-of-italy-french-macarons-collection.png", mainImage: "dummy-data.png" },
+      { id: "mixed-berry-tart", name: "Mixed Berry Tart", thumbnail: "taste-of-italy-mixed-berry-tart.png", mainImage: "dummy-data.png" }
+    ]
+  }
 ];
