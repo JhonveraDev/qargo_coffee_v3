@@ -3240,7 +3240,7 @@
   margin: 0 auto;
   max-width: 82%;
   width: 100%;
-  gap: 88px;
+  gap: 80px;
   border-top: 1px solid var(--color-secondary);
   margin-top: 24px;
   padding-top: 32px;
@@ -3277,7 +3277,7 @@
 }
 
 .our-menu__card:hover .our-menu__card-image {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
 }
 
 .our-menu__banner img {
