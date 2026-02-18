@@ -3335,7 +3335,7 @@
 
   .side-menu {
     padding-top: 68px;
-  } 
+  }
 }
 
 @media (max-width: 780px) {
@@ -3348,7 +3348,7 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 750px) {
   .our-menu__content {
     display: flex;
     flex-direction: column;
@@ -3357,12 +3357,12 @@
   .side-menu {
     padding: 20px 0;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     overflow-x: auto;
     white-space: nowrap;
-    gap: 20px;
+    gap: 22px;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; 
+    scrollbar-width: none;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -3386,11 +3386,11 @@
     margin-bottom: 0;
     margin-right: 10px;
     text-transform: uppercase;
-    opacity: 0.7;
   }
 
   .side-menu__title--food {
     margin-top: 0;
+    margin-left: 260px;
   }
 
   .side-menu__link {
@@ -3399,6 +3399,19 @@
   }
 
   .our-menu__products {
-    padding-top: 20px;
+    padding-top: 25px;
+  }
+
+  .our-menu__card-image {
+    max-width: 180px;
+  }
+
+  .our-menu__products h2 {
+    margin-top: 40px;
+  }
+
+  .our-menu__grid {
+    margin-top: 28px;
+    padding-top: 50px;
   }
 }
