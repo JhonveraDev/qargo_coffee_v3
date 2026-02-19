@@ -3136,8 +3136,6 @@
   }
 }
 
-/* ===== OUR MENU PAGE - Section / Header ===== */
-
 /* ===== OUR MENU PAGE - Section / Content ===== */
 .our-menu {
   width: 100%;
@@ -3430,4 +3428,127 @@
   .our-menu__products h2 {
     font-size: 26px;
   }
+}
+
+/* ===== PRODUCT DETAIL PAGE - Section / Product Detail ===== */
+
+.product-detail {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin-top: 142px;
+  padding-bottom: 150px;
+}
+
+.product-detail__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 95%;
+  margin-top: 50px;
+  margin: 0 auto;
+  padding-top: 125px;
+}
+
+.product-detail__image-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.product-detail__image-container {
+  width: 100%;
+  background-color: var(--bg-secondary);
+  max-width: 81%;
+  height: auto;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-detail__dietary-icons {
+  margin-top: 77px;
+  margin-bottom: 75px;
+}
+
+.product-detail__allergen-text {
+  max-width: 70%;
+  width: 100%;
+  margin: 0 auto;
+  color: var(--color-secondary);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: var(--font-main);
+  text-align: center;
+}
+
+.product-detail__info-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.product-detail__title {
+  font-weight: 700;
+  color: var(--color-main);
+  font-size: 32px;
+  line-height: 120%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.product-detail__order-button {
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--font-main);
+  padding: 22px 117.6px;
+  background-color: var(--color-main);
+  border-radius: 35px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.product-detail__available-text {
+  font-weight: 600;
+  color: var(--color-main);
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.product-detail__size {
+  color: var(--color-white);
+  background-color: var(--color-main);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 31px;
+  border-radius: 9px;
+  margin-bottom: 60px;
+}
+
+.product-detail__back-button {
+  margin-left: 95px;
+  font-weight: 500;
+  color: var(--color-main);
+  font-size: 20px;
+  line-height: 120%;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-detail__back-button img {
+  transform: rotate(90deg);
+  width: 22px;
+  margin-right: 12px;
 }

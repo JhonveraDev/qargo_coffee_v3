@@ -4,6 +4,8 @@ import { getImage } from "../utils/products-images.utils";
 
 import DietaryIcons from "../../../assets/images/menu/general-info/dietary-icons-blue.svg";
 
+import arrowLeft from "../../../assets/images/franchise/arrow.svg";
+
 import nutritionalTable from "../../../assets/images/menu/main-images/dummy-data-01.png";
 
 import { allProducts } from "../data/products.data";
@@ -26,27 +28,68 @@ export const ProductDetailPage = () => {
 
   return (
     <div className="product-detail">
-      <div>
-        <button onClick={() => navigate(-1)}>Our Menu</button>
-      </div>
-      <div>
-        <div>
+
+      <div className="product-detail__header">
+        <button
+          className="product-detail__back-button"
+          onClick={() => navigate(-1)}
+        >
           <img
-            src={getImage("main-images", product.mainImage)}
-            alt={product.name}
-          />
-          <img src={DietaryIcons} alt="" />
-          <p>We cannot guarantee that our products are allergen-free due to the use of shared equipment for storage, preparation, and service.  Customers with allergies can find ingredient information for our packaged products on the labels.</p>
-        </div>
-        <div>
-          <h2>{product.name}</h2>
-          <button>Order Here</button>
-          <p>Available in:</p>
-          <div>
-            <span>{product.sizePiker}</span>
+            src={ arrowLeft }
+            alt=""
+            aria-hidden="true"
+          /> 
+          Our Menu
+        </button>
+      </div>
+
+      <div className="product-detail__content">
+
+        <div className="product-detail__image-section">
+          <div className="product-detail__image-container">
+            <img
+              className="product-detail__main-image"
+              src={getImage("main-images", product.mainImage)}
+              alt={product.name}
+            />
           </div>
-          <img src={ nutritionalTable } alt="" />
+
+          <img
+            className="product-detail__dietary-icons"
+            src={DietaryIcons}
+            alt="Dietary icons"
+          />
+
+          <p className="product-detail__allergen-text">
+            We cannot guarantee that our products are allergen-free due to the use of shared equipment for storage, preparation, and service.  Customers with allergies can find ingredient information for our packaged products on the labels.
+            Subject to availability
+          </p>
         </div>
+
+        <div className="product-detail__info-section">
+          <h2 className="product-detail__title">
+            {product.name}
+          </h2>
+
+          <button className="product-detail__order-button">
+            Order Here
+          </button>
+
+          <p className="product-detail__available-text">
+            Available in:
+          </p>
+
+          <span className="product-detail__size">
+            ( {product.sizePiker} )
+          </span>
+
+          <img
+            className="product-detail__nutrition-image"
+            src={nutritionalTable}
+            alt="Nutritional information"
+          />
+        </div>
+
       </div>
     </div>
   );
