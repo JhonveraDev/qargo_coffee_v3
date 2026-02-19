@@ -2,7 +2,7 @@ import { useParams, Navigate, useNavigate } from "react-router-dom";
 
 import { getImage } from "../utils/products-images.utils";
 
-import DietaryIcons from "../../../assets/images/menu/general-info/dietary-icons-blue.png";
+import DietaryIcons from "../../../assets/images/menu/general-info/dietary-icons-blue.svg";
 
 import nutritionalTable from "../../../assets/images/menu/main-images/dummy-data-01.png";
 

@@ -8,7 +8,7 @@ export const allProducts: Product[] = [
         id: "cafe-au-lait",
         name: "Café Au Lait",
         thumbnail: "hot-coffee-cafe-au-lait.png",
-        mainImage: "dummy-data.png",
+        mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
         productUrl: "www.qargo.com"
