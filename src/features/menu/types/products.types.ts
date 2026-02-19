@@ -27,6 +27,9 @@ export interface ProductItem {
   name: string;
   thumbnail: string;
   mainImage: string;
+  sizePiker: string;
+  nutritionalTable: string;
+  productUrl: string;
 }
 
 export interface Product {
