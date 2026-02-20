@@ -35,10 +35,10 @@ export const ProductDetailPage = () => {
           onClick={() => navigate(-1)}
         >
           <img
-            src={ arrowLeft }
+            src={arrowLeft}
             alt=""
             aria-hidden="true"
-          /> 
+          />
           Our Menu
         </button>
       </div>
@@ -54,16 +54,18 @@ export const ProductDetailPage = () => {
             />
           </div>
 
-          <img
-            className="product-detail__dietary-icons"
-            src={DietaryIcons}
-            alt="Dietary icons"
-          />
+          <div className="product-detail__info-container">
+            <img
+              className="product-detail__dietary-icons"
+              src={DietaryIcons}
+              alt="Dietary icons"
+            />
 
-          <p className="product-detail__allergen-text">
-            We cannot guarantee that our products are allergen-free due to the use of shared equipment for storage, preparation, and service.  Customers with allergies can find ingredient information for our packaged products on the labels.
-            Subject to availability
-          </p>
+            <p className="product-detail__allergen-text">
+              We cannot guarantee that our products are allergen-free due to the use of shared equipment for storage, preparation, and service.  Customers with allergies can find ingredient information for our packaged products on the labels.
+              Subject to availability
+            </p>
+          </div>
         </div>
 
         <div className="product-detail__info-section">

@@ -9,7 +9,7 @@ export const allProducts: Product[] = [
         name: "Café Au Lait",
         thumbnail: "hot-coffee-cafe-au-lait.png",
         mainImage: "dummy-product-02.png",
-        sizePiker: "12 Oz",
+        sizePiker: "16 Oz",
         nutritionalTable: "dummy-data-01.png",
         productUrl: "www.qargo.com"
       },

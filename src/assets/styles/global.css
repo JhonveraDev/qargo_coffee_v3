@@ -3438,6 +3438,7 @@
   display: block;
   margin-top: 142px;
   padding-bottom: 150px;
+  position: relative;
 }
 
 .product-detail__content {
@@ -3504,6 +3505,7 @@
   line-height: 120%;
   margin-top: 20px;
   margin-bottom: 50px;
+  width: 80%;
 }
 
 .product-detail__order-button {
@@ -3551,4 +3553,193 @@
   transform: rotate(90deg);
   width: 22px;
   margin-right: 12px;
+}
+
+.product-detail__nutrition-image {
+  width: 100%;
+  max-width: 62%;
+}
+
+.product-detail__info-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .product-detail__order-button {
+    padding: 18px 93.6px;
+    font-size: 23px;
+  }
+
+  .product-detail__dietary-icons {
+    max-width: 70%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .product-detail__allergen-text {
+    font-size: 19px;
+  }
+
+  .product-detail__nutrition-image {
+    max-width: 70%;
+  }
+
+  .product-detail__back-button {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 950px) {
+  .product-detail__order-button {
+    padding: 16px 79.6px;
+    font-size: 22px;
+  }
+
+  .product-detail__image-container {
+    max-width: 87%;
+  }
+
+  .product-detail__dietary-icons {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .product-detail {
+    padding-bottom: 450px;
+  }
+}
+
+@media (max-width: 800px) {
+  .product-detail__content {
+    grid-template-columns: 1fr;
+  }
+
+  .product-detail__image-container {
+    max-width: 74%;
+  }
+
+  .product-detail__info-container {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 105px;
+  }
+
+  .product-detail__nutrition-image {
+    max-width: 55%;
+  }
+
+  .product-detail__title {
+    margin-top: 65px;
+    font-size: 40px;
+  }
+
+  .product-detail__order-button {
+    padding: 17px 105.6px;
+    font-size: 24px;
+  }
+
+  .product-detail__size {
+    padding: 8px 32px;
+  }
+}
+
+@media (max-width: 650px) {
+  .product-detail__allergen-text {
+    font-size: 18px;
+  }
+
+  .product-detail__nutrition-image {
+    max-width: 57%;
+  }
+}
+
+@media (max-width: 550px) {
+  .product-detail__image-container {
+    max-width: 80%;
+  }
+
+  .product-detail__back-button {
+    margin-left: 60px;
+  }
+
+  .product-detail__order-button {
+    padding: 16px 71.6px;
+    font-size: 23px;
+  }
+
+  .product-detail__title {
+    font-size: 36px;
+    width: 82%;
+  }
+
+  .product-detail__nutrition-image {
+    max-width: 60%;
+  }
+
+  .product-detail__dietary-icons {
+    max-width: 60%;
+  }
+
+  .product-detail__allergen-text {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 450px) {
+  .product-detail__nutrition-image {
+    max-width: 60%;
+  }
+
+  .product-detail__title {
+    line-height: 110%;
+    font-size: 33px;
+    width: 75%;
+  }
+
+  .product-detail__content {
+    max-width: 100%;
+  }
+
+  .product-detail__back-button {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .product-detail__order-button {
+    padding: 13px 61.6px;
+    font-size: 22px;
+  }
+
+  .product-detail__nutrition-image {
+    max-width: 65%;
+  }
+
+  .product-detail__title {
+    margin-top: 55px;
+  }
+
+  .product-detail__allergen-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .product-detail__title {
+    font-size: 31px;
+  }
+
+  .product-detail__order-button {
+    padding: 12px 56.6px;
+    font-size: 20px;
+  }
+
+  .product-detail__nutrition-image {
+    max-width: 70%;
+  }
 }
