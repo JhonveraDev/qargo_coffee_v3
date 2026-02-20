@@ -1,8 +1,6 @@
 import { Navigate } from "react-router-dom";
 
-import { HeaderBanner } from "../components/HeaderBanner";
-import { SideMenu } from "../components/SideMenu";
-import { Products } from "../components/Products";
+import { HeaderBanner, SideMenu, Products } from "../index";
 
 import { useMenuCategory } from "../hooks/useMenuCategory";
 

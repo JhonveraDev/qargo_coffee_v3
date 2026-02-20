@@ -7,6 +7,7 @@ import { HomePage } from "./features/home/page/HomePage";
 import { FranchisePage } from "./features/franchise/page/FranchisePage";
 import { OurMenuPage } from "./features/menu/page/OurMenuPage";
 import { ProductDetailPage } from "./features/menu/page/ProductDetailPage";
+import { VisitUsPage } from "./features/visit-us/page/VisitUsPage";
 
 function Layout() {
   const location = useLocation();
@@ -19,7 +20,7 @@ function Layout() {
       <main className="page-container">
         <Outlet />
       </main>
-      {!hideFooter && <Footer />}
+      {/* {!hideFooter && <Footer />} */}
     </div>
   );
 }
@@ -38,6 +39,8 @@ export default function App() {
             <Route path=":productId" element={<ProductDetailPage />} />
           </Route>
         </Route>
+
+        <Route path="locations" element={<VisitUsPage />} />
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
