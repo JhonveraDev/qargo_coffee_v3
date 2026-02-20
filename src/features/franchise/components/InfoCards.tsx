@@ -1,31 +1,11 @@
-import React, { useCallback, useRef, useState } from "react";
-
 import { Title, Text } from "../../../ui/components";
-
 import { infoCardsTextData, infoCardsData } from "../data/infoCards.data";
-
 import infoCardCheck from "../../../assets/images/franchise/franchise-check.png";
 
+import { useInfoCards } from "../hooks/useInfoCards";
+
 export const InfoCards = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState<number>(0);
-
-  const handleScroll = useCallback(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    const card = container.firstElementChild as HTMLElement | null;
-    if (!card) return;
-
-    const cardWidth = card.offsetWidth;
-    const gap = 16;
-
-    const index = Math.round(
-      container.scrollLeft / (cardWidth + gap)
-    );
-
-    setActiveIndex(index);
-  }, []);
+  const { containerRef, activeIndex, handleScroll } = useInfoCards();
 
   return (
     <section className="franchise-info-cards">
@@ -59,8 +39,13 @@ export const InfoCards = () => {
               />
 
               <div className="franchise-info-cards__card-content">
-                <h3 className="franchise-info-cards__card-title">{title}</h3>
-                <p className="franchise-info-cards__card-text">{description}</p>
+                <h3 className="franchise-info-cards__card-title">
+                  {title}
+                </h3>
+
+                <p className="franchise-info-cards__card-text">
+                  {description}
+                </p>
 
                 <ul className="franchise-info-cards__card-list">
                   {features.map((feature, index) => (
@@ -83,9 +68,8 @@ export const InfoCards = () => {
         {infoCardsData.map((_, index) => (
           <span
             key={`dot-${index}`}
-            className={`dot ${
-              index === activeIndex ? "active" : ""
-            }`}
+            className={`dot ${index === activeIndex ? "active" : ""
+              }`}
           />
         ))}
       </div>

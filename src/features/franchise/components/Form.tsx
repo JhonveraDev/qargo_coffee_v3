@@ -1,8 +1,4 @@
-import React, { useState } from "react";
-
 import { Title, Text } from "../../../ui/components";
-
-import type { FranchiseFormData } from "../types/form.types";
 
 import {
   inputFields,
@@ -11,34 +7,10 @@ import {
   headerFranchiseData
 } from "../data/form.data";
 
+import { useFranchiseForm } from "../hooks/useFranchiseForm";
+
 export const Form = () => {
-  const [formData, setFormData] = useState<FranchiseFormData>({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    state: "",
-    city: "",
-    areaInterest: "",
-    birthDate: "",
-    address: "",
-    investment: "" as FranchiseFormData["investment"],
-    timeline: "" as FranchiseFormData["timeline"],
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log(formData);
-  };
+  const { formData, handleChange, handleSubmit } = useFranchiseForm();
 
   return (
     <section className="franchise-form">
@@ -61,8 +33,11 @@ export const Form = () => {
           {inputFields.map(({ name, placeholder, type }) => (
             <input
               key={name}
-              className={`franchise-form__input ${type === "date" ? "franchise-form__input--date" : ""
-                }`}
+              className={`franchise-form__input ${
+                type === "date"
+                  ? "franchise-form__input--date"
+                  : ""
+              }`}
               name={name}
               placeholder={placeholder}
               type={type ?? "text"}
@@ -95,7 +70,9 @@ export const Form = () => {
                 checked={formData.investment === option}
                 onChange={handleChange}
               />
-              <span className="franchise-form__radio-text">{option}</span>
+              <span className="franchise-form__radio-text">
+                {option}
+              </span>
             </label>
           ))}
         </div>
@@ -115,7 +92,9 @@ export const Form = () => {
                 checked={formData.timeline === option}
                 onChange={handleChange}
               />
-              <span className="franchise-form__radio-text">{option}</span>
+              <span className="franchise-form__radio-text">
+                {option}
+              </span>
             </label>
           ))}
         </div>

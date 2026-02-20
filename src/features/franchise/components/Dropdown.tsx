@@ -1,18 +1,15 @@
-import { useState } from "react";
-
 import { Title, Text } from "../../../ui/components";
-
-import { dropdownData } from "../data/dropdown.data";
-
 import arrow from "../../../assets/images/franchise/arrow.svg";
 
-export const Dropdown = () => {
-  const [expanded, setExpanded] = useState(false);
+import { useDropdown } from "../hooks/useDropdown";
 
-  const content = dropdownData[0];
-  const visibleItems = expanded
-    ? content.items
-    : content.items.slice(0, 2);
+export const Dropdown = () => {
+  const {
+    content,
+    visibleItems,
+    expanded,
+    toggleExpanded,
+  } = useDropdown();
 
   return (
     <section className="franchise-dropdown">
@@ -53,7 +50,7 @@ export const Dropdown = () => {
 
         <button
           className="franchise-dropdown__see-more"
-          onClick={() => setExpanded(!expanded)}
+          onClick={toggleExpanded}
         >
           {expanded ? "See less" : "See more"}
           <img

@@ -1,26 +1,15 @@
-import { useParams, Navigate, useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
+import { useProductDetail } from "../hooks/useProductDetail";
 
 import { getImage } from "../utils/products-images.utils";
 
 import DietaryIcons from "../../../assets/images/menu/general-info/dietary-icons-blue.svg";
-
 import arrowLeft from "../../../assets/images/franchise/arrow.svg";
-
 import nutritionalTable from "../../../assets/images/menu/main-images/dummy-data-01.png";
 
-import { allProducts } from "../data/products.data";
-
 export const ProductDetailPage = () => {
-  const { categoryId, productId } = useParams();
   const navigate = useNavigate();
-
-  const categoryData = allProducts.find(
-    (item) => item.category === categoryId
-  );
-
-  const product = categoryData?.products.find(
-    (item) => item.id === productId
-  );
+  const { categoryId, product } = useProductDetail();
 
   if (!product) {
     return <Navigate to={`/our-menu/${categoryId}`} replace />;
@@ -38,6 +27,7 @@ export const ProductDetailPage = () => {
             src={arrowLeft}
             alt=""
             aria-hidden="true"
+            aria-label="Go back to menu"
           />
           Our Menu
         </button>
@@ -62,8 +52,9 @@ export const ProductDetailPage = () => {
             />
 
             <p className="product-detail__allergen-text">
-              We cannot guarantee that our products are allergen-free due to the use of shared equipment for storage, preparation, and service.  Customers with allergies can find ingredient information for our packaged products on the labels.
-              Subject to availability
+              We cannot guarantee that our products are allergen-free due to the use of shared equipment for storage, preparation, and service.
+              Customers with allergies can find ingredient information for our packaged products on the labels.
+              Subject to availability.
             </p>
           </div>
         </div>
@@ -96,4 +87,3 @@ export const ProductDetailPage = () => {
     </div>
   );
 };
-

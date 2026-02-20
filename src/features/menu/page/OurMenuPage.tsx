@@ -1,19 +1,17 @@
+import { Navigate } from "react-router-dom";
+
 import { HeaderBanner } from "../components/HeaderBanner";
 import { SideMenu } from "../components/SideMenu";
 import { Products } from "../components/Products";
 
-import { useParams, Navigate } from "react-router-dom";
-
-import { menuCategories } from "../data/sideMenu.data";
+import { useMenuCategory } from "../hooks/useMenuCategory";
 
 export const OurMenuPage = () => {
-  const { categoryId } = useParams();
-  
-  const validCategory = menuCategories
-    .flatMap((group) => group.items)
-    .find((item) => item.id === categoryId);
+  const { validCategory } = useMenuCategory();
 
-  if (!validCategory) return <Navigate to="/our-menu/hot-coffee" replace />;
+  if (!validCategory) {
+    return <Navigate to="/our-menu/hot-coffee" replace />;
+  }
 
   return (
     <div className="our-menu">
@@ -26,5 +24,3 @@ export const OurMenuPage = () => {
     </div>
   );
 };
-
-
