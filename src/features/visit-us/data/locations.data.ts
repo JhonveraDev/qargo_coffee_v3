@@ -24,9 +24,9 @@ export const locationsData: StateLocationsContent[] = [
     locations: [
       {
         id: 201,
-        name: "Dummy Name",
-        address: "Dummy Address",
-        phone: "Dummy Phone",
+        name: "Berkeley",
+        address: "2344 Telegraph Ave., Berkeley, CA 94704",
+        phone: "341-500-2171",
         image: img01,
         url: "Dummy URL",
       },
