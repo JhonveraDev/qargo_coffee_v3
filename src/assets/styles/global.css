@@ -3901,14 +3901,15 @@
 }
 
 .visit-us-card-locations__swiper {
-  padding: 0 !important;
+  padding: 0px 0 80px 0 !important;
   margin-top: 60px;
   margin-bottom: 110px;
 }
 
 .visit-us-card-locations__slide {
   transform: scale(1) !important;
-  margin-right: 21px !important;
+  margin-right: 18px !important;
+  padding-right: 3px;
 }
 
 .visit-us-card-locations__card {
@@ -4033,4 +4034,240 @@
   font-size: 32px;
   line-height: 20px;
   color: var(--color-secondary);
+}
+
+.visit-us-card-locations__state {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 1210px) {
+  .overlay__text {
+    max-width: 90%;
+    font-size: 20px;
+  }
+
+  .overlay__label {
+    font-size: 17px;
+  }
+
+  .overlay__button {
+    font-size: 21px;
+    padding: 10px 68px;
+  }
+
+  .overlay__actions {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .overlay__text {
+    max-width: 95%;
+    font-size: 19px;
+  }
+
+  .overlay__label {
+    font-size: 16px;
+  }
+
+  .overlay__title {
+    padding-bottom: 25px;
+  }
+
+  .overlay__info {
+    margin-top: 12px;
+  }
+
+  .overlay__button {
+    font-size: 20px;
+    padding: 10px 62px;
+  }
+}
+
+@media (max-width: 960px) {
+  .overlay__text {
+    max-width: 80%;
+    font-size: 22px;
+  }
+
+  .overlay__label {
+    font-size: 18px;
+  }
+
+  .overlay__title {
+    padding-bottom: 35px;
+  }
+
+  .overlay__actions {
+    margin-top: 55px;
+  }
+
+  .overlay__button {
+    font-size: 22px;
+    padding: 14px 75px;
+  }
+}
+
+@media (max-width: 770px) {
+  .overlay__button {
+    font-size: 21px;
+    padding: 12px 65px;
+  }
+
+  .overlay__text {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .overlay__label {
+    font-size: 17px;
+  }
+
+  .overlay__title {
+    padding-bottom: 30px;
+  }
+
+  .overlay__actions {
+    margin-top: 48px;
+  }
+
+  .overlay__info {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 690px) {
+  .overlay__text {
+    font-size: 19px;
+  }
+
+  .overlay__label {
+    font-size: 16px;
+  }
+
+  .overlay__button {
+    font-size: 20px;
+    padding: 8px 56px;
+  }
+}
+
+@media (max-width: 660px) {
+  .visit-us-card-locations__state {
+    max-width: 82%;
+  }
+
+  .visit-us-card-locations__swiper {
+    margin-bottom: 80px;
+}
+
+  .overlay__text {
+    font-size: 19px;
+  }
+
+  .overlay__text {
+    font-size: 22px;
+    max-width: 80%;
+  }
+
+  .overlay__label {
+    font-size: 18px;
+  }
+
+  .overlay__button {
+    font-size: 22px;
+    padding: 11px 70px;
+  }
+
+  .overlay__title {
+    padding-bottom: 40px;
+  }
+
+  .overlay__actions {
+    margin-top: 60px;
+  }
+
+  .overlay__info {
+    margin-top: 15px;
+  }
+
+  .overlay__actions {
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 500px) {
+  .visit-us-card-locations__state {
+    max-width: 92%;
+  }
+}
+
+@media (max-width: 400px) {
+  .overlay__text {
+    font-size: 19px;
+    max-width: 95%;
+  }
+
+  .overlay__button {
+    font-size: 20px;
+    padding: 10px 65px;
+  }
+
+  .visit-us-card-locations__swiper {
+    padding: 0px 0 65px 0 !important
+  }
+
+  .overlay__info {
+    margin-top: 9px;
+  }
+
+  .overlay__title {
+    padding-bottom: 33px;
+  }
+
+  .overlay__label {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 350px) {
+  .overlay__button {
+    font-size: 18px;
+    padding: 8px 58px;
+  }
+
+  .overlay__actions {
+    margin-top: 40px;
+  }
+
+  .overlay__label {
+    font-size: 16px;
+  }
+
+  .overlay__text {
+    font-size: 18px;
+    max-width: 95%;
+  }
+
+  .overlay__title {
+    padding-bottom: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  .overlay__text {
+    font-size: 15px;
+  }
+
+  .overlay__label {
+    font-size: 15px;
+  }
+
+  .overlay__actions {
+    margin-top: 26px;
+  }
+
+  .overlay__button {
+    font-size: 17px;
+    padding: 7px 52px;
+  }
 }

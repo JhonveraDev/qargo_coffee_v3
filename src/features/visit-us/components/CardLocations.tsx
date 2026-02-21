@@ -13,6 +13,20 @@ const swiperConfig: SwiperOptions = {
   freeMode: true,
   pagination: { clickable: true },
   modules: [Pagination, FreeMode],
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    660: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    960: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+  },
 };
 
 export const CardLocations = () => {
@@ -21,6 +35,7 @@ export const CardLocations = () => {
       {locationsData.map((stateItem) => (
         <div
           key={stateItem.id}
+          id={`state-${stateItem.id}`}
           className="visit-us-card-locations__state"
         >
           <h3 className="visit-us-card-locations__title">
