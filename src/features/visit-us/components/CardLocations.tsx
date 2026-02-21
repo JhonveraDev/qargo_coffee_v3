@@ -42,6 +42,39 @@ export const CardLocations = () => {
                     alt={location.name}
                     className="visit-us-card-locations__image"
                   />
+
+                  <div className="visit-us-card-locations__overlay">
+
+                    <header className="overlay__header">
+                      <h4 className="overlay__title">{location.name}</h4>
+                    </header>
+
+                    <section className="overlay__info">
+
+                      <div className="overlay__block">
+                        <span className="overlay__label">Visit Us</span>
+                        <address className="overlay__text">
+                          {location.address}
+                        </address>
+                      </div>
+
+                      <div className="overlay__block">
+                        <span className="overlay__label">Call Us</span>
+                        <p className="overlay__text" >
+                          {location.phone}
+                        </p>
+                      </div>
+
+                    </section>
+
+                    <div className="overlay__actions">
+                      <button className="overlay__button">
+                        View More
+                      </button>
+                    </div>
+
+                  </div>
+
                   <div className="visit-us-card-locations__card-footer">
                     {location.name}
                   </div>
