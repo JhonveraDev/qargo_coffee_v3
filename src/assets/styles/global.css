@@ -3812,3 +3812,29 @@
   color: var(--color-white);
   border: 2px solid var(--color-main);
 }
+
+.visit-us-card-locations {
+  width: 100%;
+  max-width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.visit-us-card-locations__state {
+  background-color: #C49F57;
+  width: 100%;
+  max-width: 94%;
+  margin: 0 auto;
+}
+
+.visit-us-card-locations__swiper {
+  padding: 0 !important;
+}
+
+.visit-us-card-locations__slide {
+  transform: scale(1) !important;
+  margin-right: 18px !important;
+}
