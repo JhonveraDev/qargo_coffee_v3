@@ -3901,7 +3901,7 @@
 }
 
 .visit-us-card-locations__swiper {
-  padding: 0px 0 80px 0 !important;
+  padding: 0px 40px 80px 0 !important;
   margin-top: 60px;
   margin-bottom: 110px;
 }
@@ -4084,10 +4084,10 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 990px) {
   .overlay__text {
-    max-width: 80%;
-    font-size: 22px;
+    max-width: 100%;
+    font-size: 21px;
   }
 
   .overlay__label {
@@ -4136,7 +4136,7 @@
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 700px) {
   .overlay__text {
     font-size: 19px;
   }
@@ -4192,6 +4192,10 @@
 
   .overlay__actions {
     margin-top: 55px;
+  }
+
+  .visit-us-card-locations__swiper {
+    padding: 0px 0px 80px 0 !important;
   }
 }
 

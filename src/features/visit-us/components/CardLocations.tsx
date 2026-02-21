@@ -22,7 +22,7 @@ const swiperConfig: SwiperOptions = {
       slidesPerView: 2,
       spaceBetween: 0,
     },
-    960: {
+    990: {
       slidesPerView: 3,
       spaceBetween: 0,
     },
