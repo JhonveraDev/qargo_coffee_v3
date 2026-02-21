@@ -3826,7 +3826,7 @@
 .visit-us-card-locations__state {
   background-color: #C49F57;
   width: 100%;
-  max-width: 94%;
+  max-width: 95%;
   margin: 0 auto;
 }
 
@@ -3836,5 +3836,5 @@
 
 .visit-us-card-locations__slide {
   transform: scale(1) !important;
-  margin-right: 18px !important;
+  margin-right: 21px !important;
 }
