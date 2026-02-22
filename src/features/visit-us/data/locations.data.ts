@@ -100,7 +100,7 @@ export const locationsData: StateLocationsContent[] = [
         name: "Dummy Name",
         address: "Dummy Address",
         phone: "Dummy Phone",
-        image: "Illinois-04.png",
+        image: "illinois-04.png",
         url: "Dummy URL",
       },
       {

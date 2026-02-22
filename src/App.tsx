@@ -8,6 +8,7 @@ import { FranchisePage } from "./features/franchise/page/FranchisePage";
 import { OurMenuPage } from "./features/menu/page/OurMenuPage";
 import { ProductDetailPage } from "./features/menu/page/ProductDetailPage";
 import { VisitUsPage } from "./features/visit-us/page/VisitUsPage";
+import { TeamPage } from "./features/team/pages/TeamPage";
 
 function Layout() {
   const location = useLocation();
@@ -20,7 +21,7 @@ function Layout() {
       <main className="page-container">
         <Outlet />
       </main>
-      {/* {!hideFooter && <Footer />} */}
+      {!hideFooter && <Footer />}
     </div>
   );
 }
@@ -41,6 +42,7 @@ export default function App() {
         </Route>
 
         <Route path="locations" element={<VisitUsPage />} />
+        <Route path="about" element={<TeamPage />} />
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>

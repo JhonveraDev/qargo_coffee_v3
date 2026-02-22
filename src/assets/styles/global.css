@@ -4282,7 +4282,7 @@
   width: 100%;
   position: relative;
   z-index: 1;
-  margin-bottom: 160px;
+  margin-bottom: 180px;
   padding-top: 110px;
   padding-bottom: 80px;
 }
@@ -4335,6 +4335,12 @@
   }
 }
 
+@media (max-width: 895px) {
+  .states-grid {
+    margin-bottom: 305px;
+  }
+}
+
 @media (max-width: 450px) {
   .states-grid__container-states {
     grid-template-columns: 1fr;
@@ -4348,3 +4354,11 @@
     font-size: 30px;
   }
 }
+
+@media (max-width: 370px) {
+  .states-grid {
+    margin-bottom: 335px;
+  }
+}
+
+/* ===== OUR TEAM - Section / Header Info ===== */
