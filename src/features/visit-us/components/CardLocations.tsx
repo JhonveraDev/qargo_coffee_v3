@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, FreeMode } from "swiper";
 import type { SwiperOptions } from "swiper/types";
 
+import { getImage } from "../utils/location-images.utils";
+
 import { locationsData } from "../data/locations.data";
 
 import "swiper/css";
@@ -53,7 +55,7 @@ export const CardLocations = () => {
               >
                 <div className="visit-us-card-locations__card">
                   <img
-                    src={location.image}
+                    src={getImage("visit-us", location.image)}
                     alt={location.name}
                     className="visit-us-card-locations__image"
                   />

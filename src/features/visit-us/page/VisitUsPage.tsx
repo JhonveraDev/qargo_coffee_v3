@@ -1,4 +1,4 @@
-import { Map, Locations, CardLocations } from "../../../features/visit-us/index"
+import { Map, Locations, CardLocations, StatesGrid } from "../../../features/visit-us/index"
 
 export const VisitUsPage = () => {
   return (
@@ -6,6 +6,7 @@ export const VisitUsPage = () => {
       <Map />
       <Locations />
       <CardLocations />
+      <StatesGrid />
     </>
   )
 }
