@@ -4324,3 +4324,27 @@
   font-size: 24px;
   line-height: 20px;
 }
+
+@media (max-width: 950px) {
+  .states-grid__container {
+    max-width: 85%;
+  }
+
+  .states-grid__container-states {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .states-grid__container-states {
+    grid-template-columns: 1fr;
+  }
+
+  .states-grid__container-states p {
+    font-size: 22px;
+  }
+
+  .states-grid__container h3 {
+    font-size: 30px;
+  }
+}
