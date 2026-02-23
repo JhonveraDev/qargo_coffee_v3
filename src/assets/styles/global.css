@@ -4362,3 +4362,86 @@
 }
 
 /* ===== OUR TEAM - Section / Header Info ===== */
+.profiles {
+  width: 100%;
+  max-width: 100%;
+  background-color: red;
+}
+
+.profiles-group {
+  width: 100%;
+  max-width: 91%;
+  margin: 0 auto;
+  background-color: #C49F57;
+}
+
+.profiles-group__slider {
+  background-color: #003465;
+  width: 100%;
+  max-width: 100%;
+}
+
+.profiles-group__slider {
+  padding: 0 !important;
+}
+
+.profiles-group__slide {
+  transform: scale(1) !important;
+}
+
+.profile-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.profile-card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.profile-card:hover .profile-card__overlay {
+  transform: translateY(0);
+}
+
+.profile-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-card__name {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 800;
+  color: var(--color-white);
+}
+
+.profile-card__role {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-white);
+}
+
+.profiles-group__title {
+  font-size: 32px;
+  line-height: 20px;
+  font-family: 700;
+  color: var(--color-secondary);
+}

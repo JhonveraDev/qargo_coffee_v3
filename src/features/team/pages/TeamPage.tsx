@@ -1,9 +1,10 @@
-import { HeaderInfo } from "../components/HeaderInfo"
+import { Profiles } from "../components/Profiles"
 
 export const TeamPage = () => {
   return (
     <>
-      <HeaderInfo />
+      {/* <HeaderInfo /> */}
+      <Profiles />
     </>
   )
 }
