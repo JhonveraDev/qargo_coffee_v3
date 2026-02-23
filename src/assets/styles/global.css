@@ -4365,24 +4365,24 @@
 .profiles {
   width: 100%;
   max-width: 100%;
-  background-color: red;
+  margin-top: 150px;
+  margin-bottom: 130px;
 }
 
 .profiles-group {
   width: 100%;
   max-width: 91%;
   margin: 0 auto;
-  background-color: #C49F57;
 }
 
 .profiles-group__slider {
-  background-color: #003465;
   width: 100%;
   max-width: 100%;
+  margin-bottom: 20px;
 }
 
 .profiles-group__slider {
-  padding: 0 !important;
+  padding: 0 0 80px 0 !important;
 }
 
 .profiles-group__slide {
@@ -4430,11 +4430,12 @@
   line-height: 24px;
   font-weight: 800;
   color: var(--color-white);
+  margin-bottom: 8px;
 }
 
 .profile-card__role {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   color: var(--color-white);
 }
@@ -4442,6 +4443,7 @@
 .profiles-group__title {
   font-size: 32px;
   line-height: 20px;
-  font-family: 700;
+  font-weight: 700;
   color: var(--color-secondary);
+  margin-bottom: 47px;
 }
