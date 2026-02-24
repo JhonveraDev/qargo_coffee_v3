@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 
 const swiperConfig: SwiperOptions = {
   slidesPerView: 4,
-  spaceBetween: 19,
+  spaceBetween: 17,
   freeMode: true,
   pagination: { clickable: true },
   modules: [Pagination, FreeMode],
@@ -21,11 +21,11 @@ const swiperConfig: SwiperOptions = {
     },
     660: {
       slidesPerView: 3,
-      spaceBetween: 20,
+      spaceBetween: 12,
     },
     990: {
       slidesPerView: 4,
-      spaceBetween: 19,
+      spaceBetween: 17,
     },
   },
 };

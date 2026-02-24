@@ -1,6 +1,5 @@
 import type { ProfilesContent } from "../types/profiles.types";
 
-
 export const profilesData: ProfilesContent[] = [
   {
     id: 1,
