@@ -10,7 +10,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const swiperConfig: SwiperOptions = {
-  centeredSlides: true,
   loop: true,
   initialSlide: 1,
   pagination: {
@@ -21,11 +20,15 @@ const swiperConfig: SwiperOptions = {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 20,
+    },
+    620: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
     896: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 50,
     },
   },
 };
@@ -55,7 +58,7 @@ export const Carousel = () => {
               <div className='franchise-carousel__slide-image'>
                 <img src={item.image} alt={item.title} />
               </div>
-              <div className='franchise-carousel__slide-content'>
+              <div className="franchise-carousel__slide-content">
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
