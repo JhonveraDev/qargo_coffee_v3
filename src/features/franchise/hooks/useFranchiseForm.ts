@@ -44,10 +44,20 @@ export const useFranchiseForm = () => {
       setIsSubmitting(true);
       setError(null);
 
-      // 🔥 Aquí iría tu petición real
-      // await sendFranchiseApplication(formData);
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/franchise`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-      console.log("Formulario enviado:", formData);
+      if (!response.ok) {
+        throw new Error("Error sending form");
+      }
+
+      const data = await response.json();
+      console.log("Respuesta del backend:", data);
 
       resetForm();
 
