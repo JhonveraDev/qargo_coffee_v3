@@ -8,8 +8,8 @@ export const headerFranchiseData: FormHeader = {
 export const inputFields: InputField[] = [
     { name: "firstName", placeholder: "First name*" },
     { name: "lastName", placeholder: "Last name*" },
-    { name: "email", placeholder: "Email*" },
-    { name: "phone", placeholder: "Phone*" },
+    { name: "email", placeholder: "Email*", type: "email" },
+    { name: "phone", placeholder: "Phone*", type: "phone" },
     { name: "state", placeholder: "State*" },
     { name: "city", placeholder: "City*" },
     { name: "areaInterest", placeholder: "Area of interest*" },
