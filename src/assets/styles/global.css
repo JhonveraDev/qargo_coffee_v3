@@ -2767,6 +2767,10 @@
   padding: 13.5px 95.6px;
 }
 
+.franchise-form__button:hover {
+  background-color: var(--color-secondary);
+}
+
 .franchise-form__actions {
   width: 100%;
   max-width: 100%;
@@ -4366,7 +4370,7 @@
   width: 100%;
   max-width: 100%;
   margin-top: 130px;
-  margin-bottom: 130px;
+  margin-bottom: 150px;
 }
 
 .profiles-group {
@@ -4448,6 +4452,12 @@
   margin-bottom: 47px;
 }
 
+@media (max-width: 895px) {
+  .profiles {
+    margin-bottom: 260px;
+  }
+}
+
 @media (max-width: 770px) {
   .profile-card__name {
     font-size: 19px;
@@ -4455,6 +4465,43 @@
 
   .profile-card__role {
     font-size: 15.5px;
+  }
+
+  .profiles-group__title {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 660px) {
+  .profiles {
+    margin-bottom: 270px;
+  }
+}
+
+@media (max-width: 450px) {
+  .profiles-group__title {
+    font-size: 24px;
+  }
+
+  .profiles {
+    margin-top: 70px;
+  }
+
+  .profiles-group__title {
+    margin-bottom: 33px;
+    line-height: 28px;
+  }
+
+  .profile-card__name {
+    font-size: 17px;
+  }
+
+  .profile-card__role {
+    font-size: 14.5px;
+  }
+
+  .profiles-group {
+    max-width: 92%;
   }
 }
 
@@ -4615,6 +4662,12 @@
 
   .header-info__content p {
     font-size: 15.5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .profiles {
+    margin-bottom: 320px;
   }
 }
 

@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, FreeMode } from "swiper";
+import { Pagination, FreeMode, Navigation } from "swiper";
 import type { SwiperOptions } from "swiper/types";
 
 import { getImage } from "../utils/profile-images.utils";
@@ -12,7 +12,10 @@ const swiperConfig: SwiperOptions = {
   slidesPerView: 4,
   spaceBetween: 17,
   freeMode: true,
-  pagination: { clickable: true },
+  pagination: {
+  clickable: true,
+  dynamicBullets: true,
+},
   modules: [Pagination, FreeMode],
   breakpoints: {
     0: {

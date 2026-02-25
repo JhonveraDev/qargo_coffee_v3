@@ -13,7 +13,10 @@ const swiperConfig: SwiperOptions = {
   slidesPerView: 3,
   spaceBetween: 24,
   freeMode: true,
-  pagination: { clickable: true },
+    pagination: {
+    clickable: false,
+    dynamicBullets: true,
+  },
   modules: [Pagination, FreeMode],
   breakpoints: {
     0: {

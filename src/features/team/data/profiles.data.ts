@@ -61,7 +61,7 @@ export const profilesData: ProfilesContent[] = [
       },
       {
         id: 205,
-        name: "Maria Alejandra Villafradez",
+        name: "Maria Villafradez",
         title: "Copywriter / Email Marketing Specialist",
         image: "maria-alejandra-villafradez.png",
       },

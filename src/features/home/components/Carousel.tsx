@@ -15,7 +15,12 @@ const swiperConfig: SwiperOptions = {
   centeredSlides: true,
   loop: true,
   initialSlide: 1,
-  pagination: { clickable: false },
+  slidesPerView: 1,
+  spaceBetween: 0,
+  pagination: {
+    clickable: false,
+    dynamicBullets: true,
+  },
   modules: [Pagination],
   breakpoints: {
     0: {
