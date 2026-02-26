@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import type { SwiperOptions } from 'swiper/types';
+import { useNavigate } from "react-router-dom";
 
 import { Title, Button } from "../../../ui/components";
 
@@ -34,6 +35,8 @@ const swiperConfig: SwiperOptions = {
 };
 
 export const Carousel = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="home-carousel">
       <Title
@@ -44,32 +47,36 @@ export const Carousel = () => {
       />
 
       <Swiper {...swiperConfig}>
-        {carouselItemsData.map((item) => (
-          <SwiperSlide key={item.id} className="home-carousel__slide">
-            <div className="home-leaf-container">
+        {carouselItemsData.map((item) => {
+          const { id, text, img, path } = item;
+
+          return (
+            <SwiperSlide key={id} className="home-carousel__slide">
+              <div className="home-leaf-container">
+                <img
+                  src={leaf}
+                  alt=""
+                  className="leaf leaf-1"
+                  aria-hidden="true"
+                />
+              </div>
+
               <img
-                src={leaf}
-                alt=""
-                className="leaf leaf-1"
-                aria-hidden="true"
+                src={img}
+                alt={text}
+                className="home-carousel__image"
               />
-            </div>
-            <img
-              src={item.img}
-              alt={item.text}
-              className="home-carousel__image"
-            />
 
-            <Button
-              text={item.text}
-              size="lg"
-              className="home-carousel__button"
-            />
-
-          </SwiperSlide>
-        ))}
+              <Button
+                text={text}
+                size="lg"
+                className="home-carousel__button"
+                onClick={() => { if (path) navigate(path); }}
+              />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
-
     </section>
   );
-}
+};

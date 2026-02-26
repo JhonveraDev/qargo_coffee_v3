@@ -14,11 +14,13 @@ export const headerData: HeaderContent = {
       id: "order",
       text: "Order now",
       size: "md",
+      path: "/our-menu/hot-coffee",
     },
     {
       id: "store",
       text: "Find a store",
       size: "md",
+      path: "/locations",
     },
   ],
 };

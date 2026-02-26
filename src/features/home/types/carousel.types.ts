@@ -6,4 +6,5 @@ export interface CarouselItemContent {
   id: number;
   img: string;
   text: string;
+  path: string;
 }

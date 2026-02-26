@@ -9,10 +9,10 @@ export const carouselTitleData: CarouselTitleContent = {
 };
 
 export const carouselItemsData: CarouselItemContent[] = [
-  { id: 1, img: a1, text: "Frosted Apple Chai" },
-  { id: 2, img: a2, text: "Pumpkin Pixie Latte" },
-  { id: 3, img: a3, text: "Pumpkin Pixie Latte" },
-  { id: 4, img: a1, text: "Frosted Apple Chai" },
-  { id: 5, img: a2, text: "Pumpkin Pixie Latte" },
-  { id: 6, img: a3, text: "Pumpkin Pixie Latte" },
+  { id: 1, img: a1, text: "Frosted Apple Chai", path: "/our-menu/hot-coffee" },
+  { id: 2, img: a2, text: "Pumpkin Pixie Latte", path: "/our-menu/hot-coffee" },
+  { id: 3, img: a3, text: "Pumpkin Pixie Latte", path: "/our-menu/hot-coffee" },
+  { id: 4, img: a1, text: "Frosted Apple Chai", path: "/our-menu/hot-coffee" },
+  { id: 5, img: a2, text: "Pumpkin Pixie Latte", path: "/our-menu/hot-coffee" },
+  { id: 6, img: a3, text: "Pumpkin Pixie Latte", path: "/our-menu/hot-coffee" },
 ];

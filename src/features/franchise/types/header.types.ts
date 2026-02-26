@@ -3,6 +3,8 @@ export interface HeaderFranchiseButton {
   text: string;
   size: "sm" | "md" | "lg";
   variant: "primary" | "secondary";
+  path: string;
+  onClick?: () => void;
 }
 
 export interface HeaderFranchiseImage {

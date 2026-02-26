@@ -1,9 +1,13 @@
 import { Button, Text, Title } from "../../../ui/components";
+import { useNavigate } from "react-router-dom";
 
 import { ctaMapData } from "../data/ctaMap.data";
 
 export const CtaMap = () => {
   const { title, description, image, button } = ctaMapData;
+  const navigate = useNavigate();
+
+  const { text, size, path } = button;
 
   return (
     <section className="home-cta-map">
@@ -31,9 +35,10 @@ export const CtaMap = () => {
           />
 
           <Button
-            text={button.text}
-            size={button.size}
+            text={text}
+            size={size}
             className="home-cta-map__button"
+            onClick={() => { if (path) navigate(path); }}
           />
         </div>
       </div>

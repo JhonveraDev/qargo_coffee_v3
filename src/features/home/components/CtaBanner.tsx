@@ -1,9 +1,11 @@
 import { Button, Text, Title } from "../../../ui/components";
+import { useNavigate } from "react-router-dom";
 
 import { ctaBannerData } from "../data/ctaBanner.data";
 
 export const CtaBanner = () => {
   const { title, description, image, buttons } = ctaBannerData;
+  const navigate = useNavigate();
 
   return (
     <section className="home-cta-banner">
@@ -31,12 +33,13 @@ export const CtaBanner = () => {
         />
 
         <div className="home-cta-banner__buttons">
-          {buttons.map(({ id, text, size }) => (
+          {buttons.map(({ id, text, size, path }) => (
             <Button
               key={id}
               text={text}
               size={size}
               className="home-cta-banner__button"
+              onClick={() => { if (path) navigate(path); }}
             />
           ))}
         </div>

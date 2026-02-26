@@ -10,12 +10,14 @@ export const ctaContactData: CtaContactContent = {
       text: "Contact Us Now",
       size: "sm",
       variant: "primary",
+      path: "/about",
     },
     {
       id: "schedule-a-call",
       text: "Schedule a Call",
       size: "sm",
       variant: "secondary",
+      path: "/about",
     },
   ],
 };

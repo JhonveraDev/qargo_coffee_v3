@@ -3,6 +3,8 @@ export interface ctaContactButton {
   text: string;
   size: "sm" | "md" | "lg";
   variant: "primary" | "secondary";
+  path: string;
+  onClick?: () => void;
 }
 
 export interface CtaContactContent {

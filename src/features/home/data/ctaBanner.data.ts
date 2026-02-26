@@ -14,11 +14,13 @@ export const ctaBannerData: CtaBannerContent = {
       id: "connect",
       text: "Connect with us",
       size: "md",
+      path: "/franchise",
     },
     {
       id: "learn",
       text: "Learn more",
       size: "md",
+      path: "/franchise",
     },
   ],
 };

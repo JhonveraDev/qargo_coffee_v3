@@ -11,7 +11,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "16 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "caffe-americano",
@@ -20,7 +20,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "16 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "caffe-latte",
@@ -29,7 +29,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "cappuccino",
@@ -38,7 +38,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "chai-tea-latte",
@@ -47,7 +47,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "cortado",
@@ -56,7 +56,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "espresso-con-panna",
@@ -65,7 +65,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "espresso",
@@ -74,7 +74,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "espresso-macchiato",
@@ -83,7 +83,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "flat-white",
@@ -92,7 +92,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "hot-chocolate",
@@ -101,7 +101,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "latte-macchiato",
@@ -110,7 +110,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "drip-coffee",
@@ -119,7 +119,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "matcha-latte",
@@ -128,7 +128,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "mocha",
@@ -137,7 +137,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "white-mocha",
@@ -146,7 +146,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       }
     ]
   },
@@ -160,7 +160,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "iced-cappuccino",
@@ -169,7 +169,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "iced-chai-latte",
@@ -178,7 +178,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "iced-coffee",
@@ -187,7 +187,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "iced-latte",
@@ -196,7 +196,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "iced-latte-macchiato",
@@ -205,7 +205,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "iced-matcha-latte",
@@ -214,7 +214,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "iced-mocha",
@@ -223,7 +223,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "iced-white-mocha",
@@ -232,7 +232,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       }
     ]
   },
@@ -246,7 +246,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "italian-mocha-frappe",
@@ -255,7 +255,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "italian-chocolate-frappe",
@@ -264,7 +264,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "italian-strawberry-frappe",
@@ -273,7 +273,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "crema-di-caffe",
@@ -282,7 +282,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       }
     ]
   },
@@ -296,7 +296,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "iced-tea",
@@ -305,7 +305,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
     ]
   },
@@ -319,7 +319,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "espresso-rose",
@@ -328,7 +328,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "pure-matcha",
@@ -337,7 +337,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "mangoberry",
@@ -346,7 +346,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       }
     ]
   },
@@ -360,7 +360,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "nitro-cold-brew",
@@ -369,7 +369,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "nutty-nitro-cold-brew",
@@ -378,7 +378,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "coco-choc-nitro-cold-brew",
@@ -387,7 +387,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "black-cherry-cold-brew",
@@ -396,7 +396,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       }
     ]
   },
@@ -410,7 +410,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "mango-colada",
@@ -419,7 +419,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "watermelon-cooler",
@@ -428,7 +428,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "strawberries-and-cream",
@@ -437,7 +437,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       }
     ]
   },
@@ -451,7 +451,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "berry-burst-fusion",
@@ -460,7 +460,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "pina-coco-lada",
@@ -469,7 +469,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       }
     ]
   },
@@ -483,7 +483,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "veggie-caprese",
@@ -492,7 +492,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "cheddar-crisp",
@@ -501,7 +501,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "qargo-classic",
@@ -510,7 +510,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "salmone-mattina",
@@ -519,7 +519,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "prosciutto-royale",
@@ -528,7 +528,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "caprese-al-croissant",
@@ -537,7 +537,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       }
     ]
   },
@@ -551,7 +551,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "turkey-bacon-classico",
@@ -560,7 +560,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "turkey-bacon-al-fresco",
@@ -569,7 +569,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "turkey-bacon-formaggio",
@@ -578,7 +578,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "salmone-fresco",
@@ -587,7 +587,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "pinsa-di-pollo",
@@ -596,7 +596,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "pinsa-perfetta",
@@ -605,7 +605,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       }
     ]
   },
@@ -619,7 +619,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "chocolate-croissant",
@@ -628,7 +628,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "pistachio-croissant",
@@ -637,7 +637,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "almond-croissant",
@@ -646,7 +646,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "chocolate-chip-muffin",
@@ -655,7 +655,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "cacao-muffin",
@@ -664,7 +664,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "pistachio-muffin",
@@ -673,7 +673,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "vanilla-eclair",
@@ -682,7 +682,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "chocolate-eclair",
@@ -691,7 +691,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "coffee-eclair",
@@ -700,7 +700,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "cheesecake-brownie",
@@ -709,7 +709,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "lemon-bar",
@@ -718,7 +718,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "plain-bagel",
@@ -727,7 +727,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "everything-bagel",
@@ -736,7 +736,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "cinnamon-raisin-bagel",
@@ -745,7 +745,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "spinach-and-feta-danish",
@@ -754,7 +754,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "tomato-and-olive-danish",
@@ -763,7 +763,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "leek-and-parmesan-danish",
@@ -772,7 +772,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "cream-cheese-danish",
@@ -781,7 +781,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "lemon-danish",
@@ -790,7 +790,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "maple-pecan-danish",
@@ -799,7 +799,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "guava-danish",
@@ -808,7 +808,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "cinnamon-roll",
@@ -817,7 +817,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "cherry-greek-yogurt-danish",
@@ -826,7 +826,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "blueberry-cheesecake-danish",
@@ -835,7 +835,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       }
     ]
   },
@@ -849,7 +849,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "red-velvet-cake",
@@ -858,7 +858,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "chocolate-temptation-cake",
@@ -867,7 +867,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "carrot-cake",
@@ -876,7 +876,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "torta-nocciola",
@@ -885,7 +885,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "tres-leches-cake",
@@ -894,7 +894,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "pistachio-cheesecake",
@@ -903,7 +903,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "dulce-de-leche-cheesecake",
@@ -912,7 +912,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "chocolate-ganache-cheesecake",
@@ -921,7 +921,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "cheesecake-alle-fragole-strawberry-cheesecake",
@@ -930,7 +930,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "tiramisu-with-ladyfingers",
@@ -939,7 +939,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "french-macarons-collection",
@@ -948,7 +948,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       },
       {
         id: "mixed-berry-tart",
@@ -957,7 +957,7 @@ export const allProducts: Product[] = [
         mainImage: "dummy-product-02.png",
         sizePiker: "12 Oz",
         nutritionalTable: "dummy-data-01.png",
-        productUrl: "www.qargo.com"
+        productUrl: "www.qargocoffee.com"
       }
     ]
   }

@@ -11,7 +11,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "belleville-01.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
     ],
   },
@@ -25,7 +25,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "2344 Telegraph Ave., Berkeley, CA 94704",
         phone: "341-500-2171",
         image: "california-01.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 202,
@@ -33,7 +33,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "california-02.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 203,
@@ -41,7 +41,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "california-03.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
     ],
   },
@@ -55,7 +55,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "florida-01.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 302,
@@ -63,7 +63,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "florida-02.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
     ],
   },
@@ -77,7 +77,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "illinois-01.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 402,
@@ -85,7 +85,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "illinois-02.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 403,
@@ -93,7 +93,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "illinois-03.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 404,
@@ -101,7 +101,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "illinois-04.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 405,
@@ -109,7 +109,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "illinois-05.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 406,
@@ -117,7 +117,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "illinois-06.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
     ],
   },
@@ -131,7 +131,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "michigan-01.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 502,
@@ -139,7 +139,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "michigan-02.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 503,
@@ -147,7 +147,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "michigan-03.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 504,
@@ -155,7 +155,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "michigan-04.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
     ],
   },
@@ -169,7 +169,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "missouri-01.png",
-        url: "Dummy URL",
+        path: "/franchise",
       }
     ],
   },
@@ -183,7 +183,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "nevada-01.png",
-        url: "Dummy URL",
+        path: "/franchise",
       }
     ],
   },
@@ -197,7 +197,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "new-hampshire-01.png",
-        url: "Dummy URL",
+        path: "/franchise",
       }
     ],
   },
@@ -211,7 +211,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "ohio-01.png",
-        url: "Dummy URL",
+        path: "/franchise",
       }
     ],
   },
@@ -225,7 +225,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "texas-01.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 1002,
@@ -233,7 +233,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "texas-02.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 1003,
@@ -241,7 +241,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "texas-03.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 1004,
@@ -249,7 +249,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "texas-04.png",
-        url: "Dummy URL",
+        path: "/franchise",
       },
       {
         id: 1005,
@@ -257,7 +257,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "texas-05.png",
-        url: "Dummy URL",
+        path: "/franchise",
       }
     ],
   },
@@ -271,7 +271,7 @@ export const locationsData: StateLocationsContent[] = [
         address: "Dummy Address",
         phone: "Dummy Phone",
         image: "washington-01.png",
-        url: "Dummy URL",
+        path: "/franchise",
       }
     ],
   },

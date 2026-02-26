@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, FreeMode } from "swiper";
 import type { SwiperOptions } from "swiper/types";
+import { useNavigate } from "react-router-dom";
 
 import { getImage } from "../utils/location-images.utils";
-
 import { locationsData } from "../data/locations.data";
 
 import "swiper/css";
@@ -29,6 +29,8 @@ const swiperConfig: SwiperOptions = {
 };
 
 export const CardLocations = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="visit-us-card-locations">
       {locationsData.map((stateItem) => (
@@ -45,53 +47,55 @@ export const CardLocations = () => {
             {...swiperConfig}
             className="visit-us-card-locations__swiper"
           >
-            {stateItem.locations.map((location) => (
-              <SwiperSlide
-                key={location.id}
-                className="visit-us-card-locations__slide"
-              >
-                <div className="visit-us-card-locations__card">
-                  <img
-                    src={getImage("visit-us", location.image)}
-                    alt={location.name}
-                    className="visit-us-card-locations__image"
-                  />
+            {stateItem.locations.map((location) => {
+              const { id, name, image, address, phone, path } = location;
 
-                  <div className="visit-us-card-locations__overlay">
-                    <div className="overlay__container">
-                      <div className="overlay__header">
-                        <h4 className="overlay__title">{location.name}</h4>
-                      </div>
-                      <div className="overlay__info">
-                        <div className="overlay__block">
-                          <span className="overlay__label">VISIT US</span>
-                          <p className="overlay__text">
-                            {location.address}
-                          </p>
-                        </div>
+              return (
+                <SwiperSlide
+                  key={id}
+                  className="visit-us-card-locations__slide"
+                >
+                  <div className="visit-us-card-locations__card">
+                    <img
+                      src={getImage("visit-us", image)}
+                      alt={name}
+                      className="visit-us-card-locations__image"
+                    />
 
-                        <div className="overlay__block">
-                          <span className="overlay__label">CALL US</span>
-                          <p className="overlay__text" >
-                            {location.phone}
-                          </p>
+                    <div className="visit-us-card-locations__overlay">
+                      <div className="overlay__container">
+                        <div className="overlay__header">
+                          <h4 className="overlay__title">{name}</h4>
                         </div>
-                      </div>
-                      <div className="overlay__actions">
-                        <button className="overlay__button">
-                          View More
-                        </button>
+                        <div className="overlay__info">
+                          <div className="overlay__block">
+                            <span className="overlay__label">VISIT US</span>
+                            <p className="overlay__text">{address}</p>
+                          </div>
+
+                          <div className="overlay__block">
+                            <span className="overlay__label">CALL US</span>
+                            <p className="overlay__text">{phone}</p>
+                          </div>
+                        </div>
+                        <div className="overlay__actions">
+                          <button
+                            className="overlay__button"
+                            onClick={() => { if (path) navigate(path); }}
+                          >
+                            View More
+                          </button>
+                        </div>
                       </div>
                     </div>
 
+                    <div className="visit-us-card-locations__card-footer">
+                      {name}
+                    </div>
                   </div>
-
-                  <div className="visit-us-card-locations__card-footer">
-                    {location.name}
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       ))}

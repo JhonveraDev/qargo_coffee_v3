@@ -1,9 +1,11 @@
 import { Title, Button, Text } from "../../../ui/components";
+import { useNavigate } from "react-router-dom";
 
 import { headerFranchiseData } from "../data/header.data";
 
 export const Header = () => {
   const { title, description, image, buttons } = headerFranchiseData;
+  const navigate = useNavigate();
 
   return (
     <header className="franchise-header">
@@ -31,12 +33,13 @@ export const Header = () => {
         />
 
         <div className="franchise-header__actions">
-          {buttons.map(({ id, text, size, variant }) => (
+          {buttons.map(({ id, text, size, variant, path, onClick}) => (
             <Button
               key={id}
               text={text}
               size={size}
               className={`franchise-header__button franchise-header__button--${variant}`}
+              onClick={onClick ?? (() => { if (path) navigate(path); })}
             />
           ))}
         </div>

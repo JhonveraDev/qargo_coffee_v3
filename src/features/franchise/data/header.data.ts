@@ -15,12 +15,14 @@ export const headerFranchiseData: HeaderFranchiseContent = {
       text: "Start the Conversation",
       size: "md",
       variant: "primary",
+      path: "/about",
     },
     {
       id: "download-info",
       text: "Download Our Franchise Info",
       size: "md",
       variant: "secondary",
+      path: "/about",
     },
   ],
 };

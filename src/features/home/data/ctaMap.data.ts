@@ -12,5 +12,6 @@ export const ctaMapData: CtaMapContent = {
   button: {
     text: "Explore Locations",
     size: "md",
+    path: "/locations",
   },
 };

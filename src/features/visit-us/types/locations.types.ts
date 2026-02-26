@@ -4,7 +4,7 @@ export interface Location {
   address: string;
   phone: string;
   image: string;
-  url: string;
+  path: string;
 }
 
 export interface StateLocationsContent {

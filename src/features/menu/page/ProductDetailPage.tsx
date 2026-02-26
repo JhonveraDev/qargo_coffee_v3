@@ -64,9 +64,14 @@ export const ProductDetailPage = () => {
             {product.name}
           </h2>
 
-          <button className="product-detail__order-button">
+          <a
+            className="product-detail__order-button"
+            href={`https://${product.productUrl}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Order Here
-          </button>
+          </a>
 
           <p className="product-detail__available-text">
             Available in:
