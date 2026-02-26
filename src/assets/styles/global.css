@@ -4634,6 +4634,8 @@
   justify-content: space-between;
   border-bottom: 10px solid var(--color-main);
   padding-bottom: 10px;
+  border-top: 1px solid var(--color-main);
+  padding-top: 13px;
 }
 
 .amount-per-serving {
@@ -4701,4 +4703,98 @@
 
 .mbl {
   border-bottom: 10px solid var(--color-main);
+}
+
+@media (max-width: 1270px) {
+  .product-detail__nutrition-section {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1140px) {
+  .product-detail__nutrition-section {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .product-detail__nutrition-section {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 930px) {
+  .product-detail__nutrition-section {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 860px) {
+  .product-detail__nutrition-section {
+    max-width: 89%;
+  }
+
+  .product-detail__nutrition-title {
+    font-size: 43px;
+  }
+}
+
+@media (max-width: 800px) {
+  .product-detail__nutrition-section {
+    max-width: 72%;
+  }
+
+  .product-detail__nutrition-title {
+    font-size: 49px;
+  }
+}
+
+@media (max-width: 800px) {
+  .product-detail__nutrition-section {
+    max-width: 72%;
+  }
+}
+
+@media (max-width: 540px) {
+  .product-detail__nutrition-section {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  .product-detail__nutrition-section {
+    max-width: 90%;
+  }
+
+  .product-detail__nutrition-title {
+    font-size: 42px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .nutrients {
+    font-size: 16.5px;
+  }
+
+  .product-detail__nutrition-title {
+    font-size: 40px;
+  }
+
+  .calories {
+    font-size: 35px
+  }
+
+  .calories-value {
+    font-size: 48px;
+  }
+
+  .nutrients .st {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 450px) {
+  .product-detail__nutrition-section {
+    max-width: 93%;
+  }
 }
