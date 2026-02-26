@@ -5,7 +5,8 @@ import { getImage } from "../utils/products-images.utils";
 
 import DietaryIcons from "../../../assets/images/menu/general-info/dietary-icons-blue.svg";
 import arrowLeft from "../../../assets/images/franchise/arrow.svg";
-import nutritionalTable from "../../../assets/images/menu/main-images/dummy-data-01.png";
+
+import { NutritionalFacts } from "../index";
 
 export const ProductDetailPage = () => {
   const navigate = useNavigate();
@@ -81,13 +82,12 @@ export const ProductDetailPage = () => {
             ( {product.sizePiker} )
           </span>
 
-          <img
-            className="product-detail__nutrition-image"
-            src={nutritionalTable}
-            alt="Nutritional information"
-          />
-        </div>
+          <h2 className="product-detail__nutrition-title">Nutritional Facts</h2>
 
+          <div className="product-detail__nutrition-section">
+            <NutritionalFacts data={product.nutritionalFacts} />
+          </div>
+        </div>
       </div>
     </div>
   );

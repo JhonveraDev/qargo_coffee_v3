@@ -4602,3 +4602,103 @@
     font-size: 13.5px;
   }
 }
+
+/* ===== OUR MENU PAGE - Section / Nutritional Table ===== */
+.product-detail__nutrition-section {
+  width: 100%;
+  max-width: 60%;
+}
+
+.nutritional-facts {
+  padding: 10px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  color: var(--color-main);
+}
+
+.product-detail__nutrition-title {
+  font-size: 49px;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 8px;
+  color: var(--color-main);
+}
+
+.serving-size {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 10px solid var(--color-main);
+  padding-bottom: 10px;
+}
+
+.amount-per-serving {
+  display: flex;
+  justify-content: start;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+.daily-value {
+  display: flex;
+  justify-content: end;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.calories {
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  line-height: 120%;
+  border-bottom: 5px solid var(--color-main);
+  padding-bottom: 5px;
+}
+
+.calories-value {
+  font-size: 54px;
+}
+
+.nutrients {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+.nutrients .nutrient {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-main);
+  padding: 4px 0;
+}
+
+.nutrients .sub {
+  padding-left: 16px;
+}
+
+.nutrients .st {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+.disclaimer {
+  font-size: 14px;
+  margin-top: 12px;
+  font-weight: 400;
+  border-top: 5px solid var(--color-main);
+  padding-top: 6px;
+}
+
+.mbl {
+  border-bottom: 10px solid var(--color-main);
+}

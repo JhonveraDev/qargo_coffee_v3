@@ -22,13 +22,42 @@ export interface MenuCategory {
   items: MenuItem[];
 }
 
+export type NutritionalFactsContent = {
+  servingSize: string;
+  calories: number;
+  totalFat: number;
+  totalFatPercent: number;
+  saturatedFat: number;
+  saturatedFatPercent: number;
+  transFat: number;
+  cholesterol: number;
+  cholesterolPercent: number;
+  totalCarbs: number;
+  totalCarbsPercent: number;
+  dietaryFiber: number;
+  dietaryFiberPercent: number;
+  totalSugar: number;
+  addedSugar: number;
+  addedSugarPercent: number;
+  protein: number;
+  proteinPercent: number;
+  vitaminD: number;
+  vitaminDPercent: number;
+  calcium: number;
+  calciumPercent: number;
+  iron: number;
+  ironPercent: number;
+  potassium: number;
+  potassiumPercent: number;
+};
+
 export interface ProductItem {
   id: string;
   name: string;
   thumbnail: string;
   mainImage: string;
   sizePiker: string;
-  nutritionalTable: string;
+  nutritionalFacts: NutritionalFactsContent;
   productUrl: string;
 }
 
