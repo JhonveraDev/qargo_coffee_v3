@@ -12,6 +12,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "belleville-01.png",
         path: "/franchise",
+        comingSoon: true,
       },
     ],
   },
@@ -94,6 +95,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "illinois-03.png",
         path: "/franchise",
+        comingSoon: true,
       },
       {
         id: 404,
@@ -110,6 +112,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "illinois-05.png",
         path: "/franchise",
+        comingSoon: true,
       },
       {
         id: 406,
@@ -118,6 +121,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "illinois-06.png",
         path: "/franchise",
+        comingSoon: true,
       },
     ],
   },
@@ -148,6 +152,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "michigan-03.png",
         path: "/franchise",
+        comingSoon: true,
       },
       {
         id: 504,
@@ -156,6 +161,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "michigan-04.png",
         path: "/franchise",
+        comingSoon: true,
       },
     ],
   },
@@ -170,6 +176,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "missouri-01.png",
         path: "/franchise",
+        comingSoon: true,
       }
     ],
   },
@@ -184,6 +191,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "nevada-01.png",
         path: "/franchise",
+        comingSoon: true,
       }
     ],
   },
@@ -198,6 +206,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "new-hampshire-01.png",
         path: "/franchise",
+        comingSoon: true,
       }
     ],
   },
@@ -242,6 +251,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "texas-03.png",
         path: "/franchise",
+        comingSoon: true,
       },
       {
         id: 1004,
@@ -250,6 +260,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "texas-04.png",
         path: "/franchise",
+        comingSoon: true,
       },
       {
         id: 1005,
@@ -258,6 +269,7 @@ export const locationsData: StateLocationsContent[] = [
         phone: "COMING SOON",
         image: "texas-05.png",
         path: "/franchise",
+        comingSoon: true,
       }
     ],
   },

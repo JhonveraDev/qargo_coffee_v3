@@ -48,7 +48,7 @@ export const CardLocations = () => {
             className="visit-us-card-locations__swiper"
           >
             {stateItem.locations.map((location) => {
-              const { id, name, image, address, phone, path } = location;
+              const { id, name, image, address, phone, path, comingSoon } = location;
 
               return (
                 <SwiperSlide
@@ -62,7 +62,7 @@ export const CardLocations = () => {
                       className="visit-us-card-locations__image"
                     />
 
-                    <div className="visit-us-card-locations__overlay">
+                    <div className={`visit-us-card-locations__overlay ${comingSoon ? "visit-us-card-locations__overlay--disabled" : ""}`}>
                       <div className="overlay__container">
                         <div className="overlay__header">
                           <h4 className="overlay__title">{name}</h4>

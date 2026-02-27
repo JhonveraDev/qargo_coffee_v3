@@ -3850,6 +3850,22 @@
   border-radius: 30px;
 }
 
+.visit-us-card-locations__overlay--disabled {
+  background-color: var(--text-main);
+}
+
+.visit-us-card-locations__overlay--disabled .overlay__label {
+  color: var(--color-main);
+}
+
+.visit-us-card-locations__overlay--disabled .overlay__button {
+  background-color: var(--color-main);
+}
+
+.visit-us-card-locations__overlay--disabled .overlay__header {
+  border-bottom: 2px solid var(--color-main);
+}
+
 .overlay__container {
   display: flex;
   flex-direction: column;
@@ -3865,6 +3881,10 @@
   border-radius: 30px;
   padding: 12px 75px;
   font-weight: 700;
+}
+
+.overlay__button--disabled {
+  background-color: var(--color-main);
 }
 
 .overlay__button:hover {

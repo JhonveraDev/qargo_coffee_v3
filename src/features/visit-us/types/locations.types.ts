@@ -5,6 +5,7 @@ export interface Location {
   phone: string;
   image: string;
   path: string;
+  comingSoon?: boolean,
 }
 
 export interface StateLocationsContent {
