@@ -1,4 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MAP_CENTER, MAP_LOCATIONS } from "../data/map.data";
 import "leaflet/dist/leaflet.css";
 
 import L from "leaflet";
@@ -9,7 +10,6 @@ const customMarker = new L.Icon({
   iconAnchor: [20, 50],
   popupAnchor: [0, -50],
 });
-import { MAP_CENTER, MAP_LOCATIONS } from "../data/map.data";
 
 export const Map = () => {
   return (
@@ -26,11 +26,25 @@ export const Map = () => {
 
         {MAP_LOCATIONS.map((location) => (
           <Marker
-            key={location.name}
+            key={location.slug}
             position={location.position}
             icon={customMarker}
           >
-            <Popup>{location.name}</Popup>
+            <Popup>
+              <div style={{ textAlign: "center" }}>
+                <img
+                  src={location.cityImage}
+                  alt={location.name}
+                  style={{
+                    width: "200px",
+                    height: "auto",
+                    borderRadius: "8px",
+                    marginBottom: "8px"
+                  }}
+                />
+                <h4 style={{ margin: 0 }}>{location.name}</h4>
+              </div>
+            </Popup>
           </Marker>
         ))}
       </MapContainer>
