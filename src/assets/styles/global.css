@@ -4046,6 +4046,7 @@
     font-size: 33px;
   }
 }
+
 @media (max-width: 800px) {
   .visit-us-card-locations__card-footer {
     font-size: 27px;
@@ -4080,19 +4081,46 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
+  .visit-us-card-locations__card-footer {
+    font-size: 24px;
+  }
+
+  .overlay__title {
+    font-size: 30px;
+  }
+
   .overlay__text {
     font-size: 19px;
   }
+}
 
+@media (max-width: 700px) {
   .overlay__label {
     font-size: 16px;
+  }
+
+  .overlay__title {
+    font-size: 28px;
+  }
+
+  .overlay__text {
+    font-size: 18px;
   }
 
   .overlay__button {
     font-size: 20px;
     padding: 8px 56px;
   }
+
+  .overlay__actions {
+    margin-top: 28px;
+  }
+
+  .visit-us-card-locations__card-footer {
+    font-size: 22px;
+  }
+
 }
 
 @media (max-width: 660px) {
@@ -4104,8 +4132,12 @@
     margin-bottom: 80px;
   }
 
+  .visit-us-card-locations__card-footer {
+    font-size: 26px;
+  }
+
   .overlay__text {
-    font-size: 23px;
+    font-size: 24px;
     max-width: 80%;
   }
 
@@ -4114,12 +4146,13 @@
   }
 
   .overlay__button {
-    font-size: 22px;
-    padding: 11px 70px;
+    font-size: 23px;
+    padding: 15px 94px;
   }
 
   .overlay__title {
     padding-bottom: 40px;
+    font-size: 34px;
   }
 
   .overlay__actions {
@@ -4147,11 +4180,20 @@
 
 @media (max-width: 440px) {
   .overlay__title {
-    font-size: 31px;
+    font-size: 29px;
   }
 
   .overlay__text {
+    font-size: 18px;
+  }
+
+  .overlay__button {
     font-size: 20px;
+    padding: 9px 57px;
+  }
+
+  .visit-us-card-locations__card-footer {
+    font-size: 23px;
   }
 }
 
@@ -4181,16 +4223,24 @@
   .overlay__label {
     font-size: 17px;
   }
+
+  .overlay__actions {
+    margin-top: 32px;
+  }
+
+  .overlay__block {
+    margin-top: 14px;
+  }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .overlay__button {
     font-size: 18px;
     padding: 8px 58px;
   }
 
   .overlay__actions {
-    margin-top: 40px;
+    margin-top: 32px;
   }
 
   .overlay__label {
@@ -4204,10 +4254,15 @@
 
   .overlay__title {
     padding-bottom: 28px;
+    font-size: 27px;
+  }
+
+  .visit-us-card-locations__card-footer {
+    font-size: 20px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
   .overlay__text {
     font-size: 15px;
   }
@@ -4217,7 +4272,7 @@
   }
 
   .overlay__actions {
-    margin-top: 26px;
+    margin-top: 21px;
   }
 
   .overlay__button {
@@ -4826,11 +4881,5 @@
 
   .nutrients .st {
     font-size: 17px;
-  }
-}
-
-@media (max-width: 450px) {
-  .product-detail__nutrition-section {
-    max-width: 93%;
   }
 }
