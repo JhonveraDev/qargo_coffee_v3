@@ -43,6 +43,7 @@ export const Form = () => {
               type={type ?? "text"}
               value={formData[name]}
               onChange={handleChange}
+              required
             />
           ))}
         </div>
@@ -53,6 +54,7 @@ export const Form = () => {
           placeholder="Address*"
           value={formData.address}
           onChange={handleChange}
+          required
         />
 
         <div className="franchise-form__radio-group">
@@ -69,6 +71,7 @@ export const Form = () => {
                 value={option}
                 checked={formData.investment === option}
                 onChange={handleChange}
+                required
               />
               <span className="franchise-form__radio-text">
                 {option}
@@ -91,6 +94,7 @@ export const Form = () => {
                 value={option}
                 checked={formData.timeline === option}
                 onChange={handleChange}
+                required
               />
               <span className="franchise-form__radio-text">
                 {option}
