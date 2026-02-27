@@ -3998,10 +3998,30 @@
   }
 }
 
+@media (max-width: 1110px) {
+  .visit-us-card-locations__card-footer {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .overlay__title {
+    font-size: 22.5px;
+  }
+
+  .overlay__text {
+    font-size: 17px;
+  }
+
+  .overlay__text {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 990px) {
   .overlay__text {
     max-width: 100%;
-    font-size: 21px;
+    font-size: 25px;
   }
 
   .overlay__label {
@@ -4010,6 +4030,7 @@
 
   .overlay__title {
     padding-bottom: 35px;
+    font-size: 34.5px;
   }
 
   .overlay__actions {
@@ -4019,6 +4040,15 @@
   .overlay__button {
     font-size: 22px;
     padding: 14px 75px;
+  }
+
+  .visit-us-card-locations__card-footer {
+    font-size: 33px;
+  }
+}
+@media (max-width: 800px) {
+  .visit-us-card-locations__card-footer {
+    font-size: 27px;
   }
 }
 
@@ -4075,11 +4105,7 @@
   }
 
   .overlay__text {
-    font-size: 19px;
-  }
-
-  .overlay__text {
-    font-size: 22px;
+    font-size: 23px;
     max-width: 80%;
   }
 
@@ -4116,6 +4142,16 @@
 @media (max-width: 500px) {
   .visit-us-card-locations__state {
     max-width: 92%;
+  }
+}
+
+@media (max-width: 440px) {
+  .overlay__title {
+    font-size: 31px;
+  }
+
+  .overlay__text {
+    font-size: 20px;
   }
 }
 
