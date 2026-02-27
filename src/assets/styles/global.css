@@ -3669,39 +3669,35 @@
   justify-content: center;
 }
 
-.map__header img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+.custom-marker {
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-main);
+  border: 3px solid white  !important;
 }
 
-@media (max-width: 800px) {
-  .map__header img {
-    transform: scale(1.1);
-  }
-
-  .map__header {
-    margin-top: 85px;
-  }
+.leaflet-control-zoom a {
+  background-color: var(--color-yellow) !important;
+  border: none !important;
+  border-radius: 50% !important;
+  color: var(--color-white) !important;
+  margin-bottom: 8px !important;
 }
 
-@media (max-width: 550px) {
-  .map__header img {
-    transform: scale(1.2);
-  }
+.leaflet-control-zoom a:hover {
+  background-color: var(--color-main) !important;
+  color: var(--color-white) !important;
 }
 
-@media (max-width: 450px) {
-  .map__header img {
-    transform: scale(1.17);
-  }
+.leaflet-bar {
+  border: none !important;
 }
 
 /* ===== VISIT US - Section / Locations ===== */
 .visit-us-locations {
   width: 100%;
   max-width: 100%;
-  margin-top: 35px;
+  margin-top: 55px;
   margin-bottom: 75px;
 }
 
