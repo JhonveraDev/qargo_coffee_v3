@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 import { NAV_LINKS as links } from "../layout/data/navBar.data";
 
@@ -8,6 +8,9 @@ import hamburgerMenu from "../../assets/images/global/hamburger_menu.svg";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const isHome = location.pathname === "/";
 
   return (
     <nav className="navbar">
@@ -20,10 +23,20 @@ export const NavBar = () => {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >
-        <img src={hamburgerMenu} alt="icon menu" className="navbar__menu-icon" />
+        <img
+          src={hamburgerMenu}
+          alt="icon menu"
+          className="navbar__menu-icon"
+        />
       </button>
 
-      <ul className={`navbar-links ${isOpen ? "navbar-links--open" : ""}`}>
+      <ul
+        className={
+          "navbar-links" +
+          (isHome ? " navbar-links--home" : "") +
+          (isOpen ? " navbar-links--open" : "")
+        }
+      >
         {links.map((link) => (
           <li key={link.to}>
             <NavLink

@@ -213,7 +213,7 @@
   .navbar-links {
     -webkit-backdrop-filter: blur(5.2px);
     backdrop-filter: blur(5.2px);
-    background: var(--bg-main);
+    background-color: var(--bg-main);
     border-radius: 0 0 22px 22px;
     box-shadow: 0 20px 18px rgba(0, 0, 0, 0.2);
     flex-direction: column;
@@ -230,6 +230,10 @@
       visibility 0.3s ease;
     visibility: hidden;
     width: 100%;
+  }
+
+  .navbar-links--home {
+    background: linear-gradient(65deg, rgba(253, 253, 248, 1) 32%, rgba(230, 228, 224, 1) 50%, rgba(228, 228, 223, 1) 72%);
   }
 
   .navbar-links--open {
