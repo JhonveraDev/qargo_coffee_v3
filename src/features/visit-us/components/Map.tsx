@@ -31,18 +31,18 @@ export const Map = () => {
             icon={customMarker}
           >
             <Popup>
-              <div style={{ textAlign: "center" }}>
+              <div style={{ textAlign: "center" }} className="popup__container">
                 <img
                   src={location.cityImage}
                   alt={location.name}
                   style={{
-                    width: "200px",
+                    width: "90px",
                     height: "auto",
                     borderRadius: "8px",
                     marginBottom: "8px"
                   }}
                 />
-                <h4 style={{ margin: 0 }}>{location.name}</h4>
+                <h4>{location.name}</h4>
               </div>
             </Popup>
           </Marker>
