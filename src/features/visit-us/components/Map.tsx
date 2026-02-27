@@ -17,7 +17,7 @@ export const Map = () => {
       <MapContainer
         center={MAP_CENTER}
         zoom={4}
-        style={{ height: "540px", width: "90%" }}
+        style={{ height: "600px", width: "100%" }}
       >
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
