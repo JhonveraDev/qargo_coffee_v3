@@ -1,27 +1,6 @@
-import type { MapLocation } from "../types/map.types";
+import type { BaseLocation } from "../types/map.types";
 
-const imageModules = import.meta.glob(
-  "../../../assets/images/visit-us/cities/*.png",
-  {
-    eager: true,
-    import: "default",
-  }
-) as Record<string, string>;
-
-const images: Record<string, string> = Object.fromEntries(
-  Object.entries(imageModules).map(([path, url]) => {
-    const fileName = path.split("/").pop()?.replace(".png", "") ?? "";
-    return [fileName, url];
-  })
-);
-
-type BaseLocation = {
-  name: string;
-  slug: string;
-  position: [number, number];
-};
-
-const locations: BaseLocation[] = [
+export const BASE_LOCATIONS: BaseLocation[] = [
   { name: "California", slug: "california", position: [36.7783, -119.4179] },
   { name: "Belleville (Illinois)", slug: "belleville", position: [38.5201, -89.9839] },
   { name: "Florida", slug: "florida", position: [27.6648, -81.5158] },
@@ -36,10 +15,3 @@ const locations: BaseLocation[] = [
 ];
 
 export const MAP_CENTER: [number, number] = [39.8283, -98.5795];
-
-export const MAP_LOCATIONS: MapLocation[] = locations.map(location => ({
-  name: location.name,
-  slug: location.slug,
-  position: location.position,
-  cityImage: images[location.slug] ?? "",
-}));

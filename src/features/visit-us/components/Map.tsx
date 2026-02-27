@@ -1,8 +1,8 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { MAP_CENTER, MAP_LOCATIONS } from "../data/map.data";
 import "leaflet/dist/leaflet.css";
-
 import L from "leaflet";
+
+import { MAP_CENTER, MAP_LOCATIONS } from "../service/map.base";
 
 const customMarker = new L.Icon({
   iconUrl: "/location-pin.svg",
@@ -31,7 +31,7 @@ export const Map = () => {
             icon={customMarker}
           >
             <Popup>
-              <div style={{ textAlign: "center" }} className="popup__container">
+              <div className="popup__container" style={{ textAlign: "center" }}>
                 <img
                   src={location.cityImage}
                   alt={location.name}
@@ -39,7 +39,7 @@ export const Map = () => {
                     width: "90px",
                     height: "auto",
                     borderRadius: "8px",
-                    marginBottom: "8px"
+                    marginBottom: "8px",
                   }}
                 />
                 <h4>{location.name}</h4>

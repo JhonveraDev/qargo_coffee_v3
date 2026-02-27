@@ -6,3 +6,9 @@ export interface MapLocation {
   position: [number, number];
   cityImage: string;
 }
+
+export type BaseLocation = {
+  name: string;
+  slug: string;
+  position: [number, number];
+};
