@@ -1,18 +1,4 @@
-import facebook from '../../assets/images/global/facebook.svg';
-import linkedin from '../../assets/images/global/linkedin.svg';
-import instagram from '../../assets/images/global/instagram.svg';
-import youtube from '../../assets/images/global/youtube.svg';
-import spotify from '../../assets/images/global/spotify.svg';
-import tiktok from '../../assets/images/global/tiktok.svg';
-
-const socialNetworks = [
-  { name: 'Facebook', icon: facebook, url: '#' },
-  { name: 'LinkedIn', icon: linkedin, url: '#' },
-  { name: 'Instagram', icon: instagram, url: '#' },
-  { name: 'YouTube', icon: youtube, url: '#' },
-  { name: 'Spotify', icon: spotify, url: '#' },
-  { name: 'TikTok', icon: tiktok, url: '#' },
-];
+import { socialNetworks, footerLegalLinks } from './data/footer.data';
 
 export const Footer = () => {
   return (
@@ -34,9 +20,17 @@ export const Footer = () => {
           ))}
         </div>
 
-        <a href="#">© 2025 Qargo Coffee. All rights reserved.</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
+        {footerLegalLinks.map(({ name, url }) => (
+          <a
+            key={name}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={name}
+          >
+            {name}
+          </a>
+        ))}
       </div>
     </footer>
   );

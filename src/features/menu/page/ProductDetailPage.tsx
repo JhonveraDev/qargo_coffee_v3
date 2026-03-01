@@ -12,9 +12,7 @@ export const ProductDetailPage = () => {
   const navigate = useNavigate();
   const { categoryId, product } = useProductDetail();
 
-  if (!product) {
-    return <Navigate to={`/our-menu/${categoryId}`} replace />;
-  }
+  if (!product) { return <Navigate to={`/our-menu/${categoryId}`} replace />; }
 
   return (
     <div className="product-detail">

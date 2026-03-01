@@ -1,6 +1,5 @@
 import { incomingStatesData } from "../data/incomingStates.data";
 
-
 export const StatesGrid = () => {
   return (
     <section className="states-grid">

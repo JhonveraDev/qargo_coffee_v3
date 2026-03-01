@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, FreeMode, Navigation } from "swiper";
+import { Pagination, FreeMode } from "swiper";
 import type { SwiperOptions } from "swiper/types";
 
 import { getImage } from "../utils/profile-images.utils";
