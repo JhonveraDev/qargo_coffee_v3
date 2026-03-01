@@ -33,11 +33,10 @@ export const Form = () => {
           {inputFields.map(({ name, placeholder, type }) => (
             <input
               key={name}
-              className={`franchise-form__input ${
-                type === "date"
+              className={`franchise-form__input ${type === "date"
                   ? "franchise-form__input--date"
                   : ""
-              }`}
+                }`}
               name={name}
               placeholder={placeholder}
               type={type ?? "text"}

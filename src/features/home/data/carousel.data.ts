@@ -5,7 +5,7 @@ import a3 from '../../../assets/images/home/home-carousel-item-03.png';
 import type { CarouselItemContent, CarouselTitleContent } from "../types/carousel.types";
 
 export const carouselTitleData: CarouselTitleContent = {
-  title: "Popular Choice",
+  title: "Most Popular Choices",
 };
 
 export const carouselItemsData: CarouselItemContent[] = [

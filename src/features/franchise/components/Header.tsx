@@ -33,7 +33,7 @@ export const Header = () => {
         />
 
         <div className="franchise-header__actions">
-          {buttons.map(({ id, text, size, variant, path, onClick}) => (
+          {buttons.map(({ id, text, size, variant, path, onClick }) => (
             <Button
               key={id}
               text={text}

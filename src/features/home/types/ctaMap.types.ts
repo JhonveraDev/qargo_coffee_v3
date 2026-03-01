@@ -1,7 +1,7 @@
 export interface CtaMapButton {
   text: string;
   size: "sm" | "md" | "lg";
-    path?: string;
+  path?: string;
 
 }
 

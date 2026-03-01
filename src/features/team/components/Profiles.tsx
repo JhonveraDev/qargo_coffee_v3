@@ -13,9 +13,9 @@ const swiperConfig: SwiperOptions = {
   spaceBetween: 17,
   freeMode: true,
   pagination: {
-  clickable: true,
-  dynamicBullets: true,
-},
+    clickable: true,
+    dynamicBullets: true,
+  },
   modules: [Pagination, FreeMode],
   breakpoints: {
     0: {

@@ -1,4 +1,4 @@
-export const incomingStatesData:readonly string[] = [
+export const incomingStatesData: readonly string[] = [
   "Georgia",
   "Missouri",
   "New York",
