@@ -4619,6 +4619,10 @@
   position: relative;
 }
 
+.header-info img {
+  border-radius: 25px 25px 0 0;
+}
+
 .header-info__content {
   position: absolute;
   top: 18%;
@@ -4641,6 +4645,12 @@
   font-size: 24px;
   line-height: 150%;
   color: var(--bg-secondary);
+}
+
+@media (max-width: 1440px) {
+  .header-info img {
+    border-radius: 0px 0px 0 0;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -4998,6 +5008,7 @@
     opacity: 0;
     transform: translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
