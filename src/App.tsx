@@ -2,6 +2,7 @@ import { Routes, Route, Navigate, Outlet, useLocation } from "react-router-dom";
 
 import { NavBar } from "./ui/layout/NavBar";
 import { Footer } from "./ui/layout/Footer";
+import { ScrollToTop } from "./ui/layout/ScrollToTop";
 
 import { HomePage } from "./features/home/page/HomePage";
 import { FranchisePage } from "./features/franchise/page/FranchisePage";
@@ -17,8 +18,9 @@ function Layout() {
 
   return (
     <div className="app-container">
+      <ScrollToTop />
       <NavBar />
-      <main className="page-container">
+      <main className="page-container fade-transition" key={location.pathname}>
         <Outlet />
       </main>
       {!hideFooter && <Footer />}

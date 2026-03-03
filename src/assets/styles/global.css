@@ -146,7 +146,7 @@
 }
 
 .button--lg {
-  padding: 0.65rem 1rem;
+  padding: 0.65rem 0rem;
   font-size: 1.5rem;
   font-weight: 600;
   width: 80% !important;
@@ -4986,5 +4986,20 @@
 
   .nutrients .st {
     font-size: 17px;
+  }
+}
+
+.fade-transition {
+  animation: fadeIn 0.35s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
